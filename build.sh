@@ -1,4 +1,4 @@
 
 make html
 rm -rf docs
-mv build/html docs
+mv html docs

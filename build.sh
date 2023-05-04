@@ -1,2 +1,3 @@
 
 make html
+make html

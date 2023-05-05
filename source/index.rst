@@ -9,10 +9,8 @@ This contains code documentation about interfaces to access the Princeton /hydro
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
-
-
 
 Indices and tables
 ==================

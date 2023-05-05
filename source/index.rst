@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to readthedocs's documentation!
+Welcome to hydrodata documentation!
 =======================================
+This contains code documentation about interfaces to access the Princeton /hydrodata file share.
+
 
 .. toctree::
    :maxdepth: 2

@@ -5,7 +5,13 @@
 
 Welcome to hydrodata documentation!
 =======================================
-This contains code documentation about interfaces to access the Princeton /hydrodata file share.
+This is code documentation about interfaces to access the /hydrodata file share.
+
+The /hydrodata file share is a collection of public and derived data useful for analyzing surface
+and groundwater in the United States.
+
+
+
 
 
 .. toctree::
@@ -17,4 +23,3 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`

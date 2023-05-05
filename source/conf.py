@@ -9,7 +9,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath("../../src"))
-project = 'HydrogenApi'
+project = 'HYDRODATA'
 copyright = '2023, Princeton University, University of Arizona'
 author = 'Bill Hasling, Amy Johnson, Amy Defnet, Reed Maxwell, Laura Condon'
 release = '1.0.0'

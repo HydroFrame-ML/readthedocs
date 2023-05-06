@@ -1,0 +1,18 @@
+Introduction
+============
+Hydrodata is a large GPFS file share located at Princeton that contain a large
+number of hydrology related data files. The files in hydrodata are indexed by
+a data catalog.
+
+The index is provided to allow code that needs to read information from /hydrodata
+to access the information without hard coding absolute path names to the files. 
+This index makes it easier for people and code to locate files and understand
+the purpose of the files.
+
+There is a python module to help programs get metadata and file paths from the data catalog. 
+
+The data catalog consists of a set of objects (tables) that can be joined together
+by common keys. The "tables" are represented in a
+yaml file `hydrodata_catalog.yaml` file rather that a SQL database so the information
+can version controlled, branched, promoted and labeled.
+

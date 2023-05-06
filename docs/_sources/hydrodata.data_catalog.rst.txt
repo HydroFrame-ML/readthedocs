@@ -1,0 +1,18 @@
+hydrodata.data\_catalog package
+===============================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hydrodata.data_catalog.data_access
+
+Module contents
+---------------
+
+.. automodule:: hydrodata.data_catalog
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -10,13 +10,13 @@ This is code documentation about interfaces to access the /hydrodata file share.
 The /hydrodata file share is a collection of public and derived data useful for analyzing surface
 and groundwater in the United States.
 
-
-
-
-
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
+
+   introduction
+   install
+   hydrodata
 
 Indices and tables
 ==================

@@ -1,0 +1,16 @@
+aggregation
+######################
+
+.. list-table:: aggregation
+   :widths: 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - aggregation
+     - title
+   * - average
+     - Average
+   * - min
+     - Min
+   * - max
+     - Max

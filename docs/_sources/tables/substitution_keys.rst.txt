@@ -1,0 +1,32 @@
+substitution_keys
+######################
+
+.. list-table:: substitution_keys
+   :widths: 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - substitution_keys
+     - description
+   * - wy
+     - Water year of time such as 2006.
+   * - wy_start_hour
+     - Hour number within a water year of a time starting at 000001.
+   * - wy_end_hour
+     - Hour number within a water year of a time starting at 000001.
+   * - wy_start_hour5
+     - Hour number with 5 digits within a water year of a time starting at 00001.
+   * - mmddyyyy
+     - Date formatted as %m%d%Y.
+   * - dataset_var
+     - The value of the dataset_var attribute.
+   * - wyday
+     - The water year day of the year starting at 001.
+   * - wy_plus1
+     - The next water year from one of the current time such as 2007
+   * - wy_minus1
+     - The previous water year from one of the current time such as 2005
+   * - scenario_id
+     - A hydrogen scenario_id.
+   * - domain_path
+     - A hydrogen area of interest domain path.

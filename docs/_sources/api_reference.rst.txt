@@ -1,0 +1,7 @@
+Python API Refererence
+======================
+This is the code documentation of the python API modules to access the data catalog.
+
+.. toctree::
+
+    hydrodata

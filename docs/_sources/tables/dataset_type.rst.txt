@@ -1,0 +1,20 @@
+dataset_type
+######################
+
+.. list-table:: dataset_type
+   :widths: 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - dataset_type
+     - description
+   * - parflow
+     - Outputs of a parflow run.
+   * - forcing
+     - Weather forcing files.
+   * - static
+     - Static files.
+   * - current_conditions
+     - Generated current conditions files.
+   * - remote_sensing
+     - Data acquired by remote sensing from an external source.

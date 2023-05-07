@@ -1,0 +1,56 @@
+units
+######################
+
+.. list-table:: units
+   :widths: 30 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - units
+     - title
+     - variants
+   * - m
+     - m
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+   * - meters
+     - m
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+   * - feet
+     - ft
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+   * - cm
+     - cm
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+   * - mm
+     - mm
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+   * - inches
+     - in
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+   * - celsius
+     - celsius
+     - ['celsius', 'fahrenheit', 'kelvin']
+   * - kelvin
+     - k
+     - ['celsius', 'fahrenheit', 'kelvin']
+   * - fahrenheit
+     - f
+     - ['celsius', 'fahrenheit', 'kelvin']
+   * - n/m
+     - n/m
+     - 
+   * - m/s
+     - m/s
+     - 
+   * - mm/day
+     - mm/day
+     - 
+   * - cm3/cm3
+     - cm3/cm3
+     - 
+   * - w/m2
+     - w/m2
+     - 
+   * - kg/kg
+     - kg/kg
+     - 

@@ -1,0 +1,38 @@
+Data Catalog Tables
+===================
+
+The hydrodata data catalog consists of a set of objects (tables) that can be joined together by common keys.
+The "tables" are represented by a yaml file rather that a SQL database 
+so the information can version controlled, branched, promoted and labeled.
+The yaml file is located in the hydrodata repo in the folder `hydrodata/data_catalog/hydrodata_catalog.yaml`.
+
+The model is a star schema with a fact table called "data_catalog_entry" that represents a 
+file path into the /hydrodata file share and metadata about the data in that file path.
+The file path may contain placeholder keys, for example::
+
+   /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.sum.{wy_daynum}.pfb
+
+The keys {wy} and {wy_daynum} are replaced by the water year and water year day number of the time
+being requested for this daily parflow result.
+
+This model is used by a python API module to request absolute path names to hydrodata files with
+filters using the dimension attributes in the model tables. In this way code can get access to files without
+hard coding absolute path names.
+
+Click on a table name to see the available values for each table that may be used.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   tables/data_catalog_entry
+   tables/dataset_type
+   tables/dataset_name
+   tables/file_type
+   tables/structure_type
+   tables/aggregation
+   tables/variable
+   tables/period
+   tables/grid
+   tables/units
+   tables/substitution_keys

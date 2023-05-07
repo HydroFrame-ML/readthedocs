@@ -1,0 +1,16 @@
+period
+######################
+
+.. list-table:: period
+   :widths: 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - period
+     - title
+   * - daily
+     - Daily
+   * - hourly
+     - Hourly
+   * - monthly
+     - Monthly

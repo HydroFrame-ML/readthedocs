@@ -1,0 +1,20 @@
+file_type
+######################
+
+.. list-table:: file_type
+   :widths: 30 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - file_type
+     - title
+     - description
+   * - netcdf
+     - NetCDF
+     - Driver that reads NetCDF files and returns xarray data arrays
+   * - pfb
+     - PFB
+     - Driver that reads pfb files and returns a numpy array
+   * - pfmetadata
+     - PFB Files
+     - Driver that reads a collection of PFB files and returns xarray data arrays

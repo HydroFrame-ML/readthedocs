@@ -7,6 +7,7 @@
   <title>hydrodata.data_catalog.data_access module &mdash; HYDRODATA 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -40,21 +41,13 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Install Package</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="hydrodata.html">hydrodata package</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="hydrodata.html#subpackages">Subpackages</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="hydrodata.data_catalog.html">hydrodata.data_catalog package</a><ul class="current">
-<li class="toctree-l4 current"><a class="reference internal" href="hydrodata.data_catalog.html#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="hydrodata.data_catalog.html#module-hydrodata.data_catalog">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="hydrodata.html#module-hydrodata">Module contents</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="data_catalog_tables.html">Data Catalog Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
 </ul>
 
         </div>
@@ -71,6 +64,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="api_reference.html">Python API Refererence</a></li>
           <li class="breadcrumb-item"><a href="hydrodata.html">hydrodata package</a></li>
           <li class="breadcrumb-item"><a href="hydrodata.data_catalog.html">hydrodata.data_catalog package</a></li>
       <li class="breadcrumb-item active">hydrodata.data_catalog.data_access module</li>
@@ -94,6 +88,14 @@
 </dd>
 </dl>
 <dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_dimension_tables">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_dimension_tables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_dimension_tables" title="Permalink to this definition"></a></dt>
+<dd><p>Get the list of dimension tables.</p>
+<p>This is the list of tables in the data catalog model such as: dataset_name, periods, grid, etc.
+This does not include the data_catalog_entry fact table.</p>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_file_paths">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_file_paths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_file_paths" title="Permalink to this definition"></a></dt>
 <dd><p>Get a list of file paths from the data catalog identified by the filter options.</p>
@@ -103,21 +105,24 @@
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A list of absolute path names to files in the data catalog entry
-after replacing substitution variables and filtering by time options.</p>
+after looping through time range and replacing substitution keys.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError if no matching data catalog entry is found</strong><strong> or </strong><strong>if two different data catalog entries match the options provided.</strong> – </p>
-</dd>
-</dl>
-<dl class="simple">
-<dt>A filter option value may be any attribute in a data catalog entry or any attribute below.</dt><dd><ul class="simple">
-<li><p>time:           Used to generate time substition variables in the file path. Must be YYYY-MM-DD.</p></li>
-<li><p>start_time:     Start time for a range of times used for substitution variables. Must be YYYY-MM-DD.</p></li>
-<li><p>end_time:       End time for a range of times used for substitution variable. Must be YYYY-MM-DD.</p></li>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError if no data catalog entry is found matching the options provided.</strong> – </p></li>
+<li><p><strong>ValueError if two different data catalog entries match the options provided.</strong> – </p></li>
 </ul>
 </dd>
 </dl>
-<p>If both start_time and end_time are specified then all file paths for that time range are returned.</p>
+<dl class="simple">
+<dt>A filter option value may be any attribute in a data catalog entry table or any attribute below.</dt><dd><ul class="simple">
+<li><p>time:           A time in the form YYYY-MM-DD. Used to substitute time keys in the file path.</p></li>
+<li><p>start_time:     A time in the form YYYY-MM-DD. Start of date range for time keys in the file path.</p></li>
+<li><p>end_time:       A time in the form YYYY-MM-DD. End of date range for time keys in the file path.</p></li>
+</ul>
+</dd>
+</dl>
+<p>If both time and start_time is specified then start_time is used.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -132,10 +137,13 @@ after replacing substitution variables and filtering by time options.</p>
 <dd class="field-even"><p>A dict with all the metadata of the data catalog entry. This also includes columns data_catalog_entry and datapath.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError if no matching data catalog entry is found</strong><strong> or </strong><strong>if two different data catalog entries match the options provided.</strong> – </p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError if no data catalog entry is found matching the options provided.</strong> – </p></li>
+<li><p><strong>ValueError if two different data catalog entries match the options provided.</strong> – </p></li>
+</ul>
 </dd>
 </dl>
-<p>An option value may be any attribute in a data catalog entry.</p>
+<p>An option value may be any attribute in the data catalog entry table.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -166,19 +174,15 @@ after replacing substitution variables and filtering by time options.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_table_metadata">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_table_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_table_metadata" title="Permalink to this definition"></a></dt>
-<dd><p>Get the meta data for one entry in any table in the data_catalog.</p>
+<dd><p>Get the meta data for one entry in any table in the data_catalog.
+:param table_type_str: The name of a table such as grid or units or data_catalog_entry.
+:param table_id: str:            The id of a table entry such as conus1 or meters.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>table_type_str</strong> – The name of a table such as grid or units or data_catalog_entry.</p></li>
-<li><p><strong>table_id</strong> – str:            The id of a table entry such as conus1 or meters.</p></li>
-</ul>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A dict containing all the meta data of the table entry.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A dict containing all the meta data of the table entry.</p>
-</dd>
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError if no such table_table</strong><strong> or </strong><strong>table_id exists in the data catalog.</strong> – </p>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError if no such table_table exists in the data catalog.</strong> – </p>
 </dd>
 </dl>
 </dd></dl>

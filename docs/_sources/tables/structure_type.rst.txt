@@ -1,0 +1,14 @@
+structure_type
+######################
+
+.. list-table:: structure_type
+   :widths: 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - structure_type
+     - title
+   * - gridded
+     - Gridded
+   * - point
+     - Points

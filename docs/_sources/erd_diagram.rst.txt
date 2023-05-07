@@ -1,0 +1,8 @@
+
+Entity Relationship Diagram
+==============================================
+
+The diagram below is an entity relationship diagram describing
+the tables in the data catalog model.
+
+.. image:: ../../hydrodata/data_catalog/figures/data_catalog.drawio.png

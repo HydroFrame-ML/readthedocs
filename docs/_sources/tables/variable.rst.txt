@@ -1,0 +1,38 @@
+variable
+######################
+
+.. list-table:: variable
+   :widths: 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - variable
+     - title
+   * - atmospheric_pressure
+     - Atmospheric Pressure
+   * - east_windspeed
+     - Eastward windspeed
+   * - evapotranspiration
+     - Evapo Transpiration
+   * - humidity
+     - Humidity
+   * - longwave_radiation
+     - Longwave Radiation
+   * - precipitation
+     - Precipitation
+   * - pressure_head
+     - Pressure
+   * - north_windspeed
+     - South/North windspeed
+   * - saturation
+     - Saturation
+   * - shortwave_radiation
+     - Shortwave Radiation
+   * - snow
+     - Snow water equivalent
+   * - soil_moisture
+     - Soil Moisture
+   * - temp
+     - Temperature
+   * - water_table_depth
+     - Water Table Depth

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>data_catalog_entry &mdash; HYDRODATA 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="dataset_type" href="dataset_type.html" />
+    <link rel="prev" title="Data Catalog Tables" href="../data_catalog_tables.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            HYDRODATA
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../data_catalog_tables.html">Data Catalog Tables</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">data_catalog_entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset_type.html">dataset_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset_name.html">dataset_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_type.html">file_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_type.html">structure_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aggregation.html">aggregation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable.html">variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="period.html">period</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grid.html">grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="substitution_keys.html">substitution_keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../erd_diagram.html">Entity Relationship Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api_reference.html">Python API Refererence</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HYDRODATA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../data_catalog_tables.html">Data Catalog Tables</a></li>
+      <li class="breadcrumb-item active">data_catalog_entry</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tables/data_catalog_entry.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-catalog-entry">
+<h1>data_catalog_entry<a class="headerlink" href="#data-catalog-entry" title="Permalink to this heading"></a></h1>
+<table class="scrolltable docutils align-default" id="id1">
+<caption><span class="caption-text">data_catalog_entry</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>data_catalog_entry</p></th>
+<th class="head"><p>file_type</p></th>
+<th class="head"><p>structure_type</p></th>
+<th class="head"><p>dataset_type</p></th>
+<th class="head"><p>dataset_name</p></th>
+<th class="head"><p>variable</p></th>
+<th class="head"><p>dataset_var</p></th>
+<th class="head"><p>start_date</p></th>
+<th class="head"><p>end_date</p></th>
+<th class="head"><p>period</p></th>
+<th class="head"><p>grid</p></th>
+<th class="head"><p>units</p></th>
+<th class="head"><p>aggregation</p></th>
+<th class="head"><p>datapath</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>conus1_baseline_hourly_pressure</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>pressure_head</p></td>
+<td><p>Press</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>n/m</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_baseline_hourly_saturation</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>saturation</p></td>
+<td><p>satur</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>cm3/cm3</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/saturation/CONUS.{wy}.out.satur.{wy_start_hour5}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_baseline_hourly_total_precipitation</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>precipitation</p></td>
+<td><p>APCP</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>mm</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_baseline_hourly_dlwr</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>longwave_radiation</p></td>
+<td><p>DLWR</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>w/m2</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_baseline_hourly_dswr</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>shortwave_radiation</p></td>
+<td><p>DSWR</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>w/m2</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_baseline_hourly_spfh</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>humidity</p></td>
+<td><p>SPFH</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>kg/kg</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_baseline_hourly_temp</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>temp</p></td>
+<td><p>Temp</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>kelvin</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_baseline_hourly_UGRD</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>east_windspeed</p></td>
+<td><p>UGRD</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>m/s</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_baseline_hourly_VGRD</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>north_windspeed</p></td>
+<td><p>VGRD</p></td>
+<td><p>1972-04-03</p></td>
+<td><p>1986-06-03</p></td>
+<td><p>hourly</p></td>
+<td><p>conus1</p></td>
+<td><p>m/s</p></td>
+<td></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_baseline_daily_evapotranspiration</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>evapotranspiration</p></td>
+<td><p>et</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2006-09-30</p></td>
+<td><p>daily</p></td>
+<td><p>conus1</p></td>
+<td><p>mm/day</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.sum.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_baseline_daily_wtd</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>water_table_depth</p></td>
+<td><p>wtd</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2006-09-30</p></td>
+<td><p>daily</p></td>
+<td><p>conus1</p></td>
+<td><p>meters</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_baseline_daily_sm</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>soil_moisture</p></td>
+<td><p>sm</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2006-09-30</p></td>
+<td><p>daily</p></td>
+<td><p>conus1</p></td>
+<td><p>cm3/cm3</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_baseline_daily_swe</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>snow</p></td>
+<td><p>swe</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2006-09-30</p></td>
+<td><p>daily</p></td>
+<td><p>conus1</p></td>
+<td><p>mm</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.eod.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_baseline_daily_pressure</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>parflow</p></td>
+<td><p>baseline</p></td>
+<td><p>atmospheric_pressure</p></td>
+<td><p>pressure</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2006-09-30</p></td>
+<td><p>daily</p></td>
+<td><p>conus1</p></td>
+<td><p>mm</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_forcing_hourly_apcp</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>precipitation</p></td>
+<td><p>APCP</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>mm</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_forcing_hourly_dlwr</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>longwave_radiation</p></td>
+<td><p>DLWR</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>w/m2</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_forcing_hourly_dswr</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>shortwave_radiation</p></td>
+<td><p>DSWR</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>w/m2</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_forcing_hourly_press</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>pressure_head</p></td>
+<td><p>Press</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>n/m</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_forcing_hourly_spfh</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>humidity</p></td>
+<td><p>SPFH</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>kg/kg</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_forcing_hourly_temp</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>temp</p></td>
+<td><p>Temp</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>kelvin</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_forcing_hourly_ugrd</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>east_windspeed</p></td>
+<td><p>UGRD</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>m/s</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_forcing_hourly_vgrd</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>north_windspeed</p></td>
+<td><p>VGRD</p></td>
+<td><p>2002-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>hourly</p></td>
+<td><p>conus2</p></td>
+<td><p>m/s</p></td>
+<td></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus2_forcing_daily_min_temp</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>temp</p></td>
+<td><p>Temp</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>kelvin</p></td>
+<td><p>min</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.min.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus2_forcing_daily_max_temp</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>temp</p></td>
+<td><p>Temp</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>kelvin</p></td>
+<td><p>max</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.max.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus2_forcing_daily_mean_temp</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>temp</p></td>
+<td><p>Temp</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>kelvin</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus2_forcing_daily_dswr</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>shortwave_radiation</p></td>
+<td><p>DSWR</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>w/m2</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus2_forcing_daily_dlwr</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>longwave_radiation</p></td>
+<td><p>DLWR</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>w/m2</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus2_forcing_daily_precip</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>precipitation</p></td>
+<td><p>APCP</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>mm</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.sum.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus2_forcing_daily_pressure</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>pressure_head</p></td>
+<td><p>Press</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>n/m</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus2_forcing_daily_spfh</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>humidity</p></td>
+<td><p>SPFH</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>kg/kg</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus2_forcing_daily_ugrd</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>east_windspeed</p></td>
+<td><p>UGRD</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>m/s</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus2_forcing_daily_vgrd</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>forcing</p></td>
+<td><p>NLDAS3</p></td>
+<td><p>north_windspeed</p></td>
+<td><p>VGRD</p></td>
+<td><p>1979-10-01</p></td>
+<td><p>2021-10-01</p></td>
+<td><p>daily</p></td>
+<td><p>conus2</p></td>
+<td><p>m/s</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>conus1_cc_sm</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>current_conditions</p></td>
+<td><p>hydrogen_current_conditions</p></td>
+<td><p>soil_moisture</p></td>
+<td><p>soil_moisture</p></td>
+<td><p>2022/05/02</p></td>
+<td><p>2023/03/10</p></td>
+<td><p>daily</p></td>
+<td><p>conus1</p></td>
+<td><p>cm3/cm3</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mmddyyyy}.pfb</p></td>
+</tr>
+<tr class="row-odd"><td><p>conus1_cc_wtd</p></td>
+<td><p>pfb</p></td>
+<td><p>gridded</p></td>
+<td><p>current_conditions</p></td>
+<td><p>hydrogen_current_conditions</p></td>
+<td><p>water_table_depth</p></td>
+<td><p>water_table_depth</p></td>
+<td><p>2022/05/02</p></td>
+<td><p>2023/03/10</p></td>
+<td><p>daily</p></td>
+<td><p>conus1</p></td>
+<td><p>meters</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mmddyyyy}.pfb</p></td>
+</tr>
+<tr class="row-even"><td><p>nasa_smap_sm</p></td>
+<td><p>netcdf</p></td>
+<td><p>gridded</p></td>
+<td><p>remote_sensing</p></td>
+<td><p>smap</p></td>
+<td><p>soil_moisture</p></td>
+<td><p>SoilMoisture</p></td>
+<td><p>2017/09/30</p></td>
+<td><p>2023/04/23</p></td>
+<td><p>daily</p></td>
+<td><p>smapgrid</p></td>
+<td><p>cm3/cm3</p></td>
+<td><p>average</p></td>
+<td><p>/hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../data_catalog_tables.html" class="btn btn-neutral float-left" title="Data Catalog Tables" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dataset_type.html" class="btn btn-neutral float-right" title="dataset_type" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Princeton University, University of Arizona, National Science Foundation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

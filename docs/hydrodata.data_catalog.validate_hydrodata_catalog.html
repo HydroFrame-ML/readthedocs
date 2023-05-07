@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Installation &mdash; HYDRODATA 1.0.0 documentation</title>
+  <title>hydrodata.data_catalog.validate_hydrodata_catalog module &mdash; HYDRODATA 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -18,8 +18,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Examples" href="examples.html" />
-    <link rel="prev" title="Entity Relationship Diagram" href="erd_diagram.html" /> 
+    <link rel="prev" title="hydrodata.data_catalog.data_access module" href="hydrodata.data_catalog.data_access.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,11 +41,11 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_catalog_tables.html">Data Catalog Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
 </ul>
@@ -65,9 +64,12 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Installation</li>
+          <li class="breadcrumb-item"><a href="api_reference.html">Python API Refererence</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.html">hydrodata package</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.data_catalog.html">hydrodata.data_catalog package</a></li>
+      <li class="breadcrumb-item active">hydrodata.data_catalog.validate_hydrodata_catalog module</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/install.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/hydrodata.data_catalog.validate_hydrodata_catalog.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -75,39 +77,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
-<p>The python module to help access the metadata in the hydrodat_catalog.yaml file
-can be installed in a python virtual environment using pip:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">ssh</span><span class="p">:</span><span class="o">//</span><span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">HydroFrame</span><span class="o">-</span><span class="n">ML</span><span class="o">/</span><span class="n">hydrodata</span><span class="nd">@review</span>
-</pre></div>
-</div>
-<p>Once the hydrodata package is installed you can use it for example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hydrodata.data_catalog.data_access</span>
-
-<span class="n">options</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;variable&quot;</span><span class="p">:</span> <span class="s2">&quot;water_table_depth&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;dataset_name&quot;</span><span class="p">:</span> <span class="s2">&quot;baseline&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;grid&quot;</span><span class="p">:</span> <span class="s2">&quot;conus1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;period&quot;</span><span class="p">:</span> <span class="s2">&quot;daily&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;start_time&quot;</span> <span class="p">:</span> <span class="s2">&quot;2005-09-29&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;end_time&quot;</span> <span class="p">:</span> <span class="s2">&quot;2005-10-03&quot;</span>
-<span class="p">}</span>
-<span class="c1"># Get path names to files</span>
-<span class="n">paths</span> <span class="o">=</span> <span class="n">hydrodata</span><span class="o">.</span><span class="n">data_catalog</span><span class="o">.</span><span class="n">data_access</span><span class="o">.</span><span class="n">get_file_paths</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
-
-<span class="c1"># Get metadata about those files</span>
-<span class="n">metadata</span> <span class="o">=</span> <span class="n">hydrodata</span><span class="o">.</span><span class="n">data_catalog</span><span class="o">.</span><span class="n">data_access</span><span class="o">.</span><span class="n">get_metadata</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
-</pre></div>
-</div>
+  <section id="hydrodata-data-catalog-validate-hydrodata-catalog-module">
+<h1>hydrodata.data_catalog.validate_hydrodata_catalog module<a class="headerlink" href="#hydrodata-data-catalog-validate-hydrodata-catalog-module" title="Permalink to this heading"></a></h1>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="erd_diagram.html" class="btn btn-neutral float-left" title="Entity Relationship Diagram" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="examples.html" class="btn btn-neutral float-right" title="Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="hydrodata.data_catalog.data_access.html" class="btn btn-neutral float-left" title="hydrodata.data_catalog.data_access module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

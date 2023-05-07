@@ -11,12 +11,15 @@ The /hydrodata file share is a collection of public and derived data useful for 
 and groundwater in the United States.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    introduction
+   data_catalog_tables
+   erd_diagram
    install
-   hydrodata
+   examples
+   api_reference
 
 Indices and tables
 ==================

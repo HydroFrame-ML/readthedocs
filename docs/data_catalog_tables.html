@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Catalog Tables &mdash; HYDRODATA 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="data_catalog_entry" href="tables/data_catalog_entry.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HYDRODATA
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Catalog Tables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tables/data_catalog_entry.html">data_catalog_entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/dataset_type.html">dataset_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/dataset_name.html">dataset_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/file_type.html">file_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/structure_type.html">structure_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/aggregation.html">aggregation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/variable.html">variable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/period.html">period</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/grid.html">grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tables/substitution_keys.html">substitution_keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HYDRODATA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Catalog Tables</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/data_catalog_tables.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-catalog-tables">
+<h1>Data Catalog Tables<a class="headerlink" href="#data-catalog-tables" title="Permalink to this heading"></a></h1>
+<p>The hydrodata data catalog consists of a set of objects (tables) that can be joined together by common keys.
+The “tables” are represented by a yaml file rather that a SQL database
+so the information can version controlled, branched, promoted and labeled.
+The yaml file is located in the hydrodata repo in the folder <cite>hydrodata/data_catalog/hydrodata_catalog.yaml</cite>.</p>
+<p>The model is a star schema with a fact table called “data_catalog_entry” that represents a
+file path into the /hydrodata file share and metadata about the data in that file path.
+The file path may contain placeholder keys, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">hydrodata</span><span class="o">/</span><span class="n">PFCLM</span><span class="o">/</span><span class="n">CONUS1_baseline</span><span class="o">/</span><span class="n">simulations</span><span class="o">/</span><span class="n">daily</span><span class="o">/</span><span class="n">WY</span><span class="p">{</span><span class="n">wy</span><span class="p">}</span><span class="o">/</span><span class="p">{</span><span class="n">dataset_var</span><span class="p">}</span><span class="o">.</span><span class="n">daily</span><span class="o">.</span><span class="n">sum</span><span class="o">.</span><span class="p">{</span><span class="n">wy_daynum</span><span class="p">}</span><span class="o">.</span><span class="n">pfb</span>
+</pre></div>
+</div>
+<p>The keys {wy} and {wy_daynum} are replaced by the water year and water year day number of the time
+being requested for this daily parflow result.</p>
+<p>This model is used by a python API module to request absolute path names to hydrodata files with
+filters using the dimension attributes in the model tables. In this way code can get access to files without
+hard coding absolute path names.</p>
+<p>Click on a table name to see the available values for each table that may be used.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tables/data_catalog_entry.html">data_catalog_entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/dataset_type.html">dataset_type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/dataset_name.html">dataset_name</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/file_type.html">file_type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/structure_type.html">structure_type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/aggregation.html">aggregation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/variable.html">variable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/period.html">period</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/grid.html">grid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/units.html">units</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tables/substitution_keys.html">substitution_keys</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tables/data_catalog_entry.html" class="btn btn-neutral float-right" title="data_catalog_entry" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Princeton University, University of Arizona, National Science Foundation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

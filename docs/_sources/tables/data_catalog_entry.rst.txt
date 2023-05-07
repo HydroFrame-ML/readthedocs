@@ -1,0 +1,512 @@
+data_catalog_entry
+######################
+
+.. list-table:: data_catalog_entry
+   :widths: 30 30 30 30 30 30 30 30 30 30 30 30 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - data_catalog_entry
+     - file_type
+     - structure_type
+     - dataset_type
+     - dataset_name
+     - variable
+     - dataset_var
+     - start_date
+     - end_date
+     - period
+     - grid
+     - units
+     - aggregation
+     - datapath
+   * - conus1_baseline_hourly_pressure
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - pressure_head
+     - Press
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - n/m
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_hourly_saturation
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - saturation
+     - satur
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - cm3/cm3
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/saturation/CONUS.{wy}.out.satur.{wy_start_hour5}.pfb
+   * - conus1_baseline_hourly_total_precipitation
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - precipitation
+     - APCP
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - mm
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_hourly_dlwr
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - longwave_radiation
+     - DLWR
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - w/m2
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_hourly_dswr
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - shortwave_radiation
+     - DSWR
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - w/m2
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_hourly_spfh
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - humidity
+     - SPFH
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - kg/kg
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_hourly_temp
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - temp
+     - Temp
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - kelvin
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_hourly_UGRD
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - east_windspeed
+     - UGRD
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - m/s
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_hourly_VGRD
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - north_windspeed
+     - VGRD
+     - 1972-04-03
+     - 1986-06-03
+     - hourly
+     - conus1
+     - m/s
+     - 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_baseline_daily_evapotranspiration
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - evapotranspiration
+     - et
+     - 2002-10-01
+     - 2006-09-30
+     - daily
+     - conus1
+     - mm/day
+     - average
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.sum.{wy_daynum}.pfb
+   * - conus1_baseline_daily_wtd
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - water_table_depth
+     - wtd
+     - 2002-10-01
+     - 2006-09-30
+     - daily
+     - conus1
+     - meters
+     - average
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus1_baseline_daily_sm
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - soil_moisture
+     - sm
+     - 2002-10-01
+     - 2006-09-30
+     - daily
+     - conus1
+     - cm3/cm3
+     - average
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus1_baseline_daily_swe
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - snow
+     - swe
+     - 2002-10-01
+     - 2006-09-30
+     - daily
+     - conus1
+     - mm
+     - average
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.eod.{wy_daynum}.pfb
+   * - conus1_baseline_daily_pressure
+     - pfb
+     - gridded
+     - parflow
+     - baseline
+     - atmospheric_pressure
+     - pressure
+     - 2002-10-01
+     - 2006-09-30
+     - daily
+     - conus1
+     - mm
+     - average
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus1_forcing_hourly_apcp
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - precipitation
+     - APCP
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - mm
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_forcing_hourly_dlwr
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - longwave_radiation
+     - DLWR
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - w/m2
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_forcing_hourly_dswr
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - shortwave_radiation
+     - DSWR
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - w/m2
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_forcing_hourly_press
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - pressure_head
+     - Press
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - n/m
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_forcing_hourly_spfh
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - humidity
+     - SPFH
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - kg/kg
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_forcing_hourly_temp
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - temp
+     - Temp
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - kelvin
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_forcing_hourly_ugrd
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - east_windspeed
+     - UGRD
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - m/s
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus1_forcing_hourly_vgrd
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - north_windspeed
+     - VGRD
+     - 2002-10-01
+     - 2021-10-01
+     - hourly
+     - conus2
+     - m/s
+     - 
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/hourly/WY{wy}/NLDAS.{dataset_var}.{wy_start_hour}_to_{wy_end_hour}.pfb
+   * - conus2_forcing_daily_min_temp
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - temp
+     - Temp
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - kelvin
+     - min
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.min.{wy_daynum}.pfb
+   * - conus2_forcing_daily_max_temp
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - temp
+     - Temp
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - kelvin
+     - max
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.max.{wy_daynum}.pfb
+   * - conus2_forcing_daily_mean_temp
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - temp
+     - Temp
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - kelvin
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus2_forcing_daily_dswr
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - shortwave_radiation
+     - DSWR
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - w/m2
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus2_forcing_daily_dlwr
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - longwave_radiation
+     - DLWR
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - w/m2
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus2_forcing_daily_precip
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - precipitation
+     - APCP
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - mm
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.sum.{wy_daynum}.pfb
+   * - conus2_forcing_daily_pressure
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - pressure_head
+     - Press
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - n/m
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus2_forcing_daily_spfh
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - humidity
+     - SPFH
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - kg/kg
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus2_forcing_daily_ugrd
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - east_windspeed
+     - UGRD
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - m/s
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus2_forcing_daily_vgrd
+     - pfb
+     - gridded
+     - forcing
+     - NLDAS3
+     - north_windspeed
+     - VGRD
+     - 1979-10-01
+     - 2021-10-01
+     - daily
+     - conus2
+     - m/s
+     - average
+     - /hydrodata/forcing/processed_data/CONUS2/NLDAS3/daily/WY{wy}/NLDAS.{dataset_var}.daily.mean.{wy_daynum}.pfb
+   * - conus1_cc_sm
+     - pfb
+     - gridded
+     - current_conditions
+     - hydrogen_current_conditions
+     - soil_moisture
+     - soil_moisture
+     - 2022/05/02
+     - 2023/03/10
+     - daily
+     - conus1
+     - cm3/cm3
+     - average
+     - /hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mmddyyyy}.pfb
+   * - conus1_cc_wtd
+     - pfb
+     - gridded
+     - current_conditions
+     - hydrogen_current_conditions
+     - water_table_depth
+     - water_table_depth
+     - 2022/05/02
+     - 2023/03/10
+     - daily
+     - conus1
+     - meters
+     - average
+     - /hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mmddyyyy}.pfb
+   * - nasa_smap_sm
+     - netcdf
+     - gridded
+     - remote_sensing
+     - smap
+     - soil_moisture
+     - SoilMoisture
+     - 2017/09/30
+     - 2023/04/23
+     - daily
+     - smapgrid
+     - cm3/cm3
+     - average
+     - /hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc

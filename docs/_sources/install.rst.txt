@@ -1,22 +1,24 @@
-Install Package
+Installation
 =========================
-The python module to help access the metadata in the hydrodat_catalog.yaml
+The python module to help access the metadata in the hydrodat_catalog.yaml file
 can be installed in a python virtual environment using pip::
 
     pip install git+ssh://git@github.com/HydroFrame-ML/hydrodata@review
 
 Once the hydrodata package is installed you can use it for example::
 
-	options = {
-		"variable": "water_table_depth",
-		"dataset_name": "baseline",
-		"grid": "conus1",
-		"period": "daily",
-		"start_time" : "2005-09-29",
-		"end_time" : "2005-10-03"
-	}
+    import hydrodata.data_catalog.data_access
+
+    options = {
+        "variable": "water_table_depth",
+        "dataset_name": "baseline",
+        "grid": "conus1",
+        "period": "daily",
+        "start_time" : "2005-09-29",
+        "end_time" : "2005-10-03"
+    }
     # Get path names to files
     paths = hydrodata.data_catalog.data_access.get_file_paths(options)
 
     # Get metadata about those files
-	metadata = hydrodata.data_catalog.data_access.get_metadata(options)
+    metadata = hydrodata.data_catalog.data_access.get_metadata(options)

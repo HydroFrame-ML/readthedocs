@@ -32,7 +32,7 @@ Example subsetting of PFB forcing file using the data catalog::
 	import hydrodata.data_catalog.data_access
 	from parflow import read_pfb_sequence
 
-	"""Demonstrate reading and susetting 5 days of hourly pfb pressure files.""""
+	"""Demonstrate reading and susetting 5 days of hourly pfb pressure files."""
 
 	options = {
 		"variable": "pressure_head",

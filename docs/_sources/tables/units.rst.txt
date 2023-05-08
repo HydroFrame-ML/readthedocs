@@ -44,7 +44,10 @@ units
      - 
    * - mm/day
      - mm/day
-     - 
+     - ['mm/day', 'mm/s']
+   * - mm/s
+     - mm/s
+     - ['mm/day', 'mm/s']
    * - cm3/cm3
      - cm3/cm3
      - 

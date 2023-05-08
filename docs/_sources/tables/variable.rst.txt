@@ -36,3 +36,5 @@ variable
      - Temperature
    * - water_table_depth
      - Water Table Depth
+   * - streamflow
+     - Stream Flow

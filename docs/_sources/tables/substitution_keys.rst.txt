@@ -30,3 +30,5 @@ substitution_keys
      - A hydrogen scenario_id.
    * - domain_path
      - A hydrogen area of interest domain path.
+   * - site_id
+     - An point observation site_id

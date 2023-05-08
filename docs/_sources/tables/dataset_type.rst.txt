@@ -18,3 +18,5 @@ dataset_type
      - Generated current conditions files.
    * - remote_sensing
      - Data acquired by remote sensing from an external source.
+   * - observations
+     - Point observations

@@ -12,11 +12,11 @@ dataset_type
      - Outputs of a parflow run.
    * - forcing
      - Weather forcing files.
-   * - static
-     - Static files.
+   * - parameters
+     - Static model parameters.
    * - current_conditions
      - Generated current conditions files.
    * - remote_sensing
      - Data acquired by remote sensing from an external source.
    * - observations
-     - Point observations
+     - Point observations.

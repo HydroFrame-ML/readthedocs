@@ -1,0 +1,22 @@
+variable_type
+######################
+
+.. list-table:: variable_type
+   :widths: 30 30
+   :header-rows: 1
+   :class: scrolltable
+
+   * - variable_type
+     - title
+   * - atomospheric
+     - Atmospheric
+   * - land_surface
+     - Land Surface
+   * - subsurface
+     - Subsurface
+   * - surface_water
+     - Surface Water
+   * - location
+     - Location
+   * - topography
+     - Topography

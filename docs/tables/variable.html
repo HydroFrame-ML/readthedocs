@@ -19,7 +19,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="period" href="period.html" />
-    <link rel="prev" title="aggregation" href="aggregation.html" /> 
+    <link rel="prev" title="variable_type" href="variable_type.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,10 +47,11 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../data_catalog_tables.html">Data Catalog Tables</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="data_catalog_entry.html">data_catalog_entry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dataset_type.html">dataset_type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dataset_name.html">dataset_name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html">dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file_type.html">file_type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structure_type.html">structure_type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="aggregation.html">aggregation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_type.html">variable_type</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">variable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="period.html">period</a></li>
 <li class="toctree-l2"><a class="reference internal" href="grid.html">grid</a></li>
@@ -94,59 +95,104 @@
 <table class="scrolltable docutils align-default" id="id1">
 <caption><span class="caption-text">variable</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>variable</p></th>
 <th class="head"><p>title</p></th>
+<th class="head"><p>variable_type</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>atmospheric_pressure</p></td>
 <td><p>Atmospheric Pressure</p></td>
-</tr>
-<tr class="row-odd"><td><p>east_windspeed</p></td>
-<td><p>Eastward windspeed</p></td>
-</tr>
-<tr class="row-even"><td><p>evapotranspiration</p></td>
-<td><p>Evapo Transpiration</p></td>
-</tr>
-<tr class="row-odd"><td><p>humidity</p></td>
-<td><p>Humidity</p></td>
-</tr>
-<tr class="row-even"><td><p>longwave_radiation</p></td>
-<td><p>Longwave Radiation</p></td>
+<td><p>atomospheric</p></td>
 </tr>
 <tr class="row-odd"><td><p>precipitation</p></td>
 <td><p>Precipitation</p></td>
+<td><p>atomospheric</p></td>
 </tr>
-<tr class="row-even"><td><p>pressure_head</p></td>
-<td><p>Pressure</p></td>
+<tr class="row-even"><td><p>specific_humidity</p></td>
+<td><p>Specific Humidity</p></td>
+<td><p>atomospheric</p></td>
 </tr>
-<tr class="row-odd"><td><p>north_windspeed</p></td>
+<tr class="row-odd"><td><p>downward_shortwave</p></td>
+<td><p>Shortwave Radiation</p></td>
+<td><p>atomospheric</p></td>
+</tr>
+<tr class="row-even"><td><p>downward_longwave</p></td>
+<td><p>Downward Longwave Radiation</p></td>
+<td><p>atomospheric</p></td>
+</tr>
+<tr class="row-odd"><td><p>east_windspeed</p></td>
+<td><p>Eastward windspeed</p></td>
+<td><p>atomospheric</p></td>
+</tr>
+<tr class="row-even"><td><p>north_windspeed</p></td>
 <td><p>South/North windspeed</p></td>
+<td><p>atomospheric</p></td>
+</tr>
+<tr class="row-odd"><td><p>air_temp</p></td>
+<td><p>Air Temperature</p></td>
+<td><p>atomospheric</p></td>
+</tr>
+<tr class="row-even"><td><p>evapotranspiration</p></td>
+<td><p>Evapo Transpiration</p></td>
+<td><p>land_surface</p></td>
+</tr>
+<tr class="row-odd"><td><p>pressure_head</p></td>
+<td><p>Pressure</p></td>
+<td><p>subsurface</p></td>
 </tr>
 <tr class="row-even"><td><p>saturation</p></td>
 <td><p>Saturation</p></td>
-</tr>
-<tr class="row-odd"><td><p>shortwave_radiation</p></td>
-<td><p>Shortwave Radiation</p></td>
-</tr>
-<tr class="row-even"><td><p>snow</p></td>
-<td><p>Snow water equivalent</p></td>
+<td><p>subsurface</p></td>
 </tr>
 <tr class="row-odd"><td><p>soil_moisture</p></td>
 <td><p>Soil Moisture</p></td>
+<td><p>subsurface</p></td>
 </tr>
-<tr class="row-even"><td><p>temp</p></td>
-<td><p>Temperature</p></td>
-</tr>
-<tr class="row-odd"><td><p>water_table_depth</p></td>
+<tr class="row-even"><td><p>water_table_depth</p></td>
 <td><p>Water Table Depth</p></td>
+<td><p>subsurface</p></td>
+</tr>
+<tr class="row-odd"><td><p>swe</p></td>
+<td><p>Snow water equivalent</p></td>
+<td><p>surface_water</p></td>
 </tr>
 <tr class="row-even"><td><p>streamflow</p></td>
-<td><p>Stream Flow</p></td>
+<td><p>Streamflow</p></td>
+<td><p>land_surface</p></td>
+</tr>
+<tr class="row-odd"><td><p>slope_xc</p></td>
+<td><p>Slope x</p></td>
+<td><p>topography</p></td>
+</tr>
+<tr class="row-even"><td><p>slope_yc</p></td>
+<td><p>Slope y</p></td>
+<td><p>topography</p></td>
+</tr>
+<tr class="row-odd"><td><p>latitude</p></td>
+<td><p>Latitude</p></td>
+<td><p>location</p></td>
+</tr>
+<tr class="row-even"><td><p>longitude</p></td>
+<td><p>Longitude</p></td>
+<td><p>location</p></td>
+</tr>
+<tr class="row-odd"><td><p>vegp</p></td>
+<td><p>Vegetation type at each point.</p></td>
+<td><p>land_surface</p></td>
+</tr>
+<tr class="row-even"><td><p>vegm</p></td>
+<td><p>Vegetation measures types</p></td>
+<td><p>land_surface</p></td>
+</tr>
+<tr class="row-odd"><td><p>veg_type_igbp</p></td>
+<td><p>Vegatation types at each point</p></td>
+<td><p>land_surface</p></td>
 </tr>
 </tbody>
 </table>
@@ -156,7 +202,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="aggregation.html" class="btn btn-neutral float-left" title="aggregation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="variable_type.html" class="btn btn-neutral float-left" title="variable_type" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="period.html" class="btn btn-neutral float-right" title="period" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -2,39 +2,76 @@ variable
 ######################
 
 .. list-table:: variable
-   :widths: 30 30
+   :widths: 30 30 30
    :header-rows: 1
    :class: scrolltable
 
    * - variable
      - title
+     - variable_type
    * - atmospheric_pressure
      - Atmospheric Pressure
-   * - east_windspeed
-     - Eastward windspeed
-   * - evapotranspiration
-     - Evapo Transpiration
-   * - humidity
-     - Humidity
-   * - longwave_radiation
-     - Longwave Radiation
+     - atomospheric
    * - precipitation
      - Precipitation
-   * - pressure_head
-     - Pressure
+     - atomospheric
+   * - specific_humidity
+     - Specific Humidity
+     - atomospheric
+   * - downward_shortwave
+     - Shortwave Radiation
+     - atomospheric
+   * - downward_longwave
+     - Downward Longwave Radiation
+     - atomospheric
+   * - east_windspeed
+     - Eastward windspeed
+     - atomospheric
    * - north_windspeed
      - South/North windspeed
+     - atomospheric
+   * - air_temp
+     - Air Temperature
+     - atomospheric
+   * - evapotranspiration
+     - Evapo Transpiration
+     - land_surface
+   * - pressure_head
+     - Pressure
+     - subsurface
    * - saturation
      - Saturation
-   * - shortwave_radiation
-     - Shortwave Radiation
-   * - snow
-     - Snow water equivalent
+     - subsurface
    * - soil_moisture
      - Soil Moisture
-   * - temp
-     - Temperature
+     - subsurface
    * - water_table_depth
      - Water Table Depth
+     - subsurface
+   * - swe
+     - Snow water equivalent
+     - surface_water
    * - streamflow
-     - Stream Flow
+     - Streamflow
+     - land_surface
+   * - slope_xc
+     - Slope x
+     - topography
+   * - slope_yc
+     - Slope y
+     - topography
+   * - latitude
+     - Latitude
+     - location
+   * - longitude
+     - Longitude
+     - location
+   * - vegp
+     - Vegetation type at each point.
+     - land_surface
+   * - vegm
+     - Vegetation measures types
+     - land_surface
+   * - veg_type_igbp
+     - Vegatation types at each point
+     - land_surface

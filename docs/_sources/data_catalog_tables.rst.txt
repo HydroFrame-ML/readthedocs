@@ -27,10 +27,11 @@ Click on a table name to see the available values for each table that may be use
 
    tables/data_catalog_entry
    tables/dataset_type
-   tables/dataset_name
+   tables/dataset
    tables/file_type
    tables/structure_type
    tables/aggregation
+   tables/variable_type
    tables/variable
    tables/period
    tables/grid

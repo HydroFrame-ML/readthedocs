@@ -3,7 +3,7 @@ Installation
 The python module to help access the metadata in the hydrodat_catalog.yaml file
 can be installed in a python virtual environment using pip::
 
-    pip install git+ssh://git@github.com/HydroFrame-ML/hydrodata@review
+    pip install git+ssh://git@github.com/HydroFrame-ML/hydrodata
 
 Once the hydrodata package is installed you can use it for example::
 
@@ -11,7 +11,7 @@ Once the hydrodata package is installed you can use it for example::
 
     options = {
         "variable": "water_table_depth",
-        "dataset_name": "baseline",
+        "dataset": "baseline",
         "grid": "conus1",
         "period": "daily",
         "start_time" : "2005-09-29",

@@ -18,3 +18,9 @@ file_type
    * - pfmetadata
      - PFB Files
      - Driver that reads a collection of PFB files and returns xarray data arrays
+   * - vegm
+     - Parflow vegm .dat file
+     - 
+   * - vegp
+     - Parflow vegm .dat file
+     - 

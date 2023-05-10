@@ -91,17 +91,20 @@
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_dimension_tables">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_dimension_tables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_dimension_tables" title="Permalink to this definition"></a></dt>
 <dd><p>Get the list of dimension tables.</p>
-<p>This is the list of tables in the data catalog model such as: dataset_name, periods, grid, etc.
+<p>This is the list of tables in the data catalog model such as: dataset, periods, grid, etc.
 This does not include the data_catalog_entry fact table.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_file_paths">
-<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_file_paths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_file_paths" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_file_paths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_file_paths" title="Permalink to this definition"></a></dt>
 <dd><p>Get a list of file paths from the data catalog identified by the filter options.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>options</strong> – A dict of filter options to identify a data_catalog_entry and the file paths.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>args</strong> – Supports one optional positional parameters that must be a dict with filter options.</p></li>
+<li><p><strong>kwargs</strong> – Supports multiple named parameters with filter option values.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A list of absolute path names to files in the data catalog entry
@@ -114,25 +117,40 @@ after looping through time range and replacing substitution keys.</p>
 </ul>
 </dd>
 </dl>
-<dl class="simple">
-<dt>A filter option value may be any attribute in a data catalog entry table or any attribute below.</dt><dd><ul class="simple">
+<p>A filter option either as a named argument or an entry in the dict passed as the first argument
+may be any metadata attibute in a data catalog entry or any attribute below.</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>time:           A time in the form YYYY-MM-DD. Used to substitute time keys in the file path.</p></li>
 <li><p>start_time:     A time in the form YYYY-MM-DD. Start of date range for time keys in the file path.</p></li>
 <li><p>end_time:       A time in the form YYYY-MM-DD. End of date range for time keys in the file path.</p></li>
 <li><p>site_id:        An observation point site id.</p></li>
 </ul>
+</div></blockquote>
+<p>If both time and start_time is specified then start_time is used.</p>
+<dl>
+<dt>For example, the following are equivalent:</dt><dd><dl class="simple">
+<dt>options={</dt><dd><p>“dataset”: “baseline”, “grid”:”conus1”, “start_time”:”2023-01-15”, “variable”:”water_table_depth”</p>
 </dd>
 </dl>
-<p>If both time and start_time is specified then start_time is used.</p>
+<p>}</p>
+<p>paths = get_file_paths(options)</p>
+<p>paths = get_file_paths(dataset=”baseline”, grid=”conus1”, start_time=”2023-01-15”, variable=”water_table_depth”)</p>
+<p>paths = get_file_paths(<a href="#id1"><span class="problematic" id="id2">**</span></a>options)</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_metadata">
-<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_metadata" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_metadata" title="Permalink to this definition"></a></dt>
 <dd><p>Get the metadata associated with the specified filter options.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>options</strong> – A dict of filter options to identify a data catalog entry.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>args</strong> – Supports one optional positional parameters that must be a dict with filter options.</p></li>
+<li><p><strong>kwargs</strong> – Supports multiple named parameters with filter option values.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A dict with all the metadata of the data catalog entry. This also includes columns data_catalog_entry and datapath.</p>
@@ -144,7 +162,7 @@ after looping through time range and replacing substitution keys.</p>
 </ul>
 </dd>
 </dl>
-<p>An option value may be any attribute in the data catalog entry table.</p>
+<p>An option value may be any attribute in the data catalog entry metadata.</p>
 </dd></dl>
 
 <dl class="py function">

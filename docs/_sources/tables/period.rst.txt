@@ -2,15 +2,19 @@ period
 ######################
 
 .. list-table:: period
-   :widths: 30 30
+   :widths: 30 30 30
    :header-rows: 1
    :class: scrolltable
 
    * - period
      - title
+     - description
    * - daily
      - Daily
+     - Daily aggregated values from midnight to mignight.
    * - hourly
      - Hourly
+     - Hourly aggregated values.
    * - monthly
      - Monthly
+     - Monthly aggregated values.

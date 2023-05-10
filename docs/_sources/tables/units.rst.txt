@@ -9,21 +9,18 @@ units
    * - units
      - title
      - variants
-   * - m
-     - m
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
    * - meters
      - m
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - ['meters', 'feet', 'cm', 'mm', 'inches']
    * - feet
      - ft
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - ['meters', 'feet', 'cm', 'mm', 'inches']
    * - cm
      - cm
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - ['meters', 'feet', 'cm', 'mm', 'inches']
    * - mm
      - mm
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - ['meters', 'feet', 'cm', 'mm', 'inches']
    * - inches
      - in
      - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
@@ -56,4 +53,10 @@ units
      - 
    * - kg/kg
      - kg/kg
+     - 
+   * - degrees
+     - Degrees
+     - 
+   * - percent
+     - %
      - 

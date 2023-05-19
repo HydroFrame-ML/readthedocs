@@ -95,35 +95,77 @@
 <table class="scrolltable docutils align-default" id="id1">
 <caption><span class="caption-text">file_type</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>file_type</p></th>
+<tr class="row-odd"><th class="head"><p>id</p></th>
 <th class="head"><p>title</p></th>
 <th class="head"><p>description</p></th>
+<th class="head"><p>driver</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>netcdf</p></td>
 <td><p>NetCDF</p></td>
+<td><p>NetCDF file</p></td>
 <td><p>Driver that reads NetCDF files and returns xarray data arrays</p></td>
 </tr>
 <tr class="row-odd"><td><p>pfb</p></td>
 <td><p>PFB</p></td>
+<td><p>Standard PFB outputs without pfmetadata</p></td>
 <td><p>Driver that reads pfb files and returns a numpy array</p></td>
 </tr>
 <tr class="row-even"><td><p>pfmetadata</p></td>
 <td><p>PFB Files</p></td>
+<td><p>PFB files that have associated pfmetadata</p></td>
 <td><p>Driver that reads a collection of PFB files and returns xarray data arrays</p></td>
 </tr>
+<tr class="row-odd"><td><p>C.pfb</p></td>
+<td><p>PFB Files for CLM variables</p></td>
+<td><p>PFB files with CLM output variables</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>drv_clm</p></td>
+<td><p>CLM divers</p></td>
+<td><p>driver files for CLM</p></td>
+<td></td>
+</tr>
 <tr class="row-odd"><td><p>vegm</p></td>
-<td><p>Parflow vegm .dat file</p></td>
+<td><p>vegm</p></td>
+<td><p>vegm input file for clm</p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>vegp</p></td>
-<td><p>Parflow vegm .dat file</p></td>
+<td><p>vegp</p></td>
+<td><p>vegp input file for clm</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>pfyml</p></td>
+<td><p>ParFlow Yml</p></td>
+<td><p>ParFlow yml file for run specification</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>pftcl</p></td>
+<td><p>ParFlow tcl script</p></td>
+<td><p>Tcl script for a parflow run</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>pfidb</p></td>
+<td><p>ParFlow database</p></td>
+<td><p>PFIDB file for a parflow run</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>pftxt</p></td>
+<td><p>ParFlow text file</p></td>
+<td><p>File formatted as a single column in pf order where first row is nx, ny, zy</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>zarr</p></td>
+<td><p>Zarr file format</p></td>
+<td></td>
 <td></td>
 </tr>
 </tbody>

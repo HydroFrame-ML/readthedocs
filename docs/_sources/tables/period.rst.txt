@@ -6,15 +6,24 @@ period
    :header-rows: 1
    :class: scrolltable
 
-   * - period
+   * - id
      - title
-     - description
+     - period_description
    * - daily
      - Daily
-     - Daily aggregated values from midnight to mignight.
+     - Daily values aggregated from midnight to midnight
    * - hourly
      - Hourly
-     - Hourly aggregated values.
+     - 
    * - monthly
      - Monthly
-     - Monthly aggregated values.
+     - 
+   * - static
+     - static
+     - variables that don't change with time
+   * - monthly_clim
+     - Monthly Climatology
+     - long term monthly mean values
+   * - annual_clim
+     - Annual Climatology
+     - long term annual mean values

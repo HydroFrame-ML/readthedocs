@@ -1,0 +1,7 @@
+hydrodata.data\_catalog.generate\_markdown module
+=================================================
+
+.. automodule:: hydrodata.data_catalog.generate_markdown
+   :members:
+   :undoc-members:
+   :show-inheritance:

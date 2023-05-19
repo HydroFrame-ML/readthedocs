@@ -13,12 +13,10 @@ Once the hydrodata package is installed you can use it for example::
         "variable": "water_table_depth",
         "dataset": "baseline",
         "grid": "conus1",
-        "period": "daily",
-        "start_time" : "2005-09-29",
-        "end_time" : "2005-10-03"
+        "period": "daily"
     }
-    # Get path names to files
-    paths = hydrodata.data_catalog.data_access.get_file_paths(options)
+    # Get metadata about the entry in the row and the path names to the data files
+    row = hydrodata.data_catalog.data_access.get_catalog_entry(options)
+    paths = hydrodata.data_catalog.data_access.get_file_paths(row, start_time="2005-09-29", end_time="2005-10-03")
 
-    # Get metadata about those files
-    metadata = hydrodata.data_catalog.data_access.get_metadata(options)
+

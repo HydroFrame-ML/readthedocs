@@ -2,25 +2,59 @@ file_type
 ######################
 
 .. list-table:: file_type
-   :widths: 30 30 30
+   :widths: 30 30 30 30
    :header-rows: 1
    :class: scrolltable
 
-   * - file_type
+   * - id
      - title
      - description
+     - driver
    * - netcdf
      - NetCDF
+     - NetCDF file
      - Driver that reads NetCDF files and returns xarray data arrays
    * - pfb
      - PFB
+     - Standard PFB outputs without pfmetadata
      - Driver that reads pfb files and returns a numpy array
    * - pfmetadata
      - PFB Files
+     - PFB files that have associated pfmetadata
      - Driver that reads a collection of PFB files and returns xarray data arrays
+   * - C.pfb
+     - PFB Files for CLM variables
+     - PFB files with CLM output variables 
+     - 
+   * - drv_clm
+     - CLM divers 
+     - driver files for CLM 
+     - 
    * - vegm
-     - Parflow vegm .dat file
+     - vegm
+     - vegm input file for clm
      - 
    * - vegp
-     - Parflow vegm .dat file
+     - vegp
+     - vegp input file for clm
+     - 
+   * - pfyml
+     - ParFlow Yml
+     - ParFlow yml file for run specification
+     - 
+   * - pftcl
+     - ParFlow tcl script
+     - Tcl script for a parflow run 
+     - 
+   * - pfidb
+     - ParFlow database 
+     - PFIDB file for a parflow run 
+     - 
+   * - pftxt
+     - ParFlow text file
+     - File formatted as a single column in pf order where first row is nx, ny, zy
+     - 
+   * - zarr
+     - Zarr file format
+     - 
      - 

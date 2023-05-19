@@ -1,0 +1,7 @@
+hydrodata.data\_catalog.data\_model\_access module
+==================================================
+
+.. automodule:: hydrodata.data_catalog.data_model_access
+   :members:
+   :undoc-members:
+   :show-inheritance:

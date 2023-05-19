@@ -2,61 +2,115 @@ units
 ######################
 
 .. list-table:: units
-   :widths: 30 30 30
+   :widths: 30 30 30 30
    :header-rows: 1
    :class: scrolltable
 
-   * - units
+   * - id
      - title
      - variants
-   * - meters
-     - m
-     - ['meters', 'feet', 'cm', 'mm', 'inches']
-   * - feet
-     - ft
-     - ['meters', 'feet', 'cm', 'mm', 'inches']
+     - Description
+   * - c
+     - degrees celcius
+     - ['c', 'f', 'K']
+     - 
    * - cm
-     - cm
-     - ['meters', 'feet', 'cm', 'mm', 'inches']
-   * - mm
-     - mm
-     - ['meters', 'feet', 'cm', 'mm', 'inches']
-   * - inches
-     - in
+     - centimeters
      - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
-   * - celsius
-     - celsius
-     - ['celsius', 'fahrenheit', 'kelvin']
-   * - kelvin
-     - k
-     - ['celsius', 'fahrenheit', 'kelvin']
-   * - fahrenheit
-     - f
-     - ['celsius', 'fahrenheit', 'kelvin']
-   * - n/m
-     - n/m
      - 
-   * - m/s
-     - m/s
-     - 
-   * - mm/day
-     - mm/day
-     - ['mm/day', 'mm/s']
-   * - mm/s
-     - mm/s
-     - ['mm/day', 'mm/s']
    * - cm3/cm3
      - cm3/cm3
+     - ['cm3/cm3']
      - 
-   * - w/m2
-     - w/m2
+   * - f 
+     - degrees farenheit
+     - ['c', 'f', 'K']
+     - 
+   * - ft
+     - feet
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - 
+   * - in
+     - inches
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - 
+   * - K
+     - degrees Kelvin
+     - ['c', 'f', 'K']
      - 
    * - kg/kg
      - kg/kg
      - 
-   * - degrees
-     - Degrees
      - 
-   * - percent
-     - %
+   * - kg/m2
+     - kilograms per square meter
+     - 
+     - 
+   * - km2
+     - squre kilometers
+     - 
+     - 
+   * - m/s
+     - meters per second
+     - 
+     - 
+   * - m/h
+     - meters per hour
+     - 
+     - 
+   * - m
+     - meters
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - 
+   * - m3/h
+     - cubic meters per hour
+     - 
+     - 
+   * - mm
+     - mm
+     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
+     - 
+   * - mm/s
+     - mm per second
+     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
+     - 
+   * - mm/h
+     - mm per hour
+     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
+     - 
+   * - mm/d
+     - mm per day 
+     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
+     - 
+   * - mm/mon
+     - mm per month
+     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
+     - 
+   * - mm/yr
+     - mm per year
+     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
+     - 
+   * - w/m2
+     - Watts per square meter
+     - 
+     - 
+   * - degrees_north
+     - Degrees North
+     - 
+     - None
+   * - degrees_east
+     - Degrees East
+     - 
+     - None
+   * - pa
+     - Pascal
+     - 
+     - 
+   * - -
+     - UnitLess
+     - 
+     - 
+   * - ?
+     - 
+     - 
      - 

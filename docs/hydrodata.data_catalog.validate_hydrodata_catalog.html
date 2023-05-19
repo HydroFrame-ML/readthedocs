@@ -18,7 +18,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="hydrodata.data_catalog.data_access module" href="hydrodata.data_catalog.data_access.html" /> 
+    <link rel="prev" title="hydrodata.data_catalog.data_model_access module" href="hydrodata.data_catalog.data_model_access.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -77,15 +77,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="hydrodata-data-catalog-validate-hydrodata-catalog-module">
-<h1>hydrodata.data_catalog.validate_hydrodata_catalog module<a class="headerlink" href="#hydrodata-data-catalog-validate-hydrodata-catalog-module" title="Permalink to this heading"></a></h1>
+  <section id="module-hydrodata.data_catalog.validate_hydrodata_catalog">
+<span id="hydrodata-data-catalog-validate-hydrodata-catalog-module"></span><h1>hydrodata.data_catalog.validate_hydrodata_catalog module<a class="headerlink" href="#module-hydrodata.data_catalog.validate_hydrodata_catalog" title="Permalink to this heading"></a></h1>
+<p>Functions to validate the hydrodata_catalog.yaml file.</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.validate_hydrodata_catalog.ALLOWED_ATTRIBUTES">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.validate_hydrodata_catalog.</span></span><span class="sig-name descname"><span class="pre">ALLOWED_ATTRIBUTES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['description',</span> <span class="pre">'dataset_var',</span> <span class="pre">'title',</span> <span class="pre">'start_date',</span> <span class="pre">'end_date',</span> <span class="pre">'datapath']</span></em><a class="headerlink" href="#hydrodata.data_catalog.validate_hydrodata_catalog.ALLOWED_ATTRIBUTES" title="Permalink to this definition"></a></dt>
+<dd><p>Global constant. Attributes without validation tables that are allowed in a data_catalog entry.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.validate_hydrodata_catalog.validate_data_catalog_yaml">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.validate_hydrodata_catalog.</span></span><span class="sig-name descname"><span class="pre">validate_data_catalog_yaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fix_option</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.data_catalog.validate_hydrodata_catalog.validate_data_catalog_yaml" title="Permalink to this definition"></a></dt>
+<dd><p>Validate the hydrodata_catalog.yaml file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fix_option</strong> – If None or “fix” then fix the yaml file with missing attributes.</p>
+</dd>
+</dl>
+<p>This prints an error and a fails with a non-zero return code if the yaml file is inconsistent.
+The file is inconsistent if there exists a column in the data_catalog_entry tables that
+is not a dimension table and is not in the ALLOWED_ATTRIBUTS list. It is also inconsistent
+if any column in a table with the same name as a dimension table has a value that is not in that dimension.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Exit with an non-zero status code if a validation error is found or a fix to the yaml file was required.</p>
+</dd>
+</dl>
+<p>A data catalog is fixed by finding attributes in the data_catalog_entry table that have a name with
+a dimension table and the dimension row of the data_catalog_entry table value contains other attributes
+that are also dimension table. In this case the other dimension attributes from the dimension table are
+assigned to the same dimension attribute in the data_catalog_entry table.</p>
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="hydrodata.data_catalog.data_access.html" class="btn btn-neutral float-left" title="hydrodata.data_catalog.data_access module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hydrodata.data_catalog.data_model_access.html" class="btn btn-neutral float-left" title="hydrodata.data_catalog.data_model_access module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

@@ -1,0 +1,7 @@
+hydrodata.data\_catalog.generate\_rst module
+============================================
+
+.. automodule:: hydrodata.data_catalog.generate_rst
+   :members:
+   :undoc-members:
+   :show-inheritance:

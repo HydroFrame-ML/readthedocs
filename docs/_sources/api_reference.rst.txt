@@ -1,7 +1,11 @@
 Python API Refererence
 ======================
-This is the code documentation of the python API modules to access the data catalog.
+This is the code documentation of the python API modules to:
+
+  * Access the data catalog modules
+  * Access data in /hydrodata file share using the modules
 
 .. toctree::
+   :maxdepth: 5
 
-    hydrodata
+   hydrodata

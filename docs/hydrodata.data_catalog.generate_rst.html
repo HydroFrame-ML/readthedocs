@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Python API Refererence &mdash; HYDRODATA 1.0.0 documentation</title>
+  <title>hydrodata.data_catalog.generate_rst module &mdash; HYDRODATA 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -17,9 +17,7 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="hydrodata package" href="hydrodata.html" />
-    <link rel="prev" title="Examples" href="examples.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,16 +40,13 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_catalog_tables.html">Data Catalog Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Python API Refererence</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hydrodata.html">hydrodata package</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
 </ul>
 
         </div>
@@ -68,9 +63,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Python API Refererence</li>
+      <li class="breadcrumb-item active">hydrodata.data_catalog.generate_rst module</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/api_reference.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/hydrodata.data_catalog.generate_rst.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -78,45 +73,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="python-api-refererence">
-<h1>Python API Refererence<a class="headerlink" href="#python-api-refererence" title="Permalink to this heading"></a></h1>
-<p>This is the code documentation of the python API modules to:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Access the data catalog modules</p></li>
-<li><p>Access data in /hydrodata file share using the modules</p></li>
-</ul>
-</div></blockquote>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="hydrodata.html">hydrodata package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hydrodata.html#subpackages">Subpackages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="hydrodata.data_catalog.html">hydrodata.data_catalog package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="hydrodata.data_catalog.html#submodules">Submodules</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="hydrodata.data_catalog.data_access.html">hydrodata.data_catalog.data_access module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="hydrodata.data_catalog.data_model_access.html">hydrodata.data_catalog.data_model_access module</a></li>
-<li class="toctree-l5"><a class="reference internal" href="hydrodata.data_catalog.validate_hydrodata_catalog.html">hydrodata.data_catalog.validate_hydrodata_catalog module</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="hydrodata.data_catalog.html#module-hydrodata.data_catalog">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="hydrodata.html#module-hydrodata">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <section id="module-hydrodata.data_catalog.generate_rst">
+<span id="hydrodata-data-catalog-generate-rst-module"></span><h1>hydrodata.data_catalog.generate_rst module<a class="headerlink" href="#module-hydrodata.data_catalog.generate_rst" title="Permalink to this heading"></a></h1>
+<p>Functions to generate readthedoc .rst files(s) for tables in the hydrodata_catalog.yaml file.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.generate_rst.generate_rst_tables">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.generate_rst.</span></span><span class="sig-name descname"><span class="pre">generate_rst_tables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.data_catalog.generate_rst.generate_rst_tables" title="Permalink to this definition"></a></dt>
+<dd><p>Generate markdown files to document the contents the data catalog.
+:param output_dir: The directory to generate the markdown files (default is current dir).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError if the table does not exist in the data_catalog.</strong> – </p>
+</dd>
+</dl>
+<p>Generates a markdown file in the output directory with the name {table}.md for each generated table.
+The generated file is a markdown file containing a table with the rows and columns
+of the table information from the data_catalog.</p>
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="examples.html" class="btn btn-neutral float-left" title="Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="hydrodata.html" class="btn btn-neutral float-right" title="hydrodata package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 

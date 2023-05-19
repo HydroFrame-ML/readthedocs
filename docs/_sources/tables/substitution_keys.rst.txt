@@ -6,13 +6,15 @@ substitution_keys
    :header-rows: 1
    :class: scrolltable
 
-   * - substitution_keys
+   * - id
      - description
    * - wy
      - Water year of time such as 2006.
    * - wy_start_hour
-     - Hour number within a water year of a time starting at 000001.
+     - Starting hour number of a day within a water year of a time starting at 000001.
    * - wy_end_hour
+     - Ending hour number within a day within water year of a time starting at 000001.
+   * - wy_hour
      - Hour number within a water year of a time starting at 000001.
    * - wy_start_hour5
      - Hour number with 5 digits within a water year of a time starting at 00001.

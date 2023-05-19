@@ -8,6 +8,8 @@ Submodules
    :maxdepth: 4
 
    hydrodata.data_catalog.data_access
+   hydrodata.data_catalog.data_model_access
+   hydrodata.data_catalog.validate_hydrodata_catalog
 
 Module contents
 ---------------

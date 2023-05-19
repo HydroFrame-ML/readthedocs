@@ -2,76 +2,207 @@ variable
 ######################
 
 .. list-table:: variable
-   :widths: 30 30 30
+   :widths: 30 30 30 30
    :header-rows: 1
    :class: scrolltable
 
-   * - variable
+   * - id
      - title
+     - description 
      - variable_type
-   * - atmospheric_pressure
-     - Atmospheric Pressure
-     - atomospheric
-   * - precipitation
-     - Precipitation
-     - atomospheric
-   * - specific_humidity
-     - Specific Humidity
-     - atomospheric
-   * - downward_shortwave
-     - Shortwave Radiation
-     - atomospheric
-   * - downward_longwave
-     - Downward Longwave Radiation
-     - atomospheric
-   * - east_windspeed
-     - Eastward windspeed
-     - atomospheric
-   * - north_windspeed
-     - South/North windspeed
-     - atomospheric
    * - air_temp
      - Air Temperature
-     - atomospheric
+     - 
+     - atmospheric
+   * - aridity_index
+     - Aridity Index
+     - Aridity Index precipitation/ (precipitaiton -Evaporaiton)
+     - climate
+   * - atmospheric_pressure
+     - Atmospheric Pressure
+     - 
+     - atmospheric
+   * - clm_run
+     - 
+     - 
+     - run_file
+   * - downward_longwave
+     - Downward Longwave Radiation
+     - 
+     - atmospheric
+   * - downward_shortwave
+     - Downward Shortwave Radiation
+     - 
+     - atmospheric
+   * - drainage_area
+     - Drainage Area
+     - 
+     - topography
+   * - east_windspeed
+     - Zonal windspeed
+     - 
+     - atmospheric
+   * - elevation
+     - Processed elevation 
+     - Final processed elevation 
+     - topography
    * - evapotranspiration
-     - Evapo Transpiration
+     - Evapotranspiration
+     - 
      - land_surface
+   * - flow_direction_grass
+     - Grass Flow Direction 
+     - D4 Flow directions with Grass numbering (2=up, 4=left, 6=down, 8=right)
+     - stream_network
+   * - ground_evap
+     - Ground evaporation
+     - ground surface evaporation rate
+     - land_surface
+   * - ground_evap_heat
+     - Ground evaporation heat flux
+     - evaporation heat flux from ground
+     - land_surface
+   * - ground_heat
+     - ground heat flux
+     - ground heat flux 
+     - land_surface
+   * - ground_temp
+     - ground temperature
+     - ground temperature
+     - subsurface
+   * - infiltration
+     - Infiltration rate
+     - infiltration
+     - subsurface
+   * - irrigation 
+     - Irrigation Flux
+     - irrigation applied at surface 
+     - surface_water
+   * - latent_heat
+     - Latent Heat Flux
+     -  latent heat flux from canopy height to atmosphere
+     - land_surface
+   * - latitute
+     - latitutde
+     - 
+     - location 
+   * - longitude
+     - longitude
+     - 
+     - location 
+   * - north_windspeed
+     - Meridional windspeed
+     - 
+     - atmospheric
+   * - outward_longwave_radiation
+     - Outward Longwave radiation 
+     - outgoing long-wave radiation from ground+canopy
+     - land_surface
+   * - parflow_run
+     - 
+     - 
+     - run_file
+   * - permeability
+     - permeability 
+     - 
+     - hydrogeology
+   * - pf_indicator
+     - 
+     - 
+     - hydrogeology
+   * - pme
+     - Precicipitaiton minus evaporation (net recharge)
+     - Recharge forcing used for ParFlow spinups
+     - climate
+   * - porosity
+     - Porosity 
+     - 
+     - hydrogeology
+   * - precipitation
+     - Precipitation
+     - 
+     - atmospheric
    * - pressure_head
-     - Pressure
+     - Pressure Head 
+     - 
      - subsurface
    * - saturation
      - Saturation
+     - 
      - subsurface
+   * - sensible_heat
+     - Sensible heat flux 
+     - sensible heat from canopy height to atmosphere 
+     - land_surface
+   * - slope_x
+     - Slope x
+     - Slope in the x direciton (Grid centered)
+     - topography
+   * - slope_y
+     - Slope y
+     - Slope in the y direction (Grid centered)
+     - topography
    * - soil_moisture
      - Soil Moisture
+     - 
      - subsurface
-   * - water_table_depth
-     - Water Table Depth
+   * - soil_temp
+     - Soil Temperature
+     - soil temperature
      - subsurface
-   * - swe
-     - Snow water equivalent
-     - surface_water
+   * - specific_humidity
+     - Specific Humidity
+     - 
+     - atmospheric
+   * - stream_order
+     - Kahler stream order
+     - Kahler stream order
+     - stream_network
+   * - stream_segments
+     - Stream segment IDs
+     - Stream segment ID numbers (0 values outside of stream)
+     - stream_network
    * - streamflow
      - Streamflow
+     - 
      - land_surface
-   * - slope_xc
-     - Slope x
+   * - subbasins
+     - Watershed subbains IDs
+     - Subbasins calculated from topographic processing
+     - 
+   * - swe
+     - Snow water equivalent
+     - 
+     - surface_water
+   * - topographic_index
+     - Topographic Index
+     - 
      - topography
-   * - slope_yc
-     - Slope y
-     - topography
-   * - latitude
-     - Latitude
-     - location
-   * - longitude
-     - Longitude
-     - location
-   * - vegp
-     - Vegetation type at each point.
+   * - transpiration 
+     - Transpiration  rate
+     - transpiration rate
      - land_surface
-   * - vegm
-     - Vegetation measures types
+   * - transpiration_leaves
+     - Evapotranspiration from leaves
+     - evaporation+transpiration from leaves
      - land_surface
-   * - veg_type_igbp
-     - Vegatation types at each point
+   * - van_genuchten_alpha
+     - Van Genuchten Alpha
+     - alpha parameter for van Genucten curve
+     - hydrogeology
+   * - van_genuchten_n
+     - Van Genuchten n
+     - n parameter for van Genuchten curve
+     - hydrogeology
+   * - veg_type_IGBP
+     - Vegetation Type
+     - Vegetation type using IGBP classifications 
      - land_surface
+   * - water_table_depth
+     - Water Table Depth
+     - 
+     - subsurface
+   * - ?
+     - 
+     - 
+     - None

@@ -1,0 +1,7 @@
+hydrodata.data\_catalog.generate\_hydrodata\_catalog\_yaml module
+=================================================================
+
+.. automodule:: hydrodata.data_catalog.generate_hydrodata_catalog_yaml
+   :members:
+   :undoc-members:
+   :show-inheritance:

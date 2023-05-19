@@ -2,15 +2,37 @@ aggregation
 ######################
 
 .. list-table:: aggregation
-   :widths: 30 30
+   :widths: 30 30 30
    :header-rows: 1
    :class: scrolltable
 
-   * - aggregation
+   * - id
      - title
-   * - average
+     - Description
+   * - mean
      - Average
+     - 
    * - min
      - Min
+     - Minimum 
    * - max
      - Max
+     - 
+   * - sum
+     - Sum
+     - 
+   * - static
+     - Static
+     - 
+   * - tbd
+     - 
+     - 
+   * - ?
+     - 
+     - 
+   * - eod
+     - End of Day
+     - Value at the end of the day (refer to aggregation to know what time it is)
+   * - -
+     - 
+     - Not aggregated

@@ -1316,7 +1316,7 @@ data_catalog_entry
      - w/m2
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1340,7 +1340,7 @@ data_catalog_entry
      - w/m2
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1364,7 +1364,7 @@ data_catalog_entry
      - w/m2
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1388,7 +1388,7 @@ data_catalog_entry
      - w/m2
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1412,7 +1412,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1436,7 +1436,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1460,7 +1460,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1484,7 +1484,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1508,7 +1508,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1532,7 +1532,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1556,7 +1556,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1580,7 +1580,7 @@ data_catalog_entry
      - K
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1604,7 +1604,7 @@ data_catalog_entry
      - mm/s
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1628,7 +1628,7 @@ data_catalog_entry
      - K
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
      - 
@@ -1652,7 +1652,7 @@ data_catalog_entry
      - degrees_north
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1676,7 +1676,7 @@ data_catalog_entry
      - degrees_east
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1700,7 +1700,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1724,7 +1724,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1748,7 +1748,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1772,7 +1772,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1796,7 +1796,7 @@ data_catalog_entry
      - 
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1820,7 +1820,7 @@ data_catalog_entry
      - m/h
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1844,7 +1844,7 @@ data_catalog_entry
      - km2
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1868,7 +1868,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1892,7 +1892,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_parameters.pfmetadata
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -1964,7 +1964,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_vgn_n.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_vgn_n.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -2084,7 +2084,7 @@ data_catalog_entry
      - m/h
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_permeability.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_permeability.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -2132,7 +2132,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_vegtype.pfb 
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_vegtype.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -2156,7 +2156,7 @@ data_catalog_entry
      - -
      - -
      - CONUS1
-     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/ONUS1_topographic_index.pfb
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
@@ -3860,7 +3860,7 @@ data_catalog_entry
      - K
      - mean
      - CONUS1
-     - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/temperature_climatological_means_month_{month}.pfb 
+     - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/temperature_climatological_means_month_{month}.pfb
      - Need a note here about what time period the climatology represents
      - National Land Data Assimilation Product V2 
      - 
@@ -3932,7 +3932,7 @@ data_catalog_entry
      - mm/yr
      - sum
      - CONUS1
-     - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/precipitation_annual_means.pfb 
+     - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/precipitation_annual_means.pfb
      - Need a note here about what time period the climatology represents
      - National Land Data Assimilation Product V2 
      - 

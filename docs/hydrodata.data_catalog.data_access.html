@@ -92,7 +92,7 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_catalog_entries">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_catalog_entries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="hydrodata.data_catalog.data_model_access.html#hydrodata.data_catalog.data_model_access.ModelTableRow" title="hydrodata.data_catalog.data_model_access.ModelTableRow"><span class="pre">ModelTableRow</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_catalog_entries" title="Permalink to this definition"></a></dt>
-<dd><p>Get data_catalog_entry rows selected by filter options.</p>
+<dd><p>Get data catalog entry rows selected by filter options.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -107,8 +107,8 @@
 <p>A filter option is any column name in the data_catalog_entry table.
 The value of the filter option argument must be a value of that column in the table.</p>
 <dl>
-<dt>For example,</dt><dd><p>rows = get_catalog_entries(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”)
-# 9 forcing variables and all metadata</p>
+<dt>For example,</dt><dd><p>rows = get_catalog_entries(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”)</p>
+<p># 9 forcing variables and all metadata</p>
 <p>assert len(rows) == 9</p>
 <p>assert len(rows[0].column_names()) == 20</p>
 <p>assert row[0][“variable”] == “precipitation”</p>
@@ -120,7 +120,7 @@ The value of the filter option argument must be a value of that column in the ta
 <dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_catalog_entry">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_catalog_entry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="hydrodata.data_catalog.data_model_access.html#hydrodata.data_catalog.data_model_access.ModelTableRow" title="hydrodata.data_catalog.data_model_access.ModelTableRow"><span class="pre">ModelTableRow</span></a></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_catalog_entry" title="Permalink to this definition"></a></dt>
-<dd><p>Get a single data_catalog_entry row selected by filter options.</p>
+<dd><p>Get a single data catalog entry row selected by filter options.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -138,6 +138,7 @@ The value of the filter option argument must be a value of that column in the ta
 </ul>
 </dd>
 </dl>
+<p>This method is the same as get_catalog_entries() except returns a single row rather than a list of rows.</p>
 </dd></dl>
 
 <dl class="py function">
@@ -168,7 +169,7 @@ after looping through time range and replacing substitution keys.</p>
 </dl>
 <p>If both time and start_time is specified then start_time is used.</p>
 <dl>
-<dt>For example 5 daily files bewteen 9/30/2021 and 10/3/2021,</dt><dd><p>row = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>
+<dt>For example, get 5 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>row = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>
 <p>paths = get_file_paths(row, “start_time”:”2021-09-30”, end_time=”2021-10-03”)</p>
 <p>assert len(paths) = 5</p>
 </dd>

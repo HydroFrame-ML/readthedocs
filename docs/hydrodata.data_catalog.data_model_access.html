@@ -81,16 +81,15 @@
 <span id="hydrodata-data-catalog-data-model-access-module"></span><h1>hydrodata.data_catalog.data_model_access module<a class="headerlink" href="#module-hydrodata.data_catalog.data_model_access" title="Permalink to this heading"></a></h1>
 <p>Functions to load the csv files of the data catalog model into a DataModel object.</p>
 <blockquote>
-<div><ul class="simple">
-<li><p>Contains one function load_data_model() to load the model and several classes
-to represent the loaded model.</p></li>
-<li><p>This can be used to load the data catalog model and access all the tables and rows and columns
-of the model.</p></li>
-<li><p>Also see the data_access.py module for methods to access information from /hydrodata
-using the model.</p></li>
-</ul>
-<dl class="simple">
+<div><p>Contains one function load_data_model() to load the model and several classes
+to represent the loaded model.</p>
+<p>This can be used to load the data catalog model and access all the tables and rows and columns
+of the model.</p>
+<p>Also see the data_access.py module for methods to access information from /hydrodata
+using the model.</p>
+<dl>
 <dt>Usage:</dt><dd><p>data_model = hydrodata.data_catalog.load_data_model()</p>
+<p>print(data_model.table_names)</p>
 </dd>
 </dl>
 </div></blockquote>

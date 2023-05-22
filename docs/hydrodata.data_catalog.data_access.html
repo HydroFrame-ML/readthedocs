@@ -87,6 +87,8 @@
 <p>get_table_names()</p>
 <p>get_table_rows()</p>
 <p>get_yaml_data_catalog()</p>
+<p>grid_to_latlng()</p>
+<p>latlng_to_grid()</p>
 </dd>
 </dl>
 <dl class="py function">
@@ -216,6 +218,53 @@ after looping through time range and replacing substitution keys.</p>
 </dl>
 <p>The parsed yaml file representation of the data catalog is useful for use
 by non-python clients such as javascript that want access to the data model information.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.grid_to_latlng">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">grid_to_latlng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.grid_to_latlng" title="Permalink to this definition"></a></dt>
+<dd><p>Convert grid x,y coordinates to lat,lng.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>grid</strong> – The name of a grid dimension from the data catalog grid table (e.g. conus1 or conus2, or smapgrid).</p></li>
+<li><p><strong>args</strong> – A list of numbers of (x,y) values that are coordinates in the grid (may be int or float).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An array of lat,lng points converted from each of the (x,y) grid coordinates in args.</p>
+</dd>
+</dl>
+<p>Note, this may be used to convert a single point or a bounds of 2 points or a large array of points.</p>
+<dl>
+<dt>For example,</dt><dd><p>(lat, lng) = grid_to_latlng(“conus1”, 10, 10)</p>
+<p>latlng_bounds = grid_to_latlng(“conus1”, <a href="#id1"><span class="problematic" id="id2">*</span></a>[0, 0, 20, 20])</p>
+<p>(lat, lng) = grid_to_latlng(“conus1”, 10.5, 10.5)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.latlng_to_grid">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">latlng_to_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.latlng_to_grid" title="Permalink to this definition"></a></dt>
+<dd><p>Convert grid lat,lng coordinates to x,y.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>grid</strong> – The name of a grid dimension from the data catalog grid table (e.g. conus1 or conus2, or smapgrid).</p></li>
+<li><p><strong>args</strong> – A list of floating pairs if (lat,lng) values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An array of x,y integer points converted from each of the (lat,lng) grid coordinates in args.</p>
+</dd>
+</dl>
+<p>Note, this may be used to convert a single point or a bounds of 2 points or a large array of points.</p>
+<dl>
+<dt>For example,</dt><dd><p>(x, y) = grid_to_latlng(“conus1”, 31.759219, -115.902573)</p>
+<p>latlng_bounds = grid_to_latlng(“conus1”, <a href="#id3"><span class="problematic" id="id4">*</span></a>[31.651836, -115.982367, 31.759219, -115.902573])</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>

@@ -11,9 +11,10 @@ Once the hydrodata package is installed you can use it for example::
 
     options = {
         "variable": "water_table_depth",
-        "dataset": "baseline",
-        "grid": "conus1",
-        "period": "daily"
+        "dataset": "conus1_baseline_mod",
+        "grid": "CONUS1",
+        "period": "daily",
+        "file_type": "pfb"
     }
     # Get metadata about the entry in the row and the path names to the data files
     row = hydrodata.data_catalog.data_access.get_catalog_entry(options)

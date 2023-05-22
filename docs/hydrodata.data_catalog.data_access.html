@@ -236,6 +236,7 @@ by non-python clients such as javascript that want access to the data model info
 </dd>
 </dl>
 <p>Note, this may be used to convert a single point or a bounds of 2 points or a large array of points.</p>
+<p>This conversion is fast. It is about 12.8K points/second (8 min for all points in conus1).</p>
 <dl>
 <dt>For example,</dt><dd><p>(lat, lng) = grid_to_latlng(“conus1”, 10, 10)</p>
 <p>latlng_bounds = grid_to_latlng(“conus1”, <a href="#id1"><span class="problematic" id="id2">*</span></a>[0, 0, 20, 20])</p>
@@ -260,6 +261,7 @@ by non-python clients such as javascript that want access to the data model info
 </dd>
 </dl>
 <p>Note, this may be used to convert a single point or a bounds of 2 points or a large array of points.</p>
+<p>This conversion is fast. It is about 12.8K points/second (8 min for all points in conus1).</p>
 <dl>
 <dt>For example,</dt><dd><p>(x, y) = grid_to_latlng(“conus1”, 31.759219, -115.902573)</p>
 <p>latlng_bounds = grid_to_latlng(“conus1”, <a href="#id3"><span class="problematic" id="id4">*</span></a>[31.651836, -115.982367, 31.759219, -115.902573])</p>

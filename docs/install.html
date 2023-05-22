@@ -87,9 +87,10 @@ can be installed in a python virtual environment using pip:</p>
 
 <span class="n">options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;variable&quot;</span><span class="p">:</span> <span class="s2">&quot;water_table_depth&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;dataset&quot;</span><span class="p">:</span> <span class="s2">&quot;baseline&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;grid&quot;</span><span class="p">:</span> <span class="s2">&quot;conus1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;period&quot;</span><span class="p">:</span> <span class="s2">&quot;daily&quot;</span>
+    <span class="s2">&quot;dataset&quot;</span><span class="p">:</span> <span class="s2">&quot;conus1_baseline_mod&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;grid&quot;</span><span class="p">:</span> <span class="s2">&quot;CONUS1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;period&quot;</span><span class="p">:</span> <span class="s2">&quot;daily&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;file_type&quot;</span><span class="p">:</span> <span class="s2">&quot;pfb&quot;</span>
 <span class="p">}</span>
 <span class="c1"># Get metadata about the entry in the row and the path names to the data files</span>
 <span class="n">row</span> <span class="o">=</span> <span class="n">hydrodata</span><span class="o">.</span><span class="n">data_catalog</span><span class="o">.</span><span class="n">data_access</span><span class="o">.</span><span class="n">get_catalog_entry</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>

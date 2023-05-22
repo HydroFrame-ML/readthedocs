@@ -1,0 +1,10 @@
+hydrodata.data\_catalog.model package
+=====================================
+
+Module contents
+---------------
+
+.. automodule:: hydrodata.data_catalog.model
+   :members:
+   :undoc-members:
+   :show-inheritance:

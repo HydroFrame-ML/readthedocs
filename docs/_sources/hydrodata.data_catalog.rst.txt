@@ -1,6 +1,14 @@
 hydrodata.data\_catalog package
 ===============================
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hydrodata.data_catalog.model
+
 Submodules
 ----------
 

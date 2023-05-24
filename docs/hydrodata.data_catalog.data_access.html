@@ -84,6 +84,7 @@
 <dt>Functions to access data from data catalog information.</dt><dd><p>get_catalog_entries()</p>
 <p>get_catalog_entry()</p>
 <p>get_file_paths()</p>
+<p>get_ndarray()</p>
 <p>get_table_names()</p>
 <p>get_table_rows()</p>
 <p>get_yaml_data_catalog()</p>
@@ -162,18 +163,71 @@ after looping through time range and replacing substitution keys.</p>
 </dl>
 <dl class="simple">
 <dt>A data filter option must be one of the following:</dt><dd><ul class="simple">
-<li><p>time:           A time in the form YYYY-MM-DD. Used to substitute time keys in the file path.</p></li>
-<li><p>start_time:     A time in the form YYYY-MM-DD. Start of date range for time keys in the file path.</p></li>
-<li><p>end_time:       A time in the form YYYY-MM-DD. End of date range for time keys in the file path.</p></li>
+<li><p>start_time:     A time as either a datetime object or a string in the form YYYY-MM-DD. Start of the date range for data.</p></li>
+<li><p>end_time:       A time as either a datetime object or a string in the form YYYY-MM-DD. End of the date range for data.</p></li>
 <li><p>site_id:        An observation point site id.</p></li>
 </ul>
 </dd>
 </dl>
-<p>If both time and start_time is specified then start_time is used.</p>
+<p>If only start_time is specified then only the data at that time is used to substitute into path names.
+If both start_time and end_time is specified then dates in the date range are used to substitute into path names.</p>
 <dl>
 <dt>For example, get 5 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>row = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>
-<p>paths = get_file_paths(row, “start_time”:”2021-09-30”, end_time=”2021-10-03”)</p>
+<p>paths = get_file_paths(row, start_time=”2021-09-30”, end_time=”2021-10-03”)</p>
 <p>assert len(paths) = 5</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_ndarray">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_ndarray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_ndarray" title="Permalink to this definition"></a></dt>
+<dd><p>Get a numpy ndarry from files in /hydrodata with the applied data filters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row</strong> – Either a ModelTableRow object or  a data_catalog_entry ID number.</p></li>
+<li><p><strong>args</strong> – Optional positional parameter that must be a dict with data filter options.</p></li>
+<li><p><strong>kwargs</strong> – Supports multiple named parameters with data filter option values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A numpy array containing the data loaded from the files identified by the row and sliced by the data filter options.
+A list of absolute path names to files in the data catalog entry
+after looping through time range and replacing substitution keys.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError if both grid_bounds and latlng_bounds are specified.</strong> – </p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>A data filter option must be one of the following:</dt><dd><ul class="simple">
+<li><p>start_time:     A time as either a datetime object or a string in the form YYYY-MM-DD. Start of the date range for data.</p></li>
+<li><p>end_time:       A time as either a datetime object or a string in the form YYYY-MM-DD. End of the date range for data.</p></li>
+<li><p>site_id:        An observation point site id.</p></li>
+<li><p>grid_bounds:    An array of points [left, bottom, right, top] in xy grid corridates in the grid of the data.</p></li>
+<li><p>latlng_bounds:  An array of points [left, bottom, right, top] in lat/lng coordinates mapped with the grid of the data.</p></li>
+<li><p>ensamble_num:   A number 0-n to specify the ensemble number of the data to return.</p></li>
+<li><p>depth:          A number 0-n of the depth index of the data to return.</p></li>
+</ul>
+</dd>
+</dl>
+<p>If only start_time is specified then only the data at that time is returned and time is not returned as a dimension.
+If both start_time and end_time is specified then data in the date range is returned with a time dimension in the numpy array.
+If neither grid_bounds or latlng_bounds is specified in the result contains all points in the grid of the data.</p>
+<dl class="simple">
+<dt>For gridded results the returned numpy array has dimensions:</dt><dd><p>[ensamble_num, depth, time, x, y]</p>
+</dd>
+</dl>
+<p>If ensamble_num is specified in the input then the input date is sliced to that value and not returned as a dimension.
+If depth is specified in the input then the input data is sliced to that value and not returned as a dimension.
+If the data file does not have an ensamble_num, depth or time then this is not returned as dimension.</p>
+<dl>
+<dt>For example, get 5 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>bounds = [200, 200, 300, 250]
+row = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”, grid_bounds=bounds)</p>
+<p>data = get_numpy(row, start_time=”2021-09-30”, end_time=”2021-10-03”)</p>
+<p># The result has 5 days in the time dimension and sliced to x,y shape 100x50 at origin 200, 200 in the conus1 grid.
+assert data.shape == [5, 100, 50]</p>
 </dd>
 </dl>
 </dd></dl>

@@ -2,7 +2,7 @@ data_catalog_entry
 ######################
 
 .. list-table:: data_catalog_entry
-   :widths: 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30
+   :widths: 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30
    :header-rows: 1
    :class: scrolltable
 
@@ -18,8 +18,10 @@ data_catalog_entry
      - entry_end_date
      - period
      - units
+     - unit_type
      - aggregation
      - grid
+     - security_level
      - path
      - documentation_notes
      - description
@@ -29,7 +31,6 @@ data_catalog_entry
      - dataset_dnd_Date
      - time_zone
      - documentation_link
-     - public
    * - 1
      - conus1_baseline_85
      - parflow
@@ -38,21 +39,22 @@ data_catalog_entry
      - pressure_head
      - subsurface
      - pressure
-     - 10/1/1984
-     - 1/21/1985
+     - 10/1/84
+     - 1/21/85
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/conus1_pfclm_daily_1985.pfmetadata
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 2
      - conus1_baseline_85
@@ -62,21 +64,22 @@ data_catalog_entry
      - pressure_head
      - subsurface
      - pressure
-     - 10/1/1984
-     - 1/21/1985
+     - 10/1/84
+     - 1/21/85
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/pressure.daily.mean.{wy_daynum:03d}.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 3
      - conus1_baseline_mod
@@ -90,17 +93,18 @@ data_catalog_entry
      - 
      - daily
      - mm/d
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/conus1_pfclm_daily_{wy}.pfmetadata
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 4
      - conus1_baseline_mod
@@ -114,17 +118,18 @@ data_catalog_entry
      - 
      - daily
      - kg/m2
+     - surface_density
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/conus1_pfclm_daily_{wy}.pfmetadata
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 5
      - conus1_baseline_mod
@@ -138,17 +143,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/conus1_pfclm_daily_{wy}.pfmetadata
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 6
      - conus1_baseline_mod
@@ -162,17 +168,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/conus1_pfclm_daily_{wy}.pfmetadata
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 7
      - conus1_baseline_mod
@@ -186,17 +193,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - eod
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/conus1_pfclm_daily_{wy}.pfmetadata
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 8
      - conus1_baseline_mod
@@ -210,17 +218,18 @@ data_catalog_entry
      - 
      - daily
      - mm/d
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/et.daily.sum.{wy_daynum:03d}.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 9
      - conus1_baseline_mod
@@ -234,17 +243,18 @@ data_catalog_entry
      - 
      - daily
      - kg/m2
+     - surface_density
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/sm.daily.mean.{wy_daynum:03d}.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 10
      - conus1_baseline_mod
@@ -258,17 +268,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/wtd.daily.mean.{wy_daynum:03d}.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 11
      - conus1_baseline_mod
@@ -282,17 +293,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/pressure.daily.mean.{wy_daynum:03d}.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 12
      - conus1_baseline_mod
@@ -306,17 +318,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - eod
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY{wy}/swe.daily.eod.{wy_daynum:03d}.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 13
      - conus1_baseline_mod
@@ -330,17 +343,18 @@ data_catalog_entry
      - 
      - daily
      - mm/d
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 14
      - conus1_baseline_mod
@@ -354,17 +368,18 @@ data_catalog_entry
      - 
      - daily
      - kg/m2
+     - surface_density
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 15
      - conus1_baseline_mod
@@ -378,17 +393,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 16
      - conus1_baseline_mod
@@ -402,17 +418,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - mean
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 17
      - conus1_baseline_mod
@@ -426,17 +443,18 @@ data_catalog_entry
      - 
      - daily
      - m
+     - length
      - eod
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 18
      - conus1_baseline_mod
@@ -450,17 +468,18 @@ data_catalog_entry
      - 
      - daily
      - ?
+     - 
      - ?
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 19
      - conus1_baseline_mod
@@ -474,17 +493,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - max
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 20
      - conus1_baseline_mod
@@ -498,17 +518,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - min
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 21
      - conus1_baseline_mod
@@ -522,65 +543,68 @@ data_catalog_entry
      - 
      - daily
      - m3/h
+     - volume_flux
      - ?
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 22
      - conus1_baseline_mod
      - parflow
      - gridded
      - zarr
-     - ?
-     - None
+     - swe_melt
+     - land_surface
      - melt
      - 
      - 
      - daily
-     - ?
+     - mm/d
+     - rate
      - tbd
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 23
      - conus1_baseline_mod
      - parflow
      - gridded
      - zarr
-     - ?
-     - None
+     - pressure_next
+     - subsurface
      - pressure_next
      - 
      - 
      - daily
-     - ?
+     - m
+     - length
      - tbd
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_{wy}_preprocessed.zarr
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 24
      - conus1_domain
@@ -594,13 +618,14 @@ data_catalog_entry
      - 
      - static
      - degrees_north
+     - lat_lon
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -618,13 +643,14 @@ data_catalog_entry
      - 
      - static
      - degrees_east
+     - lat_lon
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -642,13 +668,14 @@ data_catalog_entry
      - 
      - static
      - m/h
+     - rate
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -666,13 +693,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -690,13 +718,14 @@ data_catalog_entry
      - 
      - static
      - km2
+     - area
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -714,13 +743,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -738,13 +768,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -762,13 +793,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -786,13 +818,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -810,13 +843,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -834,13 +868,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -851,20 +886,21 @@ data_catalog_entry
      - parameters
      - gridded
      - zarr
-     - ?
-     - None
+     - veg_type_IGBP
+     - land_surface
      - vegtype
      - 
      - 
      - static
      - -
+     - 
      - static
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/daily/zarr/conus1_2003_preprocessed.zarr
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -882,17 +918,18 @@ data_catalog_entry
      - 
      - hourly
      - m
+     - length
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.press.{wy_hour:05d}.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 37
      - conus1_baseline_85
@@ -906,17 +943,18 @@ data_catalog_entry
      - 
      - hourly
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.satur.{wy_hour:05d}.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 38
      - conus1_baseline_85
@@ -930,17 +968,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 39
      - conus1_baseline_85
@@ -954,17 +993,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 40
      - conus1_baseline_85
@@ -978,17 +1018,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 41
      - conus1_baseline_85
@@ -1002,17 +1043,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 42
      - conus1_baseline_85
@@ -1026,17 +1068,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 43
      - conus1_baseline_85
@@ -1050,17 +1093,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 44
      - conus1_baseline_85
@@ -1074,17 +1118,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 45
      - conus1_baseline_85
@@ -1098,17 +1143,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 46
      - conus1_baseline_85
@@ -1122,17 +1168,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 47
      - conus1_baseline_85
@@ -1146,17 +1193,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 48
      - conus1_baseline_85
@@ -1170,17 +1218,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 49
      - conus1_baseline_85
@@ -1194,17 +1243,18 @@ data_catalog_entry
      - 
      - hourly
      - K
+     - temperature
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 50
      - conus1_baseline_85
@@ -1218,17 +1268,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 51
      - conus1_baseline_85
@@ -1242,17 +1293,18 @@ data_catalog_entry
      - 
      - hourly
      - K
+     - temperature
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/1985/raw_outputs/CONUS.5layer.pfclm.run4.out.{wy_hour:05d}.C.pfb
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 52
      - conus1_baseline_mod
@@ -1266,17 +1318,18 @@ data_catalog_entry
      - 
      - hourly
      - m
+     - length
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/pressure/CONUS.{wy}.out.press.{wy_hour:05d}.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 53
      - conus1_baseline_mod
@@ -1290,17 +1343,18 @@ data_catalog_entry
      - 
      - hourly
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/saturation/CONUS.{wy}.out.satur.{wy_hour:05d}.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 54
      - conus1_baseline_mod
@@ -1314,17 +1368,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 55
      - conus1_baseline_mod
@@ -1338,17 +1393,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 56
      - conus1_baseline_mod
@@ -1362,17 +1418,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 57
      - conus1_baseline_mod
@@ -1386,17 +1443,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 58
      - conus1_baseline_mod
@@ -1410,17 +1468,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 59
      - conus1_baseline_mod
@@ -1434,17 +1493,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 60
      - conus1_baseline_mod
@@ -1458,17 +1518,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 61
      - conus1_baseline_mod
@@ -1482,17 +1543,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 62
      - conus1_baseline_mod
@@ -1506,17 +1568,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 63
      - conus1_baseline_mod
@@ -1530,17 +1593,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 64
      - conus1_baseline_mod
@@ -1554,17 +1618,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 65
      - conus1_baseline_mod
@@ -1578,17 +1643,18 @@ data_catalog_entry
      - 
      - hourly
      - K
+     - temperature
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 66
      - conus1_baseline_mod
@@ -1602,17 +1668,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 67
      - conus1_baseline_mod
@@ -1626,17 +1693,18 @@ data_catalog_entry
      - 
      - hourly
      - K
+     - temperature
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/raw_outputs/clm_out/CONUS.{wy}.out.clm_output.{wy_hour:05d}.C.pfb
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 68
      - conus1_domain
@@ -1650,13 +1718,14 @@ data_catalog_entry
      - 
      - static
      - degrees_north
+     - lat_lon
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1674,13 +1743,14 @@ data_catalog_entry
      - 
      - static
      - degrees_east
+     - lat_lon
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1698,13 +1768,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1722,13 +1793,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1746,13 +1818,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1770,13 +1843,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1794,13 +1868,14 @@ data_catalog_entry
      - 
      - static
      - 
+     - None
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1818,13 +1893,14 @@ data_catalog_entry
      - 
      - static
      - m/h
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1842,13 +1918,14 @@ data_catalog_entry
      - 
      - static
      - km2
+     - area
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1866,13 +1943,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1890,13 +1968,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfmetadata
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1914,13 +1993,14 @@ data_catalog_entry
      - 
      - static
      - degrees_north
+     - lat_lon
      - -
      - conus1
+     - 2
      - /hydrodata/national_mapping/CONUS1/Latitude_CONUS1.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1938,13 +2018,14 @@ data_catalog_entry
      - 
      - static
      - degrees_east
+     - lat_lon
      - -
      - conus1
+     - 2
      - /hydrodata/national_mapping/CONUS1/Longitude_CONUS1.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1962,13 +2043,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_vgn_n.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -1986,13 +2068,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_vgn_alpha.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2010,13 +2093,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/slopex.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2034,13 +2118,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/slopey.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2058,13 +2143,14 @@ data_catalog_entry
      - 
      - static
      - 
+     - None
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_porosity.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2082,13 +2168,14 @@ data_catalog_entry
      - 
      - static
      - m/h
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_permeability.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2106,13 +2193,14 @@ data_catalog_entry
      - 
      - static
      - km2
+     - area
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_drainage_area.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2130,13 +2218,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/CONUS1_vegtype.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2154,13 +2243,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/static/conus1_parameters.pfb
      - 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2178,13 +2268,14 @@ data_catalog_entry
      - 
      - static
      - m/h
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/inputs/PmE.flux.pfb
      - PmE that was used for CONUS1 steady state spinup
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2202,13 +2293,14 @@ data_catalog_entry
      - 
      - static
      - m
+     - length
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/inputs/CONUS1.pitfill.txt
      - Processed surface elevaiton for every grid cell this is what was used to calculate the slopes
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2226,13 +2318,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/other_domain_files/StreamOrder_pfFormat.txt
      -  Stream orders are assigned for every subbasin. Headwaters and non-river cells are assigned a value of zero . The order for all other streams was determined by walking downstream from the headwater reaches. Streams are assigned the largest order possible (i.e. the longest route to get to them).
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2250,13 +2343,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/grid3d.v3.pfb
      - Indicator file for CONUS1 subsurface
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2274,13 +2368,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/other_domain_files/flodir.interp_format.txt
      - The flow directions for every grid cell determined by Grass (2=up, 4=left, 6=down, 8=right)
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2298,13 +2393,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/other_domain_files/stream.interp_format.txt
      - The reach number for every stream. Pretty much the same as the subbasin file except only the river cells have values.  Numbers in this file correspond to subbasin numers. 
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2322,13 +2418,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/other_domain_files/Watershed.interp_format.txt
      - The ~30,000 subbasins that were derived from the grass processing.  The numbers in this file correspond to the basin numbers (note that basin numbers count by 2). The zero values represent areas along the edge of the domain not included in any subbasins
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2346,13 +2443,14 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/other_domain_files/conus_short_Annual_Aridity.format.txt
      - The annual aridity index. precip/(precip-evap)
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015
-     - 
      - 
      - 
      - 
@@ -2370,17 +2468,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/run_scripts/5-layer.pfclm.baseline.spinup.tcl
      - Spinup script for Baseline 1985 runs
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 99
      - conus1_baseline_85
@@ -2394,17 +2493,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/run_scripts/CONUS.5layer.pfclm.run4.out.pftcl
      - Run script for Baseline 1985 runs
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 100
      - conus1_baseline_85
@@ -2418,17 +2518,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/drv_clmin.dat
      - clm driver file
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 101
      - conus1_baseline_85
@@ -2442,17 +2543,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/drv_clmin.restart.dat
      - clm driver file for restarting 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 102
      - conus1_baseline_85
@@ -2466,17 +2568,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/drv_clmin.startup.dat
      - clm driver file for starting from scratch
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 103
      - conus1_baseline_85
@@ -2490,17 +2593,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/drv_vegm.fixed.dat
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 104
      - conus1_baseline_85
@@ -2514,17 +2618,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/drv_vegp.dat
      - 
      - WY 1985 Baseline CONUS1 simulation 
-     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916; 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
+     - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
      - 10/1/84 0:00
      - UTC−06:00
-     - 
      - 
    * - 105
      - conus1_baseline_mod
@@ -2538,17 +2643,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/run_scripts/CONUS_WY2003_2007_Cheyenne/CONUS.2003.tcl
      - tcl script for 2003-2005 ParFlow runs
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 106
      - conus1_baseline_mod
@@ -2562,17 +2668,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/run_scripts/CONUS_WY2003_2007_Cheyenne/drv_clmin.dat
      - clm driver file
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 107
      - conus1_baseline_mod
@@ -2586,17 +2693,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/run_scripts/CONUS_WY2003_2007_Cheyenne/drv_clmin.restart.dat
      - clm driver file for restarting 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 108
      - conus1_baseline_mod
@@ -2610,17 +2718,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/run_scripts/CONUS_WY2003_2007_Cheyenne/drv_clmin.start.dat 
      - clm driver file for starting from scratch
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 109
      - conus1_baseline_mod
@@ -2634,17 +2743,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/drv_vegm.fixed.dat
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 110
      - conus1_baseline_mod
@@ -2658,17 +2768,18 @@ data_catalog_entry
      - 
      - static
      - -
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/inputs/drv_vegp.dat
      - 
      - Modern CONUS1 simulations WY 2003-2006
-     - 
+     - 10.5194/gmd-14-7223-2021
      - 
      - 10/1/02 0:00
      - 10/1/02 0:00
      - UTC−0:00
-     - 
      - 
    * - 111
      - conus1_baseline_ss
@@ -2682,13 +2793,14 @@ data_catalog_entry
      - 
      - static
      - m
+     - length
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/run_scripts/CONUS_WY2003_2007_Cheyenne/press.in.pfb
      - steady state pressure used to initialize modern runs
      - CONUS1 steady state
-     - 10.5194/gmd-8-1-2015
-     - 
+     - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916
      - 
      - 
      - 
@@ -2706,17 +2818,18 @@ data_catalog_entry
      - 
      - hourly
      - mm/h
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 113
      - NLDAS2
@@ -2730,17 +2843,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 114
      - NLDAS2
@@ -2754,17 +2868,18 @@ data_catalog_entry
      - 
      - hourly
      - w/m2
+     - intensity
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 115
      - NLDAS2
@@ -2778,17 +2893,18 @@ data_catalog_entry
      - 
      - hourly
      - kg/kg
+     - 
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 116
      - NLDAS2
@@ -2802,17 +2918,18 @@ data_catalog_entry
      - 
      - hourly
      - K
+     - temperature
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 117
      - NLDAS2
@@ -2826,17 +2943,18 @@ data_catalog_entry
      - 
      - hourly
      - m/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 118
      - NLDAS2
@@ -2850,17 +2968,18 @@ data_catalog_entry
      - 
      - hourly
      - m/s
+     - rate
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 119
      - NLDAS2
@@ -2874,17 +2993,18 @@ data_catalog_entry
      - 
      - hourly
      - pa
+     - pressure
      - -
      - conus1
+     - 2
      - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr}_to_{wy_end_24hr}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 120
      - NLDAS2
@@ -2898,17 +3018,18 @@ data_catalog_entry
      - 
      - daily
      - mm/d
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 121
      - NLDAS2
@@ -2922,17 +3043,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 122
      - NLDAS2
@@ -2946,17 +3068,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 123
      - NLDAS2
@@ -2970,17 +3093,18 @@ data_catalog_entry
      - 
      - daily
      - kg/kg
+     - 
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 124
      - NLDAS2
@@ -2994,17 +3118,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - min
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 125
      - NLDAS2
@@ -3018,17 +3143,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - max
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 126
      - NLDAS2
@@ -3042,17 +3168,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 127
      - NLDAS2
@@ -3066,17 +3193,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 128
      - NLDAS2
@@ -3090,17 +3218,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 129
      - NLDAS2
@@ -3114,17 +3243,18 @@ data_catalog_entry
      - 
      - daily
      - pa
+     - pressure
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 130
      - NLDAS2
@@ -3138,17 +3268,18 @@ data_catalog_entry
      - 
      - daily
      - mm/d
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.APCP.daily.sum.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 131
      - NLDAS2
@@ -3162,17 +3293,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.DLWR.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 132
      - NLDAS2
@@ -3186,17 +3318,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.DSWR.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 133
      - NLDAS2
@@ -3210,17 +3343,18 @@ data_catalog_entry
      - 
      - daily
      - kg/kg
+     - 
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.SPFH.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 134
      - NLDAS2
@@ -3234,17 +3368,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - min
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Temp.daily.min.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 135
      - NLDAS2
@@ -3258,17 +3393,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - max
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Temp.daily.max.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 136
      - NLDAS2
@@ -3282,17 +3418,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Temp.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 137
      - NLDAS2
@@ -3306,17 +3443,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.UGRD.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 138
      - NLDAS2
@@ -3330,17 +3468,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.VGRD.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 139
      - NLDAS2
@@ -3354,17 +3493,18 @@ data_catalog_entry
      - 
      - daily
      - pa
+     - pressure
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Press.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 140
      - NLDAS2_85
@@ -3378,17 +3518,18 @@ data_catalog_entry
      - 
      - daily
      - mm/d
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 141
      - NLDAS2_85
@@ -3402,17 +3543,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 142
      - NLDAS2_85
@@ -3426,17 +3568,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 143
      - NLDAS2_85
@@ -3450,17 +3593,18 @@ data_catalog_entry
      - 
      - daily
      - kg/kg
+     - 
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 144
      - NLDAS2_85
@@ -3474,17 +3618,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - min
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 145
      - NLDAS2_85
@@ -3498,17 +3643,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - max
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 146
      - NLDAS2_85
@@ -3522,17 +3668,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 147
      - NLDAS2_85
@@ -3546,17 +3693,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 148
      - NLDAS2_85
@@ -3570,17 +3718,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 149
      - NLDAS2_85
@@ -3594,17 +3743,18 @@ data_catalog_entry
      - 
      - daily
      - pa
+     - pressure
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/conus1_nldas_daily_{wy}.pfmetadata
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 150
      - NLDAS2_85
@@ -3618,17 +3768,18 @@ data_catalog_entry
      - 
      - daily
      - mm/d
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.APCP.daily.sum.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 151
      - NLDAS2_85
@@ -3642,17 +3793,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.DLWR.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 152
      - NLDAS2_85
@@ -3666,17 +3818,18 @@ data_catalog_entry
      - 
      - daily
      - w/m2
+     - intensity
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.DSWR.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 153
      - NLDAS2_85
@@ -3690,17 +3843,18 @@ data_catalog_entry
      - 
      - daily
      - kg/kg
+     - 
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.SPFH.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 154
      - NLDAS2_85
@@ -3714,17 +3868,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - min
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Temp.daily.min.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 155
      - NLDAS2_85
@@ -3738,17 +3893,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - max
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Temp.daily.max.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 156
      - NLDAS2_85
@@ -3762,17 +3918,18 @@ data_catalog_entry
      - 
      - daily
      - K
+     - temperature
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Temp.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 157
      - NLDAS2_85
@@ -3786,17 +3943,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.UGRD.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 158
      - NLDAS2_85
@@ -3810,17 +3968,18 @@ data_catalog_entry
      - 
      - daily
      - m/s
+     - rate
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.VGRD.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 159
      - NLDAS2_85
@@ -3834,17 +3993,18 @@ data_catalog_entry
      - 
      - daily
      - pa
+     - pressure
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/daily/WY{wy}/NLDAS.Press.daily.mean.{wy_daynum:03d}.pfb
      - 
      - National Land Data Assimilation Product V2  - Water Year 1985
-     - 
+     - 10.1002/2016GL069964
      - 
      - 10/1/1984
      - 9/30/1985
-     - 
-     - 
+     - UTC−06:00
      - 
    * - 160
      - NLDAS2
@@ -3858,17 +4018,18 @@ data_catalog_entry
      - 
      - monthly_clim
      - K
+     - temperature
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/temperature_climatological_means_month_{month}.pfb
      - Need a note here about what time period the climatology represents
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 161
      - NLDAS2
@@ -3882,17 +4043,18 @@ data_catalog_entry
      - 
      - monthly_clim
      - mm/mon
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/precipitation_climatological_means_month_{month}.pfb
      - Need a note here about what time period the climatology represents
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 162
      - NLDAS2
@@ -3906,17 +4068,18 @@ data_catalog_entry
      - 
      - annual_clim
      - K
+     - temperature
      - mean
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/temperature_annual_means.pfb
      - Need a note here about what time period the climatology represents
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 
    * - 163
      - NLDAS2
@@ -3930,15 +4093,16 @@ data_catalog_entry
      - 
      - annual_clim
      - mm/yr
+     - rate
      - sum
      - conus1
+     - 2
      - /hydrodata/forcing/processed_data/CONUS1/NLDAS2/climatology/precipitation_annual_means.pfb
      - Need a note here about what time period the climatology represents
      - National Land Data Assimilation Product V2 
-     - 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
      - 9/30/2006
-     - 
-     - 
+     - UTC−0:00
      - 

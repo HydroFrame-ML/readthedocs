@@ -2,115 +2,88 @@ units
 ######################
 
 .. list-table:: units
-   :widths: 30 30 30 30
+   :widths: 30 30 30
    :header-rows: 1
    :class: scrolltable
 
    * - id
      - title
-     - variants
-     - Description
+     - unit_type
    * - c
      - degrees celcius
-     - ['c', 'f', 'K']
-     - 
+     - temperature
    * - cm
      - centimeters
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
-     - 
+     - length
    * - cm3/cm3
      - cm3/cm3
-     - ['cm3/cm3']
      - 
    * - f 
      - degrees farenheit
-     - ['c', 'f', 'K']
-     - 
+     - temperature
    * - ft
      - feet
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
-     - 
+     - length
    * - in
      - inches
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
-     - 
+     - length
    * - K
      - degrees Kelvin
-     - ['c', 'f', 'K']
-     - 
+     - temperature
    * - kg/kg
      - kg/kg
      - 
-     - 
    * - kg/m2
      - kilograms per square meter
-     - 
-     - 
+     - surface_density
    * - km2
-     - squre kilometers
-     - 
-     - 
+     - square kilometers
+     - area
    * - m/s
      - meters per second
-     - 
-     - 
+     - rate
    * - m/h
      - meters per hour
-     - 
-     - 
+     - rate
    * - m
      - meters
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
-     - 
+     - length
    * - m3/h
      - cubic meters per hour
-     - 
-     - 
+     - volume_flux
    * - mm
-     - mm
-     - ['m', 'meters', 'feet', 'cm', 'mm', 'inches']
-     - 
+     - milimeters
+     - length
    * - mm/s
      - mm per second
-     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
-     - 
+     - rate
    * - mm/h
      - mm per hour
-     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
-     - 
+     - rate
    * - mm/d
      - mm per day 
-     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
-     - 
+     - rate
    * - mm/mon
      - mm per month
-     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
-     - 
+     - rate
    * - mm/yr
      - mm per year
-     - ['mm/s', 'mm/h', 'mm/d', 'mm/mon', 'mm/yr']
-     - 
+     - rate
    * - w/m2
      - Watts per square meter
-     - 
-     - 
+     - intensity
    * - degrees_north
      - Degrees North
-     - 
-     - None
+     - lat_lon
    * - degrees_east
      - Degrees East
-     - 
-     - None
+     - lat_lon
    * - pa
      - Pascal
-     - 
-     - 
+     - pressure
    * - -
      - UnitLess
      - 
-     - 
    * - ?
-     - 
      - 
      - 

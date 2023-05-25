@@ -253,65 +253,75 @@
 <td></td>
 <td><p>subsurface</p></td>
 </tr>
-<tr class="row-odd"><td><p>saturation</p></td>
+<tr class="row-odd"><td><p>pressure_next</p></td>
+<td><p>Pressure Head at the following timestep</p></td>
+<td></td>
+<td><p>subsurface</p></td>
+</tr>
+<tr class="row-even"><td><p>saturation</p></td>
 <td><p>Saturation</p></td>
 <td></td>
 <td><p>subsurface</p></td>
 </tr>
-<tr class="row-even"><td><p>sensible_heat</p></td>
+<tr class="row-odd"><td><p>sensible_heat</p></td>
 <td><p>Sensible heat flux</p></td>
 <td><p>sensible heat from canopy height to atmosphere</p></td>
 <td><p>land_surface</p></td>
 </tr>
-<tr class="row-odd"><td><p>slope_x</p></td>
+<tr class="row-even"><td><p>slope_x</p></td>
 <td><p>Slope x</p></td>
 <td><p>Slope in the x direciton (Grid centered)</p></td>
 <td><p>topography</p></td>
 </tr>
-<tr class="row-even"><td><p>slope_y</p></td>
+<tr class="row-odd"><td><p>slope_y</p></td>
 <td><p>Slope y</p></td>
 <td><p>Slope in the y direction (Grid centered)</p></td>
 <td><p>topography</p></td>
 </tr>
-<tr class="row-odd"><td><p>soil_moisture</p></td>
+<tr class="row-even"><td><p>soil_moisture</p></td>
 <td><p>Soil Moisture</p></td>
 <td></td>
 <td><p>subsurface</p></td>
 </tr>
-<tr class="row-even"><td><p>soil_temp</p></td>
+<tr class="row-odd"><td><p>soil_temp</p></td>
 <td><p>Soil Temperature</p></td>
 <td><p>soil temperature</p></td>
 <td><p>subsurface</p></td>
 </tr>
-<tr class="row-odd"><td><p>specific_humidity</p></td>
+<tr class="row-even"><td><p>specific_humidity</p></td>
 <td><p>Specific Humidity</p></td>
 <td></td>
 <td><p>atmospheric</p></td>
 </tr>
-<tr class="row-even"><td><p>stream_order</p></td>
+<tr class="row-odd"><td><p>stream_order</p></td>
 <td><p>Kahler stream order</p></td>
 <td><p>Kahler stream order</p></td>
 <td><p>stream_network</p></td>
 </tr>
-<tr class="row-odd"><td><p>stream_segments</p></td>
+<tr class="row-even"><td><p>stream_segments</p></td>
 <td><p>Stream segment IDs</p></td>
 <td><p>Stream segment ID numbers (0 values outside of stream)</p></td>
 <td><p>stream_network</p></td>
 </tr>
-<tr class="row-even"><td><p>streamflow</p></td>
+<tr class="row-odd"><td><p>streamflow</p></td>
 <td><p>Streamflow</p></td>
 <td></td>
 <td><p>land_surface</p></td>
 </tr>
-<tr class="row-odd"><td><p>subbasins</p></td>
+<tr class="row-even"><td><p>subbasins</p></td>
 <td><p>Watershed subbains IDs</p></td>
 <td><p>Subbasins calculated from topographic processing</p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>swe</p></td>
+<tr class="row-odd"><td><p>swe</p></td>
 <td><p>Snow water equivalent</p></td>
 <td></td>
 <td><p>surface_water</p></td>
+</tr>
+<tr class="row-even"><td><p>swe_melt</p></td>
+<td><p>Snow melt</p></td>
+<td><p>Difference in SWE over a given time period</p></td>
+<td><p>land_surface</p></td>
 </tr>
 <tr class="row-odd"><td><p>topographic_index</p></td>
 <td><p>Topographic Index</p></td>
@@ -319,7 +329,7 @@
 <td><p>topography</p></td>
 </tr>
 <tr class="row-even"><td><p>transpiration</p></td>
-<td><p>Transpiration  rate</p></td>
+<td><p>Transpiration rate</p></td>
 <td><p>transpiration rate</p></td>
 <td><p>land_surface</p></td>
 </tr>
@@ -347,11 +357,6 @@
 <td><p>Water Table Depth</p></td>
 <td></td>
 <td><p>subsurface</p></td>
-</tr>
-<tr class="row-even"><td><p>?</p></td>
-<td></td>
-<td></td>
-<td><p>None</p></td>
 </tr>
 </tbody>
 </table>

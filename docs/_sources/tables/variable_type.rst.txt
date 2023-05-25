@@ -7,13 +7,13 @@ variable_type
    :class: scrolltable
 
    * - id
-     - Description
+     - description
    * - atmospheric
      - Atmospheric forcing variables
    * - climate
      - Long term average atmospheric forcings, net recharge, aridity index
    * - hydrogeology
-     - Subsurface parameters -- hydraulic conductivity, porosity, etc. 
+     - Subsurface parameters -- hydraulic conductivity, porosity, etc.
    * - land_surface
      - Vegetation types and any water or energy fluxes at the land surface
    * - location 

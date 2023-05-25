@@ -8,7 +8,7 @@ variable
 
    * - id
      - title
-     - description 
+     - description
      - variable_type
    * - air_temp
      - Air Temperature
@@ -44,7 +44,7 @@ variable
      - atmospheric
    * - elevation
      - Processed elevation 
-     - Final processed elevation 
+     - Final processed elevation
      - topography
    * - evapotranspiration
      - Evapotranspiration
@@ -126,6 +126,10 @@ variable
      - Pressure Head 
      - 
      - subsurface
+   * - pressure_next
+     - Pressure Head at the following timestep
+     - 
+     - subsurface
    * - saturation
      - Saturation
      - 
@@ -174,12 +178,16 @@ variable
      - Snow water equivalent
      - 
      - surface_water
+   * - swe_melt
+     - Snow melt
+     - Difference in SWE over a given time period
+     - land_surface
    * - topographic_index
      - Topographic Index
      - 
      - topography
    * - transpiration 
-     - Transpiration  rate
+     - Transpiration rate
      - transpiration rate
      - land_surface
    * - transpiration_leaves
@@ -196,13 +204,9 @@ variable
      - hydrogeology
    * - veg_type_IGBP
      - Vegetation Type
-     - Vegetation type using IGBP classifications 
+     - Vegetation type using IGBP classifications
      - land_surface
    * - water_table_depth
      - Water Table Depth
      - 
      - subsurface
-   * - ?
-     - 
-     - 
-     - None

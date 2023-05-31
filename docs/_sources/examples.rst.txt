@@ -14,17 +14,17 @@ Example to get the paths and metadata about parflow water table depth baseline::
 		"file_type": "pfb"
 	}
 	# Get path names to files
-	row = hydrodata.data_catalog.data_access.get_catalog_entry(options)
-	paths = hydrodata.data_catalog.data_access.get_file_paths(row, start_time="2005-09-29", end_time="2005-10-03")
+	entry = hydrodata.data_catalog.data_access.get_catalog_entry(options)
+	paths = hydrodata.data_catalog.data_access.get_file_paths(entry, start_time="2005-09-29", end_time="2005-10-03")
 
 	# 5 files between 9/29/2005-10/03/2005  (note - spans water year)
 	assert len(paths) == 5
 	assert paths[4] == "/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY2006/wtd.daily.mean.003.pfb"
 
-	assert row["structure_type"] == "gridded"
-	assert row["dataset_var"] == "wtd"
-	assert row["units"] == "m"
-	assert row["file_type"] == "pfb"
+	assert entry["structure_type"] == "gridded"
+	assert entry["dataset_var"] == "wtd"
+	assert entry["units"] == "m"
+	assert entry["file_type"] == "pfb"
 
 Example subsetting of PFB forcing file using the data catalog::
 
@@ -36,12 +36,12 @@ from parflow import read_pfb_sequence
 	options = {
 		"variable": "pressure_head",
 		"dataset": "conus1_baseline_mod",
-		"grid": "CONUS1",
+		"grid": "conus1",
 		"period": "hourly",
 		"file_type": "pfb"
 	}
-	row = hydrodata.data_catalog.data_access.get_catalog_entry(options)
-	paths = hydrodata.data_catalog.data_access.get_file_paths(row, start_time="2005-09-29", end_time="2005-10-03")
+	entry = hydrodata.data_catalog.data_access.get_catalog_entry(options)
+	paths = hydrodata.data_catalog.data_access.get_file_paths(entry, start_time="2005-09-29", end_time="2005-10-03")
 
 	# Read the data from the list of pfb files (5 days crossing a water year)
 	# Subset the pfb files by x,y space constraints to an area of interest
@@ -67,7 +67,7 @@ Example To Get Information From Data Model Tables::
 	rows = hydrodata.data_catalog.data_access.get_table_rows("grid")
 
 	assert len(rows) == 3
-	assert rows[0]["id"] == "CONUS1"
+	assert rows[0]["id"] == "conus1"
 	assert rows[0]["shape"][0] == 3342
 	assert rows[0]["shape"][1] == 1888
 

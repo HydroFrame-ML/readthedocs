@@ -1,0 +1,12 @@
+Datasets
+========
+
+The data catalog contains a list of entries that represent the data path of
+one variable of a dataset. A dataset represents the source that generated that data.
+
+* :ref:`NLDAS2`
+* :ref:`NLDAS2_85`
+* :ref:`conus1_baseline_85`
+* :ref:`conus1_baseline_mod`
+* :ref:`conus1_baseline_ss`
+* :ref:`conus1_domain`

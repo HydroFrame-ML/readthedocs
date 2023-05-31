@@ -17,6 +17,7 @@ and groundwater in the United States.
    introduction
    data_catalog_tables
    erd_diagram
+   datasets/dataset
    install
    examples
    api_reference

@@ -1,0 +1,6 @@
+.. _NLDAS2:
+
+Dataset NLDAS2
+===========================
+
+This describes the NLDAS2 dataset.

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hydrodata.point_observations.pandas.collect_observations module &mdash; HYDRODATA 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="hydrodata.point_observations.pandas.utils module" href="hydrodata.point_observations.pandas.utils.html" />
+    <link rel="prev" title="hydrodata.point_observations.pandas package" href="hydrodata.point_observations.pandas.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HYDRODATA
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_catalog_tables.html">Data Catalog Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets/dataset.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HYDRODATA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="api_reference.html">Python API Refererence</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.html">hydrodata package</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.point_observations.html">hydrodata.point_observations package</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.point_observations.pandas.html">hydrodata.point_observations.pandas package</a></li>
+      <li class="breadcrumb-item active">hydrodata.point_observations.pandas.collect_observations module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/hydrodata.point_observations.pandas.collect_observations.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-hydrodata.point_observations.pandas.collect_observations">
+<span id="hydrodata-point-observations-pandas-collect-observations-module"></span><h1>hydrodata.point_observations.pandas.collect_observations module<a class="headerlink" href="#module-hydrodata.point_observations.pandas.collect_observations" title="Permalink to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.collect_observations.get_citation_information">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.collect_observations.</span></span><span class="sig-name descname"><span class="pre">get_citation_information</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.collect_observations.get_citation_information" title="Permalink to this definition"></a></dt>
+<dd><p>Print and/or return specific citation information for requested data source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_source</strong> (<em>str</em>) – Source from which data originates. Options include: ‘usgs_nwis’, ‘usda_nrcs’, and
+‘ameriflux’.</p></li>
+<li><p><strong>site_ids</strong> (<em>list; default None</em>) – If provided, the specific list of sites to return data DOIs for. This is only
+supported if <cite>data_source</cite> == ‘ameriflux’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Nothing returned unless data_source == <cite>ameriflux</cite> and the parameter <cite>site_list</cite> is provided.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None or DataFrame of site-specific DOIs</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.collect_observations.get_pandas_observations">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.collect_observations.</span></span><span class="sig-name descname"><span class="pre">get_pandas_observations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temporal_resolution</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latitude_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">longitude_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_num_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_metadata</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_attributes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.collect_observations.get_pandas_observations" title="Permalink to this definition"></a></dt>
+<dd><p>Collect observations data into a Pandas DataFrame.</p>
+<p>Observations collected from HydroData for the specified data source, variable, temporal
+resolution, and aggregation. Optional arguments can be supplied for date bounds, geography bounds,
+the minimum number of per-site observations allowed, and/or whether site metadata
+should also be returned (in a separate DataFrame).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_source</strong> (<em>str</em>) – Source from which requested data originated. Currently supported: ‘usgs_nwis’, ‘usda_nrcs’,
+‘ameriflux’.</p></li>
+<li><p><strong>variable</strong> (<em>str</em>) – Description of type of data requested. Currently supported: ‘streamflow’, ‘wtd’, ‘swe’,
+‘precipitation’, ‘temperature’, ‘soil moisture’, ‘latent heat flux’, ‘sensible heat flux’,
+‘shortwave radiation’, ‘longwave radiation’, ‘vapor pressure deficit’, ‘wind speed’.</p></li>
+<li><p><strong>temporal_resolution</strong> (<em>str</em>) – Collection frequency of data requested. Currently supported: ‘daily’, ‘hourly’, and ‘instantaneous’.
+Please see the README documentation for allowable combinations with <cite>variable</cite>.</p></li>
+<li><p><strong>aggregation</strong> (<em>str</em>) – Additional information specifying the aggregation method for the variable to be returned.
+Options include descriptors such as ‘average’ and ‘total’. Please see the README documentation
+for allowable combinations with <cite>variable</cite>.</p></li>
+<li><p><strong>depth_level</strong> (<em>int</em>) – Depth level in inches at which the measurement is taken. Necessary for <cite>variable</cite> = ‘soil moisture’.</p></li>
+<li><p><strong>date_start</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ date indicating end of time range.</p></li>
+<li><p><strong>latitude_range</strong> (<em>tuple; default=None</em>) – Latitude range bounds for the geographic domain; lesser value is provided first.</p></li>
+<li><p><strong>longitude_range</strong> (<em>tuple; default=None</em>) – Longitude range bounds for the geographic domain; lesser value is provided first.</p></li>
+<li><p><strong>site_ids</strong> (<em>list; default=None</em>) – List of desired (string) site identifiers.</p></li>
+<li><p><strong>state</strong> (<em>str; default=None</em>) – Two-letter postal code state abbreviation.</p></li>
+<li><p><strong>min_num_obs</strong> (<em>int; default=1</em>) – Value for the minimum number of observations desired for a site to have.</p></li>
+<li><p><strong>return_metadata</strong> (<em>bool; default=False</em>) – Whether to additionally return a DataFrame containing site metadata.</p></li>
+<li><p><strong>all_attributes</strong> (<em>bool; default=False</em>) – Whether to include all available attributes on returned metadata DataFrame.</p></li>
+<li><p><strong>db_path</strong> (<em>str</em>) – Full path to location of point observations database.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>data_df</strong> (<em>DataFrame</em>) – Stacked observations data for a single variable, filtered to only sites that
+(optionally) have the minimum number of observations specified, within the
+defined geographic and/or date range.</p></li>
+<li><p><strong>metadata_df</strong> (<em>DataFrame; optional</em>) – Metadata about the sites present in <cite>data_df</cite> for the desired variable.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hydrodata.point_observations.pandas.html" class="btn btn-neutral float-left" title="hydrodata.point_observations.pandas package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hydrodata.point_observations.pandas.utils.html" class="btn btn-neutral float-right" title="hydrodata.point_observations.pandas.utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Princeton University, University of Arizona, National Science Foundation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

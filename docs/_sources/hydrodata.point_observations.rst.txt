@@ -1,0 +1,26 @@
+hydrodata.point\_observations package
+=====================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hydrodata.point_observations.pandas
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hydrodata.point_observations.utilities
+
+Module contents
+---------------
+
+.. automodule:: hydrodata.point_observations
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,19 @@
+hydrodata.point\_observations.pandas package
+============================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hydrodata.point_observations.pandas.collect_observations
+   hydrodata.point_observations.pandas.utils
+
+Module contents
+---------------
+
+.. automodule:: hydrodata.point_observations.pandas
+   :members:
+   :undoc-members:
+   :show-inheritance:

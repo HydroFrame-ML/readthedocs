@@ -1,0 +1,7 @@
+hydrodata.model\_evaluation.model\_evaluation module
+====================================================
+
+.. automodule:: hydrodata.model_evaluation.model_evaluation
+   :members:
+   :undoc-members:
+   :show-inheritance:

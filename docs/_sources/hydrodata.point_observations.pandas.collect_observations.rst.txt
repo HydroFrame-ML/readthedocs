@@ -1,0 +1,7 @@
+hydrodata.point\_observations.pandas.collect\_observations module
+=================================================================
+
+.. automodule:: hydrodata.point_observations.pandas.collect_observations
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hydrodata.model_evaluation.model_evaluation module &mdash; HYDRODATA 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="hydrodata.model_evaluation.utils module" href="hydrodata.model_evaluation.utils.html" />
+    <link rel="prev" title="hydrodata.model_evaluation.evaluation_metrics module" href="hydrodata.model_evaluation.evaluation_metrics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HYDRODATA
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_catalog_tables.html">Data Catalog Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets/dataset.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HYDRODATA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="api_reference.html">Python API Refererence</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.html">hydrodata package</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.model_evaluation.html">hydrodata.model_evaluation package</a></li>
+      <li class="breadcrumb-item active">hydrodata.model_evaluation.model_evaluation module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/hydrodata.model_evaluation.model_evaluation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-hydrodata.model_evaluation.model_evaluation">
+<span id="hydrodata-model-evaluation-model-evaluation-module"></span><h1>hydrodata.model_evaluation.model_evaluation module<a class="headerlink" href="#module-hydrodata.model_evaluation.model_evaluation" title="Permalink to this heading"></a></h1>
+<p>Main method for model evaluation.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.model_evaluation.evaluate">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observation_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulations_np</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregation_levels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregation_method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conus_version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">network_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_bounds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.model_evaluation.evaluate" title="Permalink to this definition"></a></dt>
+<dd><p>Model evaluation for a particular observation type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>observation_type</strong> (<em>str</em>) – Type of observation involved in comparison. Options include ‘streamflow’, ‘wtd’, ‘swe’.</p></li>
+<li><p><strong>simulations_np</strong> (<em>ndarray</em>) – Array of size (t, y, x), where y and x are the same size as CONUS1 or CONUS2 grid,
+depending on which x, y values are included in the observations DataFrame. The t dimension
+should match the number of time values included in the observations DataFrame series.
+The spatial extent should be the same size as specified by the <cite>grid_bounds</cite> parameter
+if it is not the size of the full CONUS1 or CONUS2 grid.</p></li>
+<li><p><strong>metrics</strong> (<em>list</em>) – List of string names of metrics to use for evaluation. Must be present in METRICS_DICT
+dictionary in the model_evaluation.py module.</p></li>
+<li><p><strong>aggregation_levels</strong> (<em>list</em>) – List of aggregation levels to calculate evaluations for each metric in <cite>metrics</cite>. Options
+currently include: ‘day’, ‘week’, ‘month’, ‘calendar year’.</p></li>
+<li><p><strong>aggregation_method</strong> (<em>str</em>) – Type of aggregation to conduct. Options include ‘mean’, ‘min’, ‘max’, etc.</p></li>
+<li><p><strong>date_start</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating end of time range.</p></li>
+<li><p><strong>conus_version</strong> (<em>str</em>) – Reference for whether simulations are on CONUS1 or CONUS2 grid. Options include
+‘conus1’ and ‘conus2’.</p></li>
+<li><p><strong>network_names</strong> (<em>list; default None</em>) – List of names of site networks. Can be a list with a single network name.
+Each network must have matching .csv file with a list of site ID values that comprise
+the network. This .csv file must be located in either STREAMFLOW_NETWORK_DIR or
+GROUNDWATER_NETWORK_DIR (as applicable) named as ‘network_name’.csv.</p></li>
+<li><p><strong>grid_bounds</strong> (<em>list; default None</em>) – List of CONUS x, y grid bounds for a subset domain as [xmin, ymin, xmax, ymax]. This set
+of bounds matches the size of the <cite>simulations_np</cite> input. These values align with the CONUS
+domain parameter <cite>conus_version</cite> in terms of whether CONUS1 or CONUS2 x, y values are given.
+Leave as None if simulation files are the full size of <cite>conus_version</cite> domain.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pandas DataFrame containing the evaluation results. If no observations fulfill the requested parameters,
+None object will be returned.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame or None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.model_evaluation.evaluate_model">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">evaluate_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.model_evaluation.evaluate_model" title="Permalink to this definition"></a></dt>
+<dd><p>Main method for model evaluation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>config_path</strong> (<em>str</em>) – Path to location of evaluation configuration YAML file.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Saves a .csv file to output directory defined for each observation type requested.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hydrodata.model_evaluation.evaluation_metrics.html" class="btn btn-neutral float-left" title="hydrodata.model_evaluation.evaluation_metrics module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hydrodata.model_evaluation.utils.html" class="btn btn-neutral float-right" title="hydrodata.model_evaluation.utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Princeton University, University of Arizona, National Science Foundation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

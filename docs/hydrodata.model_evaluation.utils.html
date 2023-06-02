@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hydrodata.model_evaluation.utils module &mdash; HYDRODATA 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="hydrodata.point_observations package" href="hydrodata.point_observations.html" />
+    <link rel="prev" title="hydrodata.model_evaluation.model_evaluation module" href="hydrodata.model_evaluation.model_evaluation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HYDRODATA
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_catalog_tables.html">Data Catalog Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets/dataset.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HYDRODATA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="api_reference.html">Python API Refererence</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.html">hydrodata package</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.model_evaluation.html">hydrodata.model_evaluation package</a></li>
+      <li class="breadcrumb-item active">hydrodata.model_evaluation.utils module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/hydrodata.model_evaluation.utils.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-hydrodata.model_evaluation.utils">
+<span id="hydrodata-model-evaluation-utils-module"></span><h1>hydrodata.model_evaluation.utils module<a class="headerlink" href="#module-hydrodata.model_evaluation.utils" title="Permalink to this heading"></a></h1>
+<p>Model evaluation utility functions.</p>
+<p>Note that these functions are not intended to be used stand-alone; they act as sub-processes
+within the model_evaluation.evaluate method.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.aggregate_dataframe">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">aggregate_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregate_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregate_method</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.aggregate_dataframe" title="Permalink to this definition"></a></dt>
+<dd><p>Aggregate daily DataFrame to different time period (weekly, monthly, yearly).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_df</strong> (<em>DataFrame</em>) – Pandas DataFrame with at least site_id, x, y, and columns for daily time series.</p></li>
+<li><p><strong>input_type</strong> (<em>str</em>) – Description of what type of input the DataFrame is sourced from: ‘observation’ or
+‘simulation’.</p></li>
+<li><p><strong>aggregate_level</strong> (<em>str</em>) – Level at which to aggregate time series. Options include ‘day’, ‘week’, ‘month’, etc.</p></li>
+<li><p><strong>aggregate_method</strong> (<em>str</em>) – Type of aggregation to conduct. Options include ‘mean’, ‘min’, ‘max’, etc.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pandas DataFrame with site_id, x, y, and columns for time series at the aggregated level.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.calculate_stats">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">calculate_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simulations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregate_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregate_method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">statistics_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.calculate_stats" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate evaluation metric statistics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>observations</strong> (<em>DataFrame</em>) – Pandas DataFrame that includes site ID, x and y CONUS grid mapping values, and columns
+for each time point to use for evaluation comparison. This DataFrame should already
+be aggregated to the <cite>aggregate_level</cite> defined.</p></li>
+<li><p><strong>simulations</strong> (<em>ndarray</em>) – Array of size (t, y, x), where y and x are the same size as CONUS1 or CONUS2 grid,
+depending on which x, y values are included in the observations DataFrame. The t dimension
+should match the number of time values included in the ‘daily’ observations DataFrame series.
+This array should not be aggregated to the <cite>aggregate_level</cite> defined. That process happens
+within this function. The spatial extent should be the same size as specified by the
+<cite>grid_bounds</cite> parameter if it is not the size of the full CONUS1 or CONUS2 grid.</p></li>
+<li><p><strong>metrics</strong> (<em>list</em>) – List of string names of metrics to use for evaluation. Must be present in METRICS_DICT
+dictionary in the model_evaluation.py module.</p></li>
+<li><p><strong>aggregate_level</strong> (<em>str</em>) – Level at which to aggregate time series. Options include ‘day’, ‘week’, ‘month’, etc.</p></li>
+<li><p><strong>aggregate_method</strong> (<em>str</em>) – Type of aggregation to conduct. Options include ‘mean’, ‘min’, ‘max’, etc.</p></li>
+<li><p><strong>date_start</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating end of time range.</p></li>
+<li><p><strong>statistics_df</strong> (<em>DataFrame</em>) – DataFrame containing site ID, x and y CONUS grid mapping values, along with empty columns
+for each of the evaluation metrics defined in metrics.</p></li>
+<li><p><strong>debug</strong> (<em>bool; default=False</em>) – Whether to show debugging print statements.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pandas DataFrame including calculated evaluation metrics for each site.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.collect_simulations">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">collect_simulations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.collect_simulations" title="Permalink to this definition"></a></dt>
+<dd><p>Collect and pre-process simulations data according to file format provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>config_dict</strong> (<em>dict</em>) – Dictionary from YAML configuration file with the simulations information for a given observation
+type.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>NumPy array to use as input for evaluation comparison.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.create_dataframe_from_dates">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">create_dataframe_from_dates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.create_dataframe_from_dates" title="Permalink to this definition"></a></dt>
+<dd><p>Given a 1D NumPy array, create a DataFrame with columns spanning the given date range.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>1D array</em>) – 1-dimensional array containing the simulation results for a single x, y geo-location.</p></li>
+<li><p><strong>date_start</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating end of time range.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame with the columns as dates and values as data from input array.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.filter_to_mapped_sites">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">filter_to_mapped_sites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.filter_to_mapped_sites" title="Permalink to this definition"></a></dt>
+<dd><p>Filter site mapping data for only non-NaN values in mapping.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>DataFrame</em>) – Pandas DataFrame consisting of site ID, x, and y values representing the CONUS
+x and y coordinate mapping for each site.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pandas DataFrame consisting of site ID, x, and y values representing the CONUS
+x and y coordinate mapping for each site. Only sites with valid CONUS mapping
+values are included.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.filter_to_sites_in_bounds">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">filter_to_sites_in_bounds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mapped_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid_bounds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.filter_to_sites_in_bounds" title="Permalink to this definition"></a></dt>
+<dd><p>Filter site list and grid-mapping DataFrame to only sites within <cite>grid_bounds</cite>.
+Adjust bound values to be relative to indexing on subset domain.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mapped_df</strong> (<em>DataFrame</em>) – Pandas DataFrame consisting of site ID, x, and y values representing the CONUS
+x and y coordinate mapping for each site.</p></li>
+<li><p><strong>grid_bounds</strong> (<em>list</em>) – List consisting of [xmin, ymin, xmax, ymax] CONUS grid bounds for domain.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>subset_site_list</strong> (<em>list</em>) – List of string site ID values restricted to sites within provided grid_bounds.</p></li>
+<li><p><strong>remapped_df</strong> (<em>DataFrame</em>) – Pandas DataFrame consisting of site ID, x, and y values representing the CONUS
+x and y coordinate mapping for each site. DataFrame is subset to only sites
+within provided <cite>grid_bounds</cite>.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.get_full_site_list">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">get_full_site_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observation_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.get_full_site_list" title="Permalink to this definition"></a></dt>
+<dd><p>Return list of site IDs with daily data available for a particular site type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>observation_type</strong> (<em>str</em>) – Type of observation. Examples include ‘streamflow’, ‘wtd’, ‘swe’.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>site_list</strong> – List of site ID strings for all sites with data available for the specific site type.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.get_network_site_list">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">get_network_site_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observation_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">network_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.get_network_site_list" title="Permalink to this definition"></a></dt>
+<dd><p>Return list of site IDs for desired network of observation sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>observation_type</strong> (<em>str</em>) – Type of observation. Examples include ‘streamflow’, ‘wtd’, ‘swe’.</p></li>
+<li><p><strong>network_names</strong> (<em>list</em>) – List of names of site networks. Can be a list with a single network name.
+Each network must have matching .csv file with a list of site ID values that comprise
+the network. This .csv file must be located in either STREAMFLOW_NETWORK_DIR or
+GROUNDWATER_NETWORK_DIR (as applicable) named as ‘network_name’.csv.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>site_list</strong> – List of site ID strings for sites belonging to named network.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.initialize_output">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">initialize_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sites_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregation_levels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.initialize_output" title="Permalink to this definition"></a></dt>
+<dd><p>Initialize DataFrame table to store output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>site_df</strong> (<em>DataFrame</em>) – Pandas DataFrame consisting of at least site_id, x, and y CONUS grid mapping
+values.</p></li>
+<li><p><strong>metrics</strong> (<em>list</em>) – List of string names of metrics to use for evaluation. Must be present in METRICS_DICT
+dictionary in the model_evaluation.py module.</p></li>
+<li><p><strong>aggregation_levels</strong> (<em>list</em>) – List of aggregation levels to calculate evaluations for each metric in <cite>metrics</cite>. Options
+currently include: ‘day’, ‘week’, ‘month’, ‘calendar year’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame containing site ID, x and y CONUS grid mapping values, along with empty columns
+for each of the evaluation metrics defined in metrics.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.map_observations">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">map_observations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observation_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conus_version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.map_observations" title="Permalink to this definition"></a></dt>
+<dd><p>Get CONUS grid mapping values for sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>observation_type</strong> (<em>str</em>) – Type of observation. Examples include ‘streamflow’, ‘wtd’, ‘swe’.</p></li>
+<li><p><strong>conus_version</strong> (<em>str</em>) – Reference for whether simulations are on CONUS1 or CONUS2 grid. Options include
+‘conus1’ and ‘conus2’.</p></li>
+<li><p><strong>site_list</strong> (<em>list</em>) – List of site ID strings to query conus x, y coordinates for.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pandas DataFrame consisting of site ID, x, and y values representing the CONUS
+x and y coordinate mapping for each site. Only sites with valid CONUS mapping
+values are included.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.prepare_emulator_simulations">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">prepare_emulator_simulations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">emulator_var</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.prepare_emulator_simulations" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare ParFlow emulator output for comparison to observations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<em>str</em>) – Full path to location of ParFlow emulator output file.</p></li>
+<li><p><strong>emulator_var</strong> (<em>str</em>) – Name of variable to slice from ParFlow emulator output file.</p></li>
+<li><p><strong>trace</strong> (<em>int; default=1</em>) – Value of trace to slice from ParFlow emulator output file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>a</strong> (<em>NumPy array</em>) – Array containing the extracted simulations data.</p></li>
+<li><p><strong>date_start</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating end of time range.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.prepare_netcdf_simulations">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">prepare_netcdf_simulations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filepath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.prepare_netcdf_simulations" title="Permalink to this definition"></a></dt>
+<dd><p>Prepare output in NetCDF file for comparison to observations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filepath</strong> (<em>str</em>) – Full path to location of ParFlow emulator output file.</p></li>
+<li><p><strong>var</strong> (<em>str</em>) – Name of variable to slice from NetCDF file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>a</strong> (<em>NumPy array</em>) – Array containing the extracted simulations data.</p></li>
+<li><p><strong>date_start</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating end of time range.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.prepare_simulations_time_series">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">prepare_simulations_time_series</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">simulations</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregate_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregate_method</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.prepare_simulations_time_series" title="Permalink to this definition"></a></dt>
+<dd><p>Pre-process simulations data to be in comparable format to aggregated observations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>simulations</strong> (<em>ndarray</em>) – Array of size (t, y, x), where y and x are the same size as CONUS1 or CONUS2 grid,
+depending on which x, y values are included in the observations DataFrame. The t dimension
+should match the number of time values included in the ‘daily’ observations DataFrame series.
+This array should not be aggregated to the <cite>aggregate_level</cite> defined. That process happens
+within this function.
+The spatial extent should be the same size as specified by the <cite>grid_bounds</cite> parameter
+if it is not the size of the full CONUS1 or CONUS2 grid.</p></li>
+<li><p><strong>x</strong> (<em>int</em>) – x coordinate to index simulation array. The origin (0,0) is from the lower left of the grid.
+The value represents the count of conus grid cells away from the origin.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – y coordinate to index simulation array. The origin (0,0) is from the lower left of the grid.
+The value represents the count of conus grid cells away from the origin.</p></li>
+<li><p><strong>date_start</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str</em>) – ‘YYYY-MM-DD’ date indicating end of time range.</p></li>
+<li><p><strong>aggregate_level</strong> (<em>str</em>) – Level at which to aggregate time series. Options include ‘day’, ‘week’, ‘month’, etc.</p></li>
+<li><p><strong>aggregate_method</strong> (<em>str</em>) – Type of aggregation to conduct. Options include ‘mean’, ‘min’, ‘max’, etc.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>1-dimensional array containing the aggregated simulation results for the given x, y geo-location.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1d array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.model_evaluation.utils.query_attributes_conus_xy">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.model_evaluation.utils.</span></span><span class="sig-name descname"><span class="pre">query_attributes_conus_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observation_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conus_version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.model_evaluation.utils.query_attributes_conus_xy" title="Permalink to this definition"></a></dt>
+<dd><p>Query site attributes database table for conus grid values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>observation_type</strong> (<em>str</em>) – Type of observation. Examples include ‘streamflow’, ‘wtd’, ‘swe’.</p></li>
+<li><p><strong>conus_version</strong> (<em>str</em>) – Reference for whether simulations are on CONUS1 or CONUS2 grid. Options include
+‘conus1’ and ‘conus2’.</p></li>
+<li><p><strong>site_list</strong> (<em>list</em>) – List of site ID strings to query conus x, y coordinates for.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pandas DataFrame consisting of site ID, x, and y values representing the CONUS
+x and y coordinate mapping for each site.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hydrodata.model_evaluation.model_evaluation.html" class="btn btn-neutral float-left" title="hydrodata.model_evaluation.model_evaluation module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hydrodata.point_observations.html" class="btn btn-neutral float-right" title="hydrodata.point_observations package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Princeton University, University of Arizona, National Science Foundation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

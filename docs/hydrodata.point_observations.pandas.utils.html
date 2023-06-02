@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hydrodata.point_observations.pandas.utils module &mdash; HYDRODATA 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="hydrodata.point_observations.utilities module" href="hydrodata.point_observations.utilities.html" />
+    <link rel="prev" title="hydrodata.point_observations.pandas.collect_observations module" href="hydrodata.point_observations.pandas.collect_observations.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HYDRODATA
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_catalog_tables.html">Data Catalog Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="erd_diagram.html">Entity Relationship Diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets/dataset.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api_reference.html">Python API Refererence</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HYDRODATA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="api_reference.html">Python API Refererence</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.html">hydrodata package</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.point_observations.html">hydrodata.point_observations package</a></li>
+          <li class="breadcrumb-item"><a href="hydrodata.point_observations.pandas.html">hydrodata.point_observations.pandas package</a></li>
+      <li class="breadcrumb-item active">hydrodata.point_observations.pandas.utils module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/hydrodata.point_observations.pandas.utils.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-hydrodata.point_observations.pandas.utils">
+<span id="hydrodata-point-observations-pandas-utils-module"></span><h1>hydrodata.point_observations.pandas.utils module<a class="headerlink" href="#module-hydrodata.point_observations.pandas.utils" title="Permalink to this heading"></a></h1>
+<p>Point observations utility functions.</p>
+<p>Note that these functions are not intended to be used stand-alone; they act as sub-processes
+within the collect_observations.get_pandas_observations method.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.check_inputs">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">check_inputs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temporal_resolution</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_metadata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_attributes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.check_inputs" title="Permalink to this definition"></a></dt>
+<dd><p>Checks on inputs to get_observations function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_source</strong> (<em>str</em>) – Source from which requested data originated. Currently supported: ‘usgs_nwis’, ‘usda_nrcs’,
+‘ameriflux’.</p></li>
+<li><p><strong>variable</strong> (<em>str</em>) – Description of type of data requested. Currently supported: ‘streamflow’, ‘wtd’, ‘swe’,
+‘precipitation’, ‘temperature’, ‘soil moisture’, ‘latent heat flux’, ‘sensible heat flux’,
+‘shortwave radiation’, ‘longwave radiation’, ‘vapor pressure deficit’, ‘wind speed’.</p></li>
+<li><p><strong>temporal_resolution</strong> (<em>str</em>) – Collection frequency of data requested. Currently supported: ‘daily’, ‘hourly’, and ‘instantaneous’.</p></li>
+<li><p><strong>aggregation</strong> (<em>str</em>) – Additional information specifying the aggregation method for the variable to be returned.
+Options include descriptors such as ‘average’ and ‘total’. Please see the README documentation
+for allowable combinations with <cite>variable</cite>.</p></li>
+<li><p><strong>depth_level</strong> (<em>int</em>) – Depth level in inches at which the measurement is taken. Necessary for <cite>variable</cite> = ‘soil moisture’.</p></li>
+<li><p><strong>return_metadata</strong> (<em>bool</em>) – Whether the metadata DataFrame is also returned.</p></li>
+<li><p><strong>all_attributes</strong> (<em>bool</em>) – If the metadata DataFrame is returned, and indication of whether the full set of site attributes
+is included or only a subset.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.convert_to_pandas">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">convert_to_pandas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.convert_to_pandas" title="Permalink to this definition"></a></dt>
+<dd><p>Convert xarray DataSet to pandas DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ds</strong> (<em>DataSet</em>) – xarray DataSet containing stacked observations data for a
+single variable.</p></li>
+<li><p><strong>var_id</strong> (<em>int</em>) – Integer variable ID associated with combination of <cite>variable</cite>, <cite>temporal_resolution</cite>,
+and <cite>aggregation</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Stacked observations data for a single variable.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.filter_min_num_obs">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">filter_min_num_obs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_num_obs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.filter_min_num_obs" title="Permalink to this definition"></a></dt>
+<dd><p>Filter to only sites which have a minimum number of observations.</p>
+<p>This filtering is done after the observations are subset by time, so these
+observation counts will only filter out sites if the number of observations <em>within
+that time range</em> is not satisfied.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>DataFrame</em>) – Stacked observations data for a single variable.</p></li>
+<li><p><strong>min_num_obs</strong> (<em>int</em>) – Value for the minimum number of observations desired for a site to have.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Stacked observations data for a single variable, filtered to only sites that
+have the minimum number of observations specified.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.get_data_nc">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">get_data_nc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">site_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_num_obs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.get_data_nc" title="Permalink to this definition"></a></dt>
+<dd><p>Get observations data for data that is stored in NetCDF files.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>site_list</strong> (<em>list</em>) – List of site IDs to query observations data for.</p></li>
+<li><p><strong>var_id</strong> (<em>int</em>) – Integer variable ID associated with combination of <cite>data_source</cite>,
+<cite>variable</cite>, <cite>temporal_resolution</cite>, and <cite>aggregation</cite>.</p></li>
+<li><p><strong>date_start</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ format date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ format date indicating end of time range.</p></li>
+<li><p><strong>min_num_obs</strong> (<em>int</em>) – Value for the minimum number of observations desired for a site to have.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Stacked observations data for a single variable, filtered to only sites that
+have the minimum number of observations specified.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.get_data_sql">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">get_data_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_num_obs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.get_data_sql" title="Permalink to this definition"></a></dt>
+<dd><p>Get observations data for data that is stored in a SQL table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conn</strong> (<em>Connection object</em>) – The Connection object associated with the SQLite database to
+query from.</p></li>
+<li><p><strong>var_id</strong> (<em>int</em>) – Integer variable ID associated with combination of <cite>data_source</cite>,
+<cite>variable</cite>, <cite>temporal_resolution</cite>, and <cite>aggregation</cite>.</p></li>
+<li><p><strong>date_start</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ format date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ format date indicating end of time range.</p></li>
+<li><p><strong>min_num_obs</strong> (<em>int</em>) – Value for the minimum number of observations desired for a site to have.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Stacked observations data for a single variable, filtered to only sites that
+have the minimum number of observations specified.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.get_dirpath">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">get_dirpath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.get_dirpath" title="Permalink to this definition"></a></dt>
+<dd><p>Map variable with location of data on /hydrodata.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>var_id</strong> (<em>int</em>) – Integer variable ID associated with combination of <cite>data_source</cite>,
+<cite>variable</cite>, <cite>temporal_resolution</cite>, and <cite>aggregation</cite>.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>dirpath</strong> – Directory path for observation data location.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.get_observations_metadata">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">get_observations_metadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_end</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">latitude_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">longitude_range</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">all_attributes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.get_observations_metadata" title="Permalink to this definition"></a></dt>
+<dd><p>Build DataFrame with site attribute metadata information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conn</strong> (<em>Connection object</em>) – The Connection object associated with the SQLite database to
+query from.</p></li>
+<li><p><strong>var_id</strong> (<em>int</em>) – Integer variable ID associated with combination of <cite>data_source</cite>, <cite>variable</cite>, <cite>temporal_resolution</cite>,
+and <cite>aggregation</cite>.</p></li>
+<li><p><strong>date_start</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ format date indicating beginning of time range.</p></li>
+<li><p><strong>date_end</strong> (<em>str; default=None</em>) – ‘YYYY-MM-DD’ format date indicating end of time range.</p></li>
+<li><p><strong>latitude_range</strong> (<em>tuple; default=None</em>) – Latitude range bounds for the geographic domain; lesser value is provided first.</p></li>
+<li><p><strong>longitude_range</strong> (<em>tuple; default=None</em>) – Longitude range bounds for the geographic domain; lesser value is provided first.</p></li>
+<li><p><strong>site_ids</strong> (<em>list; default=None</em>) – List of desired (string) site identifiers.</p></li>
+<li><p><strong>state</strong> (<em>str; default=None</em>) – Two-letter postal code state abbreviation.</p></li>
+<li><p><strong>all_attributes</strong> (<em>bool; default=False</em>) – Whether to include all available attributes on returned DataFrame.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Site-level DataFrame of attribute metadata information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The returned field ‘record_count’ is OVERALL record count. Filtering of metadata
+only applies at the site level, so only sites within the provided bounds
+(space and time) are included. The record count does not reflect any filtering
+at the data/observation level.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.point_observations.pandas.utils.get_var_id">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.point_observations.pandas.utils.</span></span><span class="sig-name descname"><span class="pre">get_var_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temporal_resolution</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aggregation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.point_observations.pandas.utils.get_var_id" title="Permalink to this definition"></a></dt>
+<dd><p>Return mapped var_id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conn</strong> (<em>Connection object</em>) – The Connection object associated with the SQLite database to
+query from.</p></li>
+<li><p><strong>data_source</strong> (<em>str</em>) – Source from which requested data originated. Currently supported: ‘usgs_nwis’, ‘usda_nrcs’,
+‘ameriflux’.</p></li>
+<li><p><strong>variable</strong> (<em>str</em>) – Description of type of data requested. Currently supported: ‘streamflow’, ‘wtd’, ‘swe’,
+‘precipitation’, ‘temperature’, ‘soil moisture’, ‘latent heat flux’, ‘sensible heat flux’,
+‘shortwave radiation’, ‘longwave radiation’, ‘vapor pressure deficit’, ‘wind speed’.</p></li>
+<li><p><strong>temporal_resolution</strong> (<em>str</em>) – Collection frequency of data requested. Currently supported: ‘daily’, ‘hourly’, and ‘instantaneous’.</p></li>
+<li><p><strong>aggregation</strong> (<em>str</em>) – Additional information specifying the aggregation method for the variable to be returned.
+Options include descriptors such as ‘average’ and ‘total’. Please see the README documentation
+for allowable combinations with <cite>variable</cite>.</p></li>
+<li><p><strong>depth_level</strong> (<em>int</em>) – Depth level in inches at which the measurement is taken. Necessary for variable=’soil moisture’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>var_id</strong> – Integer variable ID associated with combination of <cite>data_source</cite>, <cite>variable</cite>, <cite>temporal_resolution</cite>,
+and <cite>aggregation</cite>.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hydrodata.point_observations.pandas.collect_observations.html" class="btn btn-neutral float-left" title="hydrodata.point_observations.pandas.collect_observations module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hydrodata.point_observations.utilities.html" class="btn btn-neutral float-right" title="hydrodata.point_observations.utilities module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Princeton University, University of Arizona, National Science Foundation.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

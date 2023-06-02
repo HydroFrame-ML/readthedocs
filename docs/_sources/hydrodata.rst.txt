@@ -8,6 +8,8 @@ Subpackages
    :maxdepth: 4
 
    hydrodata.data_catalog
+   hydrodata.model_evaluation
+   hydrodata.point_observations
 
 Module contents
 ---------------

@@ -1,0 +1,20 @@
+hydrodata.model\_evaluation package
+===================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hydrodata.model_evaluation.evaluation_metrics
+   hydrodata.model_evaluation.model_evaluation
+   hydrodata.model_evaluation.utils
+
+Module contents
+---------------
+
+.. automodule:: hydrodata.model_evaluation
+   :members:
+   :undoc-members:
+   :show-inheritance:

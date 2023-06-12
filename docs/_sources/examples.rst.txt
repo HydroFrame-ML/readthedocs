@@ -26,6 +26,20 @@ Example to get the paths and metadata about parflow water table depth baseline::
 	assert entry["units"] == "m"
 	assert entry["file_type"] == "pfb"
 
+Example to get an numpy ndarray of data of a data catalog entry::
+
+    options = {
+        "variable": "water_table_depth",
+        "dataset": "conus1_baseline_mod",
+        "period": "daily",
+        "file_type": "pfb"
+    }
+    # Get an data catalog entry and the data for that entry as a numpy array
+    entry = hydrodata.data_catalog.data_access.get_catalog_entry(options)
+    data = hydrodata.data_catalog.data_access.get_ndarray(entry, start_time="2005-09-29", end_time="2005-10-03")
+
+    assert list(data.shape) == [5, 1888, 3342]
+
 Example subsetting of PFB forcing file using the data catalog::
 
 import hydrodata.data_catalog.data_access

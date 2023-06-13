@@ -2585,7 +2585,7 @@ data_catalog_entry
      - conus1_baseline_85
      - parflow
      - gridded
-     - vegp
+     - vegm
      - clm_run
      - run_file
      - clm_run
@@ -2610,7 +2610,7 @@ data_catalog_entry
      - conus1_baseline_85
      - parflow
      - gridded
-     - vegm
+     - vegp
      - clm_run
      - run_file
      - clm_run
@@ -2735,7 +2735,7 @@ data_catalog_entry
      - conus1_baseline_mod
      - parflow
      - gridded
-     - vegp
+     - vegm
      - clm_run
      - run_file
      - clm_run
@@ -2760,7 +2760,7 @@ data_catalog_entry
      - conus1_baseline_mod
      - parflow
      - gridded
-     - vegm
+     - vegp
      - clm_run
      - run_file
      - clm_run
@@ -2939,6 +2939,31 @@ data_catalog_entry
      - east_windspeed
      - atmospheric
      - UGRD
+     - 
+     - 
+     - hourly
+     - m/s
+     - rate
+     - -
+     - conus1
+     - 2
+     - /hydrodata/PFCLM/CONUS1_baseline/simulations/{wy}/WY{wy}/NLDAS.{dataset_var}.{wy_start_24hr:06d}_to_{wy_end_24hr:06d}.pfb
+     - 
+     - National Land Data Assimilation Product V2 
+     - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
+     - 
+     - 10/1/2002
+     - 9/30/2006
+     - UTC−0:00
+     - 
+   * - 118
+     - NLDAS2
+     - forcing
+     - gridded
+     - pfb
+     - north_windspeed
+     - atmospheric
+     - VGRD
      - 
      - 
      - hourly

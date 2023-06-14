@@ -133,13 +133,10 @@ The value of the filter option argument must be a value of that column in the ta
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A single of ModelTableRow entries that matches the filter options.</p>
+<dd class="field-even"><p>A single of ModelTableRow entries that matches the filter options or None if no entry matches the filter options.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>ValueError      If the filter options do not uniquely select a single data_catalog_entry.</strong> – </p></li>
-<li><p><strong>ValueError      If the filter options do not select any data_catalog_entry.</strong> – </p></li>
-</ul>
+<dd class="field-odd"><p><strong>ValueError      If the filter options do not uniquely select a single data_catalog_entry.</strong> – </p>
 </dd>
 </dl>
 <p>This method is the same as get_catalog_entries() except returns a single row rather than a list of rows.</p>

@@ -1113,7 +1113,7 @@ data_catalog_entry
      - C.pfb
      - ground_evap_heat
      - land_surface
-     - qflx_evap_soi
+     - qflx_evap_soil
      - 
      - 
      - hourly
@@ -1161,7 +1161,7 @@ data_catalog_entry
      - parflow
      - gridded
      - C.pfb
-     - transpiration 
+     - transpiration
      - land_surface
      - qflx_tran_veg
      - 
@@ -1288,7 +1288,7 @@ data_catalog_entry
      - C.pfb
      - soil_temp
      - subsurface
-     - tsoil 
+     - tsoil
      - 
      - 
      - hourly
@@ -1513,7 +1513,7 @@ data_catalog_entry
      - C.pfb
      - ground_evap_heat
      - land_surface
-     - qflx_evap_soi
+     - qflx_evap_soil
      - 
      - 
      - hourly
@@ -1561,7 +1561,7 @@ data_catalog_entry
      - parflow
      - gridded
      - C.pfb
-     - transpiration 
+     - transpiration
      - land_surface
      - qflx_tran_veg
      - 
@@ -1688,7 +1688,7 @@ data_catalog_entry
      - C.pfb
      - soil_temp
      - subsurface
-     - tsoil 
+     - tsoil
      - 
      - 
      - hourly

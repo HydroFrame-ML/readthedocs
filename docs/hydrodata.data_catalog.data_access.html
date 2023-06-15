@@ -170,9 +170,9 @@ after looping through time range and replacing substitution keys.</p>
 <p>If only start_time is specified then only the data at that time is used to substitute into path names.
 If both start_time and end_time is specified then dates in the date range are used to substitute into path names.</p>
 <dl>
-<dt>For example, get 5 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>entry = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>
+<dt>For example, get 3 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>entry = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>
 <p>paths = get_file_paths(entry, start_time=”2021-09-30”, end_time=”2021-10-03”)</p>
-<p>assert len(paths) = 5</p>
+<p>assert len(paths) = 3</p>
 </dd>
 </dl>
 </dd></dl>
@@ -215,11 +215,11 @@ If both start_time and end_time is specified then dates in the date range are us
 <p>If depth is specified then the result is sliced by the z dimension and the z dimension is not in the result.</p>
 <p>If the z dimension has only 1 value in the data then the z dimension is not returned in the result.</p>
 <dl>
-<dt>For example, to get data from the 5 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>bounds = [200, 200, 300, 250]</p>
+<dt>For example, to get data from the 3 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>bounds = [200, 200, 300, 250]</p>
 <p>entry = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>
 <p>data = get_ndarray(entry, start_time=”2021-09-30”, end_time=”2021-10-03”, grid_bounds = bounds)</p>
-<p># The result has 5 days in the time dimension and sliced to x,y shape 100x50 at origin 200, 200 in the conus1 grid.</p>
-<p>assert data.shape == [5, 100, 50]</p>
+<p># The result has 3 days in the time dimension and sliced to x,y shape 100x50 at origin 200, 200 in the conus1 grid.</p>
+<p>assert data.shape == [3, 100, 50]</p>
 </dd>
 </dl>
 </dd></dl>

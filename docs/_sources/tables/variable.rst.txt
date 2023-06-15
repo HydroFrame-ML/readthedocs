@@ -186,7 +186,7 @@ variable
      - Topographic Index
      - 
      - topography
-   * - transpiration 
+   * - transpiration
      - Transpiration rate
      - transpiration rate
      - land_surface

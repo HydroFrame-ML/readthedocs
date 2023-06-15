@@ -17,9 +17,9 @@ Example to get the paths and metadata about parflow water table depth baseline::
 	entry = hydrodata.data_catalog.data_access.get_catalog_entry(options)
 	paths = hydrodata.data_catalog.data_access.get_file_paths(entry, start_time="2005-09-29", end_time="2005-10-03")
 
-	# 5 files between 9/29/2005-10/03/2005  (note - spans water year)
-	assert len(paths) == 5
-	assert paths[4] == "/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY2006/wtd.daily.mean.003.pfb"
+	# 4 files between 9/29/2005-10/03/2005  (note - spans water year)
+	assert len(paths) == 4
+	assert paths[3] == "/hydrodata/PFCLM/CONUS1_baseline/simulations/daily/WY2006/wtd.daily.mean.002.pfb"
 
 	assert entry["structure_type"] == "gridded"
 	assert entry["dataset_var"] == "wtd"
@@ -38,7 +38,7 @@ Example to get an numpy ndarray of data of a data catalog entry::
     entry = hydrodata.data_catalog.data_access.get_catalog_entry(options)
     data = hydrodata.data_catalog.data_access.get_ndarray(entry, start_time="2005-09-29", end_time="2005-10-03")
 
-    assert list(data.shape) == [5, 1888, 3342]
+    assert list(data.shape) == [4, 1888, 3342]
 
 Example subsetting of PFB forcing file using the data catalog::
 
@@ -66,8 +66,8 @@ from parflow import read_pfb_sequence
 	}
 	data = read_pfb_sequence(paths, boundary_constraints)
 
-	assert data.shape[0] == 120      # 5 days x 24 hours
-	assert data.shape[1] == 5        # 5 layers deep
+	assert data.shape[0] == 96       # 4 days x 24 hours
+	assert data.shape[1] == 4        # 4 layers deep
 	assert data.shape[2] == 19       # 19 y points
 	assert data.shape[3] == 48       # 48 x points
 

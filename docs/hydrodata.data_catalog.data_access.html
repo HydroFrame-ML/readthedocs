@@ -88,6 +88,7 @@
 <p>get_ndarray()</p>
 <p>get_table_names()</p>
 <p>get_table_rows()</p>
+<p>get_table_row()</p>
 <p>get_yaml_data_catalog()</p>
 <p>grid_to_latlng()</p>
 <p>latlng_to_grid()</p>
@@ -231,6 +232,32 @@ If both start_time and end_time is specified then dates in the date range are us
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_table_row">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_table_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="hydrodata.data_catalog.data_model_access.html#hydrodata.data_catalog.data_model_access.ModelTableRow" title="hydrodata.data_catalog.data_model_access.ModelTableRow"><span class="pre">ModelTableRow</span></a></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_table_row" title="Permalink to this definition"></a></dt>
+<dd><p>Get one row of a data model table filtered by columns from that table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_name</strong> – The name of a table in the data model.</p></li>
+<li><p><strong>args</strong> – Optional positional parameter that must be a dict with filter options.</p></li>
+<li><p><strong>kwargs</strong> – Supports multiple named parameters with filter option values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A single of ModelTableRow entries of the specified table_name that match the filter options or None if now row is found.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError if the filter options are ambiguous and this matches more than one row.</strong> – </p>
+</dd>
+</dl>
+<dl>
+<dt>For example,</dt><dd><p>row = get_table_rows(“variable”, variable_type=”atmospheric”)</p>
+<p>assert row[“variable”] == “air_temp”</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_table_rows">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_table_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="hydrodata.data_catalog.data_model_access.html#hydrodata.data_catalog.data_model_access.ModelTableRow" title="hydrodata.data_catalog.data_model_access.ModelTableRow"><span class="pre">ModelTableRow</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_table_rows" title="Permalink to this definition"></a></dt>
 <dd><p>Get rows of a data model table filtered by columns from that table.</p>
@@ -313,6 +340,12 @@ by non-python clients such as javascript that want access to the data model info
 <p>latlng_bounds = grid_to_latlng(“conus1”, <a href="#id3"><span class="problematic" id="id4">*</span></a>[31.651836, -115.982367, 31.759219, -115.902573])</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.match_filename_wild_card">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">match_filename_wild_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.match_filename_wild_card" title="Permalink to this definition"></a></dt>
+<dd><p>The data_path ends with a * wild card. Use this to find a file matching that file prefix.</p>
 </dd></dl>
 
 </section>

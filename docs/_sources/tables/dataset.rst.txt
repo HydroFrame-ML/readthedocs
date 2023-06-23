@@ -18,7 +18,7 @@ dataset
      - documentation_link
    * - conus1_baseline_85
      - parflow
-     - WY 1985 Baseline CONUS1 simulation 
+     - WY 1985 Baseline CONUS1 simulation
      - 10.1126/science.aaf7891; 10.5194/hess-21-1117-2017
      - 
      - 10/1/84 0:00
@@ -39,16 +39,6 @@ dataset
    * - conus1_domain
      - parameters
      - Inputs for baseline CONUS1 ParFlow Simulations
-     - 10.5194/gmd-8-1-2015
-     - 
-     - 
-     - 
-     - gridded
-     - 
-     - 
-   * - conus1_baseline_ss
-     - parflow
-     - CONUS1 steady state
      - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916
      - 
      - 
@@ -58,7 +48,7 @@ dataset
      - 
    * - NLDAS2
      - forcing
-     - National Land Data Assimilation Product V2 
+     - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
      - 10/1/2002
@@ -75,4 +65,14 @@ dataset
      - 9/30/1985
      - gridded
      - UTC−06:00
+     - 
+   * - NLDAS3
+     - forcing
+     - 
+     - 
+     - 
+     - 10/1/1979
+     - 9/30/2022
+     - gridded
+     - 
      - 

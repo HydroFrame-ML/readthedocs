@@ -126,6 +126,10 @@ variable
      - Pressure Head 
      - 
      - subsurface
+   * - ss_pressure_head
+     - Steady State Pressure Head
+     - Presssure head at the end of spinup
+     - subsurface
    * - pressure_next
      - Pressure Head at the following timestep
      - 

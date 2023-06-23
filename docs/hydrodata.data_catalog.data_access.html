@@ -212,6 +212,7 @@ If both start_time and end_time is specified then dates in the date range are us
 </dl>
 <p>If only start_time is specified then only the data at that time is returned and time is not returned as a dimension.</p>
 <p>If both start_time and end_time is specified then data in the date range is returned with a time dimension in the ndarray.</p>
+<p>Both start_time and end_time may optionally contain time strings in the form YYYY-MM-DD HH:MM:SS.</p>
 <p>If either grid_bounds or latlng_bounds is specified then the result is sliced by the x,y values in the bounds.</p>
 <p>If depth is specified then the result is sliced by the z dimension and the z dimension is not in the result.</p>
 <p>If the z dimension has only 1 value in the data then the z dimension is not returned in the result.</p>

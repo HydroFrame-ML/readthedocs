@@ -1261,7 +1261,7 @@ data_catalog_entry
      - parflow
      - gridded
      - C.pfb
-     - irrigation 
+     - irrigation
      - surface_water
      - qflx_qirr
      - 
@@ -1661,7 +1661,7 @@ data_catalog_entry
      - parflow
      - gridded
      - C.pfb
-     - irrigation 
+     - irrigation
      - surface_water
      - qflx_qirr
      - 

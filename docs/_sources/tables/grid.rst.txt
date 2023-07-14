@@ -2,7 +2,7 @@ grid
 ######################
 
 .. list-table:: grid
-   :widths: 30 30 30 30 30 30 30
+   :widths: 30 30 30 30 30 30 30 30
    :header-rows: 1
    :class: scrolltable
 
@@ -13,6 +13,7 @@ grid
      - resolution_meters
      - crs
      - origin
+     - path
    * - conus1
      - conus 1
      - [3342, 1888]
@@ -20,6 +21,7 @@ grid
      - 1000
      - ESRI:102104
      - [-1885055.4995, -604957.0654]
+     - /hydrodata/national_mapping/CONUS1
    * - conus2
      - conus 2
      - [4442, 3256]
@@ -27,6 +29,7 @@ grid
      - 1000
      - ESRI:102104
      - [-2208000.30881173, -1668999.65483222]
+     - /hydrodata/national_mapping/CONUS2
    * - smapgrid
      - SMAP Grid
      - [646, 335]
@@ -34,3 +37,4 @@ grid
      - 
      - ESRI:102104
      - 
+     - None

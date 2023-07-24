@@ -17,6 +17,7 @@ Submodules
 
    hydrodata.data_catalog.data_access
    hydrodata.data_catalog.data_model_access
+   hydrodata.data_catalog.projection
 
 Module contents
 ---------------

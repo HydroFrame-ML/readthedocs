@@ -4856,3 +4856,53 @@ data_catalog_entry
      - 9/30/1985
      - UTC−06:00
      - 
+   * - 198
+     - huc_mapping
+     - parameters
+     - 
+     - tiff
+     - huc_map
+     - 
+     - band_data
+     - 
+     - 
+     - 
+     - 
+     - None
+     - 
+     - conus1
+     - 2
+     - /hydrodata/national_mapping/CONUS1/HUC{level}_CONUS1_grid.tif
+     - 
+     - Mapping Grid to HUC
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+   * - 199
+     - huc_mapping
+     - parameters
+     - 
+     - tiff
+     - huc_map
+     - 
+     - band_data
+     - 
+     - 
+     - 
+     - 
+     - None
+     - 
+     - conus2
+     - 2
+     - /hydrodata/national_mapping/CONUS2/CONUS2.0.Final1km.Subbasin_HUC{level}.remapped.tif
+     - 
+     - Mapping Grid to HUC
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 

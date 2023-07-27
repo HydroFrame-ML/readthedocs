@@ -58,3 +58,7 @@ file_type
      - Zarr file format
      - 
      - 
+   * - tiff
+     - TIFF file
+     - 
+     - 

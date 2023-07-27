@@ -266,3 +266,8 @@ variable
      - 
      - subsurface
      - length
+   * - huc_map
+     - topography
+     - HUC map
+     - 
+     - 

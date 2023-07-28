@@ -137,7 +137,7 @@ variable
      - hydrogeology
      - None
    * - pme
-     - Precicipitaiton minus evaporation (net recharge)
+     - Precipitation minus evaporation (net recharge)
      - Recharge forcing used for ParFlow spinups
      - climate
      - rate
@@ -150,7 +150,7 @@ variable
      - Precipitation
      - 
      - atmospheric
-     - rate
+     - length
    * - pressure_head
      - Pressure Head 
      - 
@@ -215,7 +215,7 @@ variable
      - Streamflow
      - 
      - land_surface
-     - rate
+     - volume_flux
    * - subbasins
      - Watershed subbains IDs
      - Subbasins calculated from topographic processing

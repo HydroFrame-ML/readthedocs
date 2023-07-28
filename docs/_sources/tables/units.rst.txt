@@ -51,6 +51,9 @@ units
    * - m3/h
      - cubic meters per hour
      - volume_flux
+   * - m3/s
+     - cubic meters per second
+     - volume_flux
    * - mm
      - milimeters
      - length
@@ -71,6 +74,9 @@ units
      - rate
    * - w/m2
      - Watts per square meter
+     - intensity
+   * - kw/m2
+     - K Watts per square meter
      - intensity
    * - degrees_north
      - Degrees North

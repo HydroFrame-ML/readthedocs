@@ -257,6 +257,8 @@ date string of the date dimentions of the ndarray that is returned.</p>
 <li><p>grid_bounds:    An array of points [left, bottom, right, top] in xy grid corridates in the grid of the data.</p></li>
 <li><p>latlng_bounds:  An array of points [left, bottom, right, top] in lat/lng coordinates mapped with the grid of the data.</p></li>
 <li><p>depth:          A number 0-n of the depth index of the data to return.</p></li>
+<li><p>z:              A value of the z dimension to be used as a filter to remove this dismension.</p></li>
+<li><p>level:          A HUC level integer when reading HUC boundary files.</p></li>
 </ul>
 </dd>
 <dt>For gridded results the returned numpy array has dimensions:</dt><dd><p>[time, z, y, x]</p>

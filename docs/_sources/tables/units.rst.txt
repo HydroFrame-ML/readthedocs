@@ -10,7 +10,7 @@ units
      - title
      - unit_type
    * - c
-     - degrees celcius
+     - Celcius
      - temperature
    * - cm
      - centimeters
@@ -18,8 +18,8 @@ units
    * - cm3/cm3
      - cm3/cm3
      - 
-   * - f 
-     - degrees farenheit
+   * - f
+     - Farenheit
      - temperature
    * - ft
      - feet
@@ -28,7 +28,7 @@ units
      - inches
      - length
    * - K
-     - degrees Kelvin
+     - Kelvin
      - temperature
    * - kg/kg
      - kg/kg

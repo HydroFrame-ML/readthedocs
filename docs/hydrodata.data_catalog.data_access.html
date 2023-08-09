@@ -251,7 +251,7 @@ date string of the date dimentions of the ndarray that is returned.</p>
 <dd class="field-odd"><p><strong>ValueError if both grid_bounds and latlng_bounds are specified as data filters.</strong> – </p>
 </dd>
 </dl>
-<dl>
+<dl class="simple">
 <dt>A data filter option must be one of the following:</dt><dd><ul class="simple">
 <li><p>start_time:     A time as either a datetime object or a string in the form YYYY-MM-DD. Start of the date range for data.</p></li>
 <li><p>end_time:       A time as either a datetime object or a string in the form YYYY-MM-DD. End of the date range for data.</p></li>
@@ -263,24 +263,22 @@ date string of the date dimentions of the ndarray that is returned.</p>
 <li><p>level:          A HUC level integer when reading HUC boundary files.</p></li>
 </ul>
 </dd>
-<dt>For gridded results the returned numpy array has dimensions:</dt><dd><dl class="simple">
-<dt>If variable has a z dimension:</dt><dd><p>[day, hour, z, y, x]            period is hourly
-[day, z, y, x]                  period is daily
-[month, z, y, x]                period is monthly
-[z, y, x]                       period is static or blank</p>
-</dd>
-<dt>If variable does not have a z dimension:</dt><dd><p>[day, hour, y, x]               period is hourly
-[day, y, x]                     period is daily
-[month, y, x]                   period is monthly
-[day, y, x]                     period is daily or monthly
-[y, x]                          period is static or blank</p>
+<dt>For gridded results the returned numpy array has dimensions:</dt><dd><ul class="simple">
+<li><p>[day, hour, y, x]               period is hourly without z dimension</p></li>
+<li><p>[day, y, x]                     period is daily without z dimension</p></li>
+<li><p>[month, y, x]                   period is monthly without z dimension</p></li>
+<li><p>[day, y, x]                     period is daily or monthly</p></li>
+<li><p>[y, x]                          period is static or blank without z dimension</p></li>
+<li><p>[day, hour, z, y, x]            period is hourly with z dimension</p></li>
+<li><p>[day, z, y, x]                  period is daily with z dimension</p></li>
+<li><p>[month, z, y, x]                period is monthly with z dimension</p></li>
+<li><p>[z, y, x]                       period is static or blank with z dimension</p></li>
+</ul>
 </dd>
 </dl>
 <p>If the dataset has ensembles then there is an ensemble dimension at the beginning.</p>
-</dd>
-</dl>
-<p>Both start_time and end_time must be in the form “YYYY-MM-DD HH:MM:SS” or “YYYY-MM-DD” or a datetime object.
-If only start_time is specified than only that month/day/hour is returned.
+<p>Both start_time and end_time must be in the form “YYYY-MM-DD HH:MM:SS” or “YYYY-MM-DD” or a datetime object.</p>
+<p>If only start_time is specified than only that month/day/hour is returned.
 The start_time is inclusive the end_time is exclusive (data returned less than that time).</p>
 <p>If either grid_bounds or latlng_bounds is specified then the result is sliced by the x,y values in the bounds.</p>
 <p>If z is specified then the result is sliced by the z dimension.</p>

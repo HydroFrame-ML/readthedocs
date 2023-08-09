@@ -2,7 +2,7 @@ dataset
 ######################
 
 .. list-table:: dataset
-   :widths: 30 30 30 30 30 30 30 30 30 30
+   :widths: 30 30 30 30 30 30 30 30 30 30 30
    :header-rows: 1
    :class: scrolltable
 
@@ -16,6 +16,7 @@ dataset
      - structure_type
      - time_zone
      - documentation_link
+     - has_ensemble
    * - conus1_baseline_85
      - parflow
      - WY 1985 Baseline CONUS1 simulation
@@ -26,6 +27,7 @@ dataset
      - gridded
      - UTC−06:00
      - 
+     - None
    * - conus1_baseline_mod
      - parflow
      - Modern CONUS1 simulations WY 2003-2006
@@ -36,6 +38,7 @@ dataset
      - gridded
      - UTC−0:00
      - 
+     - None
    * - conus1_domain
      - parameters
      - Inputs for baseline CONUS1 ParFlow Simulations
@@ -46,6 +49,18 @@ dataset
      - gridded
      - 
      - 
+     - None
+   * - conus2_domain
+     - parameters
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - gridded
+     - 
+     - 
+     - None
    * - NLDAS2
      - forcing
      - National Land Data Assimilation Product V2
@@ -56,6 +71,7 @@ dataset
      - gridded
      - UTC−0:00
      - 
+     - None
    * - NLDAS2_85
      - forcing
      - National Land Data Assimilation Product V2  - Water Year 1985
@@ -66,6 +82,7 @@ dataset
      - gridded
      - UTC−06:00
      - 
+     - None
    * - NLDAS3
      - forcing
      - 
@@ -76,6 +93,7 @@ dataset
      - gridded
      - 
      - 
+     - None
    * - huc_mapping
      - parameters
      - Mapping Grid to HUC
@@ -86,3 +104,4 @@ dataset
      - 
      - 
      - 
+     - None

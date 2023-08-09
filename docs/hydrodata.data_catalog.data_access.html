@@ -12,6 +12,8 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
@@ -249,7 +251,7 @@ date string of the date dimentions of the ndarray that is returned.</p>
 <dd class="field-odd"><p><strong>ValueError if both grid_bounds and latlng_bounds are specified as data filters.</strong> – </p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>A data filter option must be one of the following:</dt><dd><ul class="simple">
 <li><p>start_time:     A time as either a datetime object or a string in the form YYYY-MM-DD. Start of the date range for data.</p></li>
 <li><p>end_time:       A time as either a datetime object or a string in the form YYYY-MM-DD. End of the date range for data.</p></li>
@@ -261,15 +263,27 @@ date string of the date dimentions of the ndarray that is returned.</p>
 <li><p>level:          A HUC level integer when reading HUC boundary files.</p></li>
 </ul>
 </dd>
-<dt>For gridded results the returned numpy array has dimensions:</dt><dd><p>[time, z, y, x]</p>
+<dt>For gridded results the returned numpy array has dimensions:</dt><dd><dl class="simple">
+<dt>If variable has a z dimension:</dt><dd><p>[day, hour, z, y, x]            period is hourly
+[day, z, y, x]                  period is daily
+[month, z, y, x]                period is monthly
+[z, y, x]                       period is static or blank</p>
+</dd>
+<dt>If variable does not have a z dimension:</dt><dd><p>[day, hour, y, x]               period is hourly
+[day, y, x]                     period is daily
+[month, y, x]                   period is monthly
+[day, y, x]                     period is daily or monthly
+[y, x]                          period is static or blank</p>
 </dd>
 </dl>
-<p>If only start_time is specified then only the data at that time is returned and time is not returned as a dimension.</p>
-<p>If both start_time and end_time is specified then data in the date range is returned with a time dimension in the ndarray.</p>
-<p>Both start_time and end_time may optionally contain time strings in the form YYYY-MM-DD HH:MM:SS.</p>
+<p>If the dataset has ensembles then there is an ensemble dimension at the beginning.</p>
+</dd>
+</dl>
+<p>Both start_time and end_time must be in the form “YYYY-MM-DD HH:MM:SS” or “YYYY-MM-DD” or a datetime object.
+If only start_time is specified than only that month/day/hour is returned.
+The start_time is inclusive the end_time is exclusive (data returned less than that time).</p>
 <p>If either grid_bounds or latlng_bounds is specified then the result is sliced by the x,y values in the bounds.</p>
-<p>If depth is specified then the result is sliced by the z dimension and the z dimension is not in the result.</p>
-<p>If the z dimension has only 1 value in the data then the z dimension is not returned in the result.</p>
+<p>If z is specified then the result is sliced by the z dimension.</p>
 <dl>
 <dt>For example, to get data from the 3 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>bounds = [200, 200, 300, 250]</p>
 <p>entry = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>

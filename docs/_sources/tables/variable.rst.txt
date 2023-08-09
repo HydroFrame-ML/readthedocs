@@ -2,7 +2,7 @@ variable
 ######################
 
 .. list-table:: variable
-   :widths: 30 30 30 30 30
+   :widths: 30 30 30 30 30 30
    :header-rows: 1
    :class: scrolltable
 
@@ -11,263 +11,316 @@ variable
      - description
      - variable_type
      - unit_type
+     - has_z
    * - air_temp
      - Air Temperature
      - 
      - atmospheric
      - temperature
+     - None
    * - aridity_index
      - Aridity Index
      - Aridity Index precipitation/ (precipitaiton -Evaporaiton)
      - climate
+     - None
      - None
    * - atmospheric_pressure
      - Atmospheric Pressure
      - 
      - atmospheric
      - pressure
+     - None
    * - clm_run
      - 
      - 
      - run_file
+     - None
      - None
    * - downward_longwave
      - Downward Longwave Radiation
      - 
      - atmospheric
      - intensity
+     - None
    * - downward_shortwave
      - Downward Shortwave Radiation
      - 
      - atmospheric
      - intensity
+     - None
    * - drainage_area
      - Drainage Area
      - 
      - topography
      - area
+     - None
    * - east_windspeed
      - Zonal windspeed
      - 
      - atmospheric
      - rate
+     - None
    * - elevation
      - Processed elevation 
      - Final processed elevation
      - topography
      - length
+     - None
    * - evapotranspiration
      - Evapotranspiration
      - 
      - land_surface
      - rate
+     - None
    * - flow_direction_grass
      - Grass Flow Direction 
      - D4 Flow directions with Grass numbering (2=up, 4=left, 6=down, 8=right)
      - stream_network
+     - None
      - None
    * - ground_evap
      - Ground evaporation
      - ground surface evaporation rate
      - land_surface
      - rate
+     - None
    * - ground_evap_heat
      - Ground evaporation heat flux
      - evaporation heat flux from ground
      - land_surface
      - rate
+     - None
    * - ground_heat
      - ground heat flux
      - ground heat flux 
      - land_surface
      - intensity
+     - None
    * - ground_temp
      - ground temperature
      - ground temperature
      - subsurface
      - temperature
+     - None
    * - infiltration
      - Infiltration rate
      - infiltration
      - subsurface
      - rate
+     - None
    * - irrigation
      - Irrigation Flux
      - irrigation applied at surface 
      - surface_water
      - rate
+     - None
    * - latent_heat
      - Latent Heat Flux
      -  latent heat flux from canopy height to atmosphere
      - land_surface
      - intensity
+     - None
    * - latitute
      - latitutde
      - 
      - location 
      - lat_lon
+     - None
    * - longitude
      - longitude
      - 
      - location 
      - lat_lon
+     - None
    * - north_windspeed
      - Meridional windspeed
      - 
      - atmospheric
      - rate
+     - None
    * - outward_longwave_radiation
      - Outward Longwave radiation 
      - outgoing long-wave radiation from ground+canopy
      - land_surface
      - intensity
+     - None
    * - parflow_run
      - 
      - 
      - run_file
+     - None
      - None
    * - permeability
      - permeability
      - 
      - hydrogeology
      - rate
+     - true
    * - pf_indicator
      - 
      - 
      - hydrogeology
+     - None
      - None
    * - pme
      - Precipitation minus evaporation (net recharge)
      - Recharge forcing used for ParFlow spinups
      - climate
      - rate
+     - None
    * - porosity
      - Porosity 
      - 
      - hydrogeology
-     - None
+     - unitless
+     - true
    * - precipitation
      - Precipitation
      - 
      - atmospheric
      - length
+     - None
    * - pressure_head
      - Pressure Head 
      - 
      - subsurface
      - length
+     - true
    * - ss_pressure_head
      - Steady State Pressure Head
      - Presssure head at the end of spinup
      - subsurface
      - pressure
+     - true
    * - pressure_next
      - Pressure Head at the following timestep
      - 
      - subsurface
      - pressure
+     - true
    * - saturation
      - Saturation
      - 
      - subsurface
-     - None
+     - unitless
+     - true
    * - sensible_heat
      - Sensible heat flux 
      - sensible heat from canopy height to atmosphere 
      - land_surface
      - intensity
+     - None
    * - slope_x
      - Slope x
      - Slope in the x direciton (Grid centered)
      - topography
+     - None
      - None
    * - slope_y
      - Slope y
      - Slope in the y direction (Grid centered)
      - topography
      - None
+     - None
    * - soil_moisture
      - Soil Moisture
      - 
      - subsurface
-     - None
+     - unitless
+     - true
    * - soil_temp
      - Soil Temperature
      - soil temperature
      - subsurface
      - temperature
+     - true
    * - specific_humidity
      - Specific Humidity
      - 
      - atmospheric
+     - None
      - None
    * - stream_order
      - Kahler stream order
      - Kahler stream order
      - stream_network
      - None
+     - None
    * - stream_segments
      - Stream segment IDs
      - Stream segment ID numbers (0 values outside of stream)
      - stream_network
+     - None
      - None
    * - streamflow
      - Streamflow
      - 
      - land_surface
      - volume_flux
+     - None
    * - subbasins
      - Watershed subbains IDs
      - Subbasins calculated from topographic processing
      - 
+     - None
      - None
    * - swe
      - Snow water equivalent
      - 
      - surface_water
      - length
+     - None
    * - swe_melt
      - Snow melt
      - Difference in SWE over a given time period
      - land_surface
      - length
+     - None
    * - topographic_index
      - Topographic Index
      - 
      - topography
+     - None
      - None
    * - transpiration
      - Transpiration rate
      - transpiration rate
      - land_surface
      - None
+     - None
    * - transpiration_leaves
      - Evapotranspiration from leaves
      - evaporation+transpiration from leaves
      - land_surface
      - None
+     - None
    * - van_genuchten_alpha
      - Van Genuchten Alpha
      - alpha parameter for van Genucten curve
      - hydrogeology
-     - None
+     - unitless
+     - true
    * - van_genuchten_n
      - Van Genuchten n
      - n parameter for van Genuchten curve
      - hydrogeology
-     - None
+     - unitless
+     - true
    * - veg_type_IGBP
      - Vegetation Type
      - Vegetation type using IGBP classifications
      - land_surface
-     - None
+     - unitless
+     - true
    * - water_table_depth
      - Water Table Depth
      - 
      - subsurface
      - length
+     - None
    * - huc_map
      - topography
      - HUC map
      - 
      - 
+     - None

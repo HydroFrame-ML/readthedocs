@@ -5053,7 +5053,7 @@ data_catalog_entry
    * - 198
      - huc_mapping
      - parameters
-     - 
+     - gridded
      - tiff
      - huc_map
      - 
@@ -5079,7 +5079,7 @@ data_catalog_entry
    * - 199
      - huc_mapping
      - parameters
-     - 
+     - gridded
      - tiff
      - huc_map
      - 

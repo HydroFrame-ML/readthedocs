@@ -105,3 +105,36 @@ dataset
      - 
      - 
      - None
+   * - nasa_smap
+     - remote_sensing
+     - NASA Soil Moisture
+     - 
+     - 
+     - 10/1/2022
+     - 
+     - gridded
+     - UTC-00:00
+     - 
+     - None
+   * - conus1_current_conditions
+     - current_conditions
+     - Current Conditions Conus1
+     - 
+     - 
+     - 
+     - 
+     - gridded
+     - UTC−0:00
+     - 
+     - None
+   * - conus2_current_conditions
+     - current_conditions
+     - Current Conditions Conus2
+     - 
+     - 
+     - 
+     - 
+     - gridded
+     - UTC−0:00
+     - 
+     - None

@@ -16,7 +16,7 @@ variable_type
      - Subsurface parameters -- hydraulic conductivity, porosity, etc.
    * - land_surface
      - Vegetation types and any water or energy fluxes at the land surface
-   * - location 
+   * - location
      - Lat, log
    * - run_file
      - Model run files  (not really varibles but they get stored as catalog entries)

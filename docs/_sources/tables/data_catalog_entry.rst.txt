@@ -635,9 +635,9 @@ data_catalog_entry
      - parameters
      - gridded
      - zarr
-     - latitute
-     - location 
-     - latitute
+     - latitude
+     - location
+     - latitude
      - 
      - 
      - static
@@ -662,7 +662,7 @@ data_catalog_entry
      - gridded
      - zarr
      - longitude
-     - location 
+     - location
      - longitude
      - 
      - 
@@ -1779,9 +1779,9 @@ data_catalog_entry
      - parameters
      - gridded
      - pfmetadata
-     - latitute
-     - location 
-     - latitute
+     - latitude
+     - location
+     - latitude
      - 
      - 
      - static
@@ -1806,7 +1806,7 @@ data_catalog_entry
      - gridded
      - pfmetadata
      - longitude
-     - location 
+     - location
      - longitude
      - 
      - 
@@ -2065,9 +2065,9 @@ data_catalog_entry
      - parameters
      - gridded
      - pfb
-     - latitute
-     - location 
-     - latitute
+     - latitude
+     - location
+     - latitude
      - 
      - 
      - static
@@ -2092,7 +2092,7 @@ data_catalog_entry
      - gridded
      - pfb
      - longitude
-     - location 
+     - location
      - longitude
      - 
      - 
@@ -5107,9 +5107,9 @@ data_catalog_entry
      - parameters
      - gridded
      - pfb
-     - latitute
-     - location 
-     - latitute
+     - latitude
+     - location
+     - latitude
      - 
      - 
      - static
@@ -5134,7 +5134,7 @@ data_catalog_entry
      - gridded
      - pfb
      - longitude
-     - location 
+     - location
      - longitude
      - 
      - 
@@ -5152,5 +5152,239 @@ data_catalog_entry
      - 
      - 
      - 
+     - 
+     - None
+   * - 202
+     - nasa_smap
+     - remote_sensing
+     - gridded
+     - pfb
+     - soil_moisture
+     - subsurface
+     - SoilMoisture
+     - 
+     - 
+     - daily
+     - -
+     - unitless
+     - mean
+     - smapgrid
+     - 3
+     - /hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc
+     - None
+     - NASA Soil Moisture
+     - 
+     - 
+     - 10/1/2022
+     - 
+     - UTC-00:00
+     - 
+     - None
+   * - 203
+     - conus1_current_conditions
+     - current_conditions
+     - gridded
+     - pfb
+     - soil_moisture
+     - subsurface
+     - soil_moisture
+     - 2022/05/02
+     - 
+     - daily
+     - cm3/cm3
+     - 
+     - mean
+     - conus1
+     - 3
+     - /hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mdy}.pfb
+     - None
+     - Current Conditions Conus1
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
+     - 
+     - None
+   * - 204
+     - conus1_current_conditions
+     - current_conditions
+     - gridded
+     - pfb
+     - water_table_depth
+     - subsurface
+     - water_table_depth
+     - 2022/05/02
+     - 
+     - daily
+     - m
+     - length
+     - mean
+     - conus1
+     - 3
+     - /hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mdy}.pfb
+     - None
+     - Current Conditions Conus1
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
+     - 
+     - None
+   * - 205
+     - conus1_current_conditions
+     - current_conditions
+     - gridded
+     - pfb
+     - lat_lon
+     - location
+     - lat_lon
+     - 
+     - 
+     - static
+     - degrees
+     - lat_lon
+     - static
+     - conus1
+     - 2
+     - /hydrodata/HydroGEN/current_conditions/supporting_data/CONUS1_row_col_in_SMAP.pfb
+     - None
+     - Current Conditions Conus1
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
+     - 
+     - None
+   * - 206
+     - conus2_current_conditions
+     - current_conditions
+     - gridded
+     - pfb
+     - lat_lon
+     - location
+     - lat_lon
+     - 
+     - 
+     - static
+     - degrees
+     - lat_lon
+     - static
+     - conus2
+     - 2
+     - /hydrodata/HydroGEN/current_conditions/supporting_data/CONUS2_row_col_in_SMAP.pfb
+     - None
+     - Current Conditions Conus2
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
+     - 
+     - None
+   * - 207
+     - conus2_current_conditions
+     - current_conditions
+     - gridded
+     - pfb
+     - soil_moisture
+     - subsurface
+     - soil_moisture
+     - 2022/05/02
+     - 
+     - daily
+     - cm3/cm3
+     - 
+     - mean
+     - conus2
+     - 3
+     - /hydrodata/HydroGEN/current_conditions/CONUS2/WY{wy}/{dataset_var}.{ymd}.pfb
+     - None
+     - Current Conditions Conus2
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
+     - 
+     - None
+   * - 208
+     - conus2_current_conditions
+     - current_conditions
+     - gridded
+     - tiff
+     - water_table_depth
+     - subsurface
+     - band_data
+     - 
+     - 
+     - 
+     - m
+     - length
+     - mean
+     - conus2
+     - 3
+     - /hydrodata/temp/high_resolution_data/WTD_estimates/1km/wtd_mean_estimate_RF_1km_CONUS2_m_v_20230406.tif
+     - None
+     - Current Conditions Conus2
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
+     - 
+     - None
+   * - 209
+     - conus2_current_conditions
+     - current_conditions
+     - gridded
+     - tiff
+     - water_table_depth
+     - subsurface
+     - band_data
+     - 
+     - 
+     - 
+     - m
+     - length
+     - mean
+     - conus2.90
+     - 3
+     - /hydrodata/temp/high_resolution_data/WTD_estimates/90m/wtd_mean_estimate_RF_3s_CONUS2_m_v_20230407.tif
+     - None
+     - Current Conditions Conus2
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
+     - 
+     - None
+   * - 210
+     - conus2_current_conditions
+     - current_conditions
+     - gridded
+     - tiff
+     - water_table_depth
+     - subsurface
+     - band_data
+     - 
+     - 
+     - 
+     - m
+     - length
+     - mean
+     - conus2.30
+     - 3
+     - /hydrodata/temp/high_resolution_data/WTD_estimates/30m/wtd_mean_estimate_RF_1s_CONUS2_m_v_20230422.tif
+     - None
+     - Current Conditions Conus2
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
      - 
      - None

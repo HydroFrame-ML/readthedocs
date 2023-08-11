@@ -84,6 +84,9 @@ units
    * - degrees_east
      - Degrees East
      - lat_lon
+   * - degrees
+     - Degrees
+     - lat_lon
    * - pa
      - Pascal
      - pressure

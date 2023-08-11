@@ -18,6 +18,8 @@ substitution_keys
      - Hour number within a water year of a time starting at 000001.
    * - wy_start_hour5
      - Hour number with 5 digits within a water year of a time starting at 00001.
+   * - wy_mdy
+     - 
    * - mmddyyyy
      - Date formatted as %m%d%Y.
    * - dataset_var

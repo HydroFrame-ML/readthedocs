@@ -120,16 +120,22 @@ variable
      - land_surface
      - intensity
      - None
-   * - latitute
-     - latitutde
+   * - latitude
+     - latitude
      - 
-     - location 
+     - location
      - lat_lon
      - None
    * - longitude
      - longitude
      - 
-     - location 
+     - location
+     - lat_lon
+     - None
+   * - lat_lon
+     - lat_lon
+     - Latitude/Longitude in z dimension
+     - location
      - lat_lon
      - None
    * - north_windspeed

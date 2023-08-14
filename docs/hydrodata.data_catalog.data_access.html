@@ -149,6 +149,23 @@ The value of the filter option argument must be a value of that column in the ta
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_file_path">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_file_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_file_path" title="Permalink to this definition"></a></dt>
+<dd><p>Get the file path for a data catalog entry.
+:param entry: Either a ModelTableRow or the ID number of a data_catalog_entry. If None use the entry found by the filters.
+:param args: Optional positional parameter that must be a dict with data filter options.
+:param kwargs: Supports multiple named parameters with data filter option values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A single path path for the data catalog entry</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError      if there is no path</strong><strong> or </strong><strong>multiple paths for the data catalog entry.</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_file_paths">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_file_paths</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_file_paths" title="Permalink to this definition"></a></dt>
 <dd><p>Get a list of file paths from the data catalog identified by the filter options.</p>
@@ -239,7 +256,7 @@ date string of the date dimentions of the ndarray that is returned.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>entry</strong> – Either a ModelTableRow or the ID number of a data_catalog_entry.</p></li>
+<li><p><strong>entry</strong> – Either a ModelTableRow or the ID number of a data_catalog_entry. If None then get entry from options.</p></li>
 <li><p><strong>args</strong> – Optional positional parameter that must be a dict with data filter options.</p></li>
 <li><p><strong>kwargs</strong> – Supports multiple named parameters with data filter option values.</p></li>
 </ul>

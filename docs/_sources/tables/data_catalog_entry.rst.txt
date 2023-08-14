@@ -5158,7 +5158,7 @@ data_catalog_entry
      - nasa_smap
      - remote_sensing
      - gridded
-     - pfb
+     - netcdf
      - soil_moisture
      - subsurface
      - SoilMoisture
@@ -5188,7 +5188,7 @@ data_catalog_entry
      - soil_moisture
      - subsurface
      - soil_moisture
-     - 2022/05/02
+     - 2022/05/20
      - 
      - daily
      - cm3/cm3
@@ -5214,7 +5214,7 @@ data_catalog_entry
      - water_table_depth
      - subsurface
      - water_table_depth
-     - 2022/05/02
+     - 2022/05/20
      - 
      - daily
      - m
@@ -5274,7 +5274,7 @@ data_catalog_entry
      - static
      - conus2
      - 2
-     - /hydrodata/HydroGEN/current_conditions/supporting_data/CONUS2_row_col_in_SMAP.pfb
+     - /hydrodata/temp/bill/CONUS2_row_col_in_SMAP.pfb
      - None
      - Current Conditions Conus2
      - 
@@ -5292,7 +5292,7 @@ data_catalog_entry
      - soil_moisture
      - subsurface
      - soil_moisture
-     - 2022/05/02
+     - 2022/05/20
      - 
      - daily
      - cm3/cm3
@@ -5386,5 +5386,57 @@ data_catalog_entry
      - 
      - 
      - UTC−0:00
+     - 
+     - None
+   * - 211
+     - nasa_smap
+     - remote_sensing
+     - gridded
+     - netcdf
+     - latitude
+     - location
+     - Latitude
+     - 
+     - 
+     - static
+     - degrees
+     - lat_lon
+     - mean
+     - smapgrid
+     - 2
+     - /hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc
+     - None
+     - NASA Soil Moisture
+     - 
+     - 
+     - 10/1/2022
+     - 
+     - UTC-00:00
+     - 
+     - None
+   * - 212
+     - nasa_smap
+     - remote_sensing
+     - gridded
+     - netcdf
+     - longitude
+     - location
+     - Longitude
+     - 
+     - 
+     - static
+     - degrees
+     - lat_lon
+     - mean
+     - smapgrid
+     - 2
+     - /hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc
+     - None
+     - NASA Soil Moisture
+     - 
+     - 
+     - 10/1/2022
+     - 
+     - UTC-00:00
      - 
      - None

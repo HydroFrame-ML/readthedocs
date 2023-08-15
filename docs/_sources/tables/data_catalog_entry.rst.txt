@@ -5352,7 +5352,7 @@ data_catalog_entry
      - mean
      - conus2.90
      - 3
-     - /hydrodata/temp/high_resolution_data/WTD_estimates/90m/wtd_mean_estimate_RF_3s_CONUS2_m_v_20230407.tif
+     - /hydrodata/temp/high_resolution_data/WTD_estimates/90m/wtd_mean_estimate_RF_additional_input_3s_CONUS2_m_v_20230627.tif
      - None
      - Current Conditions Conus2
      - 
@@ -5378,7 +5378,7 @@ data_catalog_entry
      - mean
      - conus2.30
      - 3
-     - /hydrodata/temp/high_resolution_data/WTD_estimates/30m/wtd_mean_estimate_RF_1s_CONUS2_m_v_20230422.tif
+     - /hydrodata/temp/high_resolution_data/WTD_estimates/30m/wtd_mean_estimate_RF_additional_inputs_dummy_drop0LP_1s_CONUS2_m_v_20230714.tif
      - None
      - Current Conditions Conus2
      - 

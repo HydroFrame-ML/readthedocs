@@ -83,24 +83,36 @@
              
   <section id="module-hydrodata.data_catalog.projection">
 <span id="hydrodata-data-catalog-projection-module"></span><h1>hydrodata.data_catalog.projection module<a class="headerlink" href="#module-hydrodata.data_catalog.projection" title="Permalink to this heading"></a></h1>
-<p>Convert lat/lng (EPSG:4326) to to  Lambert Confirmal Conic (ESRI:102004) coordinates.</p>
+<p>Convert lat/lng (EPSG:4326) to to  Lambert Confirmal Conic (ESRI:102004) for conus 1.</p>
 <p>Do this using the projection constants of the coordinate systems obtained from the
 python pyproj package. This module is a custom implementation of lat/lng to conic transformation
 that is 35x faster than the pyproj.Transform class. The speed improvement is because the
 code is not generic and can be compiled instead interpreting all the possible
 coordinates types supported by pyproj. Since the algorithm and conversion constants are
-the same as pyproj the answer is the same.</p>
+the same as pyproj the answer is the same for conus1.
+For conus2 the conversion constants are different.</p>
 <p>The unit tests compares the answer with pyproj to verify that the two functions produce
 the same answer within 0.001 meters.</p>
+<dl class="simple">
+<dt>Inspiration (not code) taken from:</dt><dd><p><a class="reference external" href="https://github.com/vraida/Lambert-projection">https://github.com/vraida/Lambert-projection</a>
+<a class="reference external" href="https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection">https://en.wikipedia.org/wiki/Lambert_conformal_conic_projection</a></p>
+</dd>
+</dl>
 <dl class="py data">
-<dt class="sig sig-object py" id="hydrodata.data_catalog.projection.PROJ_CONSTANTS">
-<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">PROJ_CONSTANTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;hydrodata.data_catalog.projection.ProjConstants</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#hydrodata.data_catalog.projection.PROJ_CONSTANTS" title="Permalink to this definition"></a></dt>
-<dd><p>Global singleton instance of ProjContants</p>
+<dt class="sig sig-object py" id="hydrodata.data_catalog.projection.CONUS1_PROJ_CONSTANTS">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">CONUS1_PROJ_CONSTANTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;hydrodata.data_catalog.projection.ProjConstants</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#hydrodata.data_catalog.projection.CONUS1_PROJ_CONSTANTS" title="Permalink to this definition"></a></dt>
+<dd><p>Global singleton instance of CONUS1 ProjContants</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.projection.CONUS2_PROJ_CONSTANTS">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">CONUS2_PROJ_CONSTANTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;hydrodata.data_catalog.projection.ProjConstants</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#hydrodata.data_catalog.projection.CONUS2_PROJ_CONSTANTS" title="Permalink to this definition"></a></dt>
+<dd><p>Global singleton instance of CONUS2 ProjContants</p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.projection.ProjConstants">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">ProjConstants</span></span><a class="headerlink" href="#hydrodata.data_catalog.projection.ProjConstants" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">ProjConstants</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.data_catalog.projection.ProjConstants" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Constants from the pyproj package used for the EPSG:4326 to ESRI:102004 transformation.</p>
 <dl class="py method">
@@ -115,11 +127,17 @@ the same answer within 0.001 meters.</p>
 <dd><p>Return the T value associated with the x radians values as required by the algorithm.</p>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.projection.ProjConstants.un_calculate_t">
+<span class="sig-name descname"><span class="pre">un_calculate_t</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.data_catalog.projection.ProjConstants.un_calculate_t" title="Permalink to this definition"></a></dt>
+<dd><p>Return the x value given t where x=calculate_t(x) using numerical iteration method.</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.projection.from_conic">
-<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">from_conic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.projection.from_conic" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">from_conic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'conus1'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.projection.from_conic" title="Permalink to this definition"></a></dt>
 <dd><p>Convert conic x,y point to lat/lng point.
 :param lat: x position in meters in conic flat coordinates
 :param lng: y position in meters in conic flat coordinates</p>
@@ -135,7 +153,7 @@ the same answer within 0.001 meters.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.projection.to_conic">
-<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">to_conic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lng</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.projection.to_conic" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.projection.</span></span><span class="sig-name descname"><span class="pre">to_conic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lat</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lng</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'conus1'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.projection.to_conic" title="Permalink to this definition"></a></dt>
 <dd><p>Convert lat/lng point to conic x,y point.
 :param lat: Latitude in degrees.
 :param lng: Longitude in degress.</p>

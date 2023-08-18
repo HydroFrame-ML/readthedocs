@@ -137,7 +137,7 @@ variable
      - Latitude/Longitude in z dimension
      - location
      - lat_lon
-     - None
+     - true
    * - north_windspeed
      - Meridional windspeed
      - 

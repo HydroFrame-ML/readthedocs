@@ -100,6 +100,26 @@
 </dd>
 </dl>
 <dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.construct_string_from_qparams">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">construct_string_from_qparams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hydrodata.data_catalog.data_access.construct_string_from_qparams" title="Permalink to this definition"></a></dt>
+<dd><p>Constructs the query parameters from the entry and options provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry</strong> (<a class="reference internal" href="hydrodata.data_catalog.data_model_access.html#hydrodata.data_catalog.data_model_access.ModelTableRow" title="hydrodata.data_catalog.data_model_access.ModelTableRow"><em>hydrodata.data_catalog.data_model_access.ModelTableRow</em></a>) – variable to be downloaded.</p></li>
+<li><p><strong>options</strong> (<em>dictionary</em>) – datast to which the variable belongs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>data</strong> – the requested data.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_catalog_entries">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_catalog_entries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="hydrodata.data_catalog.data_model_access.html#hydrodata.data_catalog.data_model_access.ModelTableRow" title="hydrodata.data_catalog.data_model_access.ModelTableRow"><span class="pre">ModelTableRow</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_catalog_entries" title="Permalink to this definition"></a></dt>
 <dd><p>Get data catalog entry rows selected by filter options.</p>
@@ -273,8 +293,8 @@ date string of the date dimentions of the ndarray that is returned.</p>
 <li><p>start_time:     A time as either a datetime object or a string in the form YYYY-MM-DD. Start of the date range for data.</p></li>
 <li><p>end_time:       A time as either a datetime object or a string in the form YYYY-MM-DD. End of the date range for data.</p></li>
 <li><p>site_id:        An observation point site id.</p></li>
-<li><p>grid_bounds:    An array of points [left, bottom, right, top] in xy grid corridates in the grid of the data.</p></li>
-<li><p>latlng_bounds:  An array of points [left, bottom, right, top] in lat/lng coordinates mapped with the grid of the data.</p></li>
+<li><p>grid_bounds:    An array (or string representing an array) of points [left, bottom, right, top] in xy grid corridates in the grid of the data.</p></li>
+<li><p>latlng_bounds:  An array (or string representing an array) of points [left, bottom, right, top] in lat/lng coordinates mapped with the grid of the data.</p></li>
 <li><p>depth:          A number 0-n of the depth index of the data to return.</p></li>
 <li><p>z:              A value of the z dimension to be used as a filter to remove this dismension.</p></li>
 <li><p>level:          A HUC level integer when reading HUC boundary files.</p></li>

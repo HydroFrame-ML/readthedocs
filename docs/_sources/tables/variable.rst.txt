@@ -166,8 +166,8 @@ variable
      - 
      - 
      - hydrogeology
-     - None
-     - None
+     - unitless
+     - true
    * - pme
      - Precipitation minus evaporation (net recharge)
      - Recharge forcing used for ParFlow spinups

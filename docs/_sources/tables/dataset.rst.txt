@@ -138,3 +138,14 @@ dataset
      - UTC−0:00
      - 
      - None
+   * - conus2_smap_current_conditions
+     - current_conditions
+     - Current Conditions Conus2 Raw SMAP
+     - 
+     - 
+     - 
+     - 
+     - gridded
+     - UTC−0:00
+     - 
+     - None

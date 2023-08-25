@@ -5274,7 +5274,7 @@ data_catalog_entry
      - static
      - conus2
      - 2
-     - /hydrodata/temp/bill/CONUS2_row_col_in_SMAP.pfb
+     - /hydrodata/temp/SM_estimation_CONUS2/CONUS2_row_col_in_SMAP.pfb
      - None
      - Current Conditions Conus2
      - 
@@ -5438,5 +5438,31 @@ data_catalog_entry
      - 10/1/2022
      - 
      - UTC-00:00
+     - 
+     - None
+   * - 213
+     - conus2_smap_current_conditions
+     - current_conditions
+     - gridded
+     - pfb
+     - soil_moisture
+     - subsurface
+     - soil_moisture
+     - 2023/08/01
+     - 
+     - daily
+     - cm3/cm3
+     - 
+     - mean
+     - conus2
+     - 3
+     - /hydrodata/temp/bill/smap/WY{wy}/{dataset_var}.{mdy}.pfb
+     - None
+     - Current Conditions Conus2 Raw SMAP
+     - 
+     - 
+     - 
+     - 
+     - UTC−0:00
      - 
      - None

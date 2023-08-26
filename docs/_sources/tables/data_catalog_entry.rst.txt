@@ -6611,7 +6611,7 @@ data_catalog_entry
      - 
      - 
    * - 250
-     - conus2_smap_current_conditions
+     - conus2_current_conditions
      - current_conditions
      - gridded
      - pfb
@@ -6624,11 +6624,11 @@ data_catalog_entry
      - cm3/cm3
      - 
      - mean
-     - conus2
+     - smapgrid
      - 3
      - /hydrodata/temp/bill/smap/WY{wy}/{dataset_var}.{mdy}.pfb
      - 
-     - Current Conditions Conus2 Raw SMAP
+     - Current Conditions Conus2
      - 
      - 
      - 

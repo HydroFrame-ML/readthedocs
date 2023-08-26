@@ -23,7 +23,7 @@ variable
      - Aridity Index precipitation/ (precipitaiton -Evaporaiton)
      - climate
      - 
-     - None
+     - 
    * - atmospheric_pressure
      - Atmospheric Pressure
      - 
@@ -35,7 +35,7 @@ variable
      - 
      - run_file
      - 
-     - None
+     - 
    * - downward_longwave
      - Downward Longwave Radiation
      - 
@@ -149,7 +149,7 @@ variable
      - Latitude/Longitude in z dimension
      - location
      - lat_lon
-     - true
+     - TRUE
    * - north_windspeed
      - Meridional windspeed
      - 
@@ -185,13 +185,13 @@ variable
      - 
      - hydrogeology
      - rate
-     - true
+     - TRUE
    * - pf_indicator
      - Indicator file for subsufrace units in ParFlow
      - 
      - hydrogeology
      - unitless
-     - true
+     - TRUE
    * - pf_solid
      - ParFlow Solid File
      - File to define a domain shape for Parflow
@@ -209,13 +209,13 @@ variable
      - Recharge forcing used for ParFlow spinups
      - climate
      - rate
-     - true
+     - TRUE
    * - porosity
      - Porosity 
      - 
      - hydrogeology
      - unitless
-     - true
+     - TRUE
    * - precipitation
      - Precipitation
      - 
@@ -227,25 +227,25 @@ variable
      - 
      - subsurface
      - length
-     - true
+     - TRUE
    * - ss_pressure_head
      - Steady State Pressure Head
      - Presssure head at the end of spinup
      - subsurface
      - pressure
-     - true
+     - TRUE
    * - pressure_next
      - Pressure Head at the following timestep
      - 
      - subsurface
      - pressure
-     - true
+     - TRUE
    * - saturation
      - Saturation
      - 
      - subsurface
      - unitless
-     - true
+     - TRUE
    * - sensible_heat
      - Sensible heat flux 
      - sensible heat from canopy height to atmosphere 
@@ -269,13 +269,13 @@ variable
      - 
      - subsurface
      - unitless
-     - true
+     - TRUE
    * - soil_temp
      - Soil Temperature
      - soil temperature
      - subsurface
      - temperature
-     - true
+     - TRUE
    * - specific_humidity
      - Specific Humidity
      - 
@@ -305,7 +305,7 @@ variable
      - Subbasins calculated from topographic processing
      - 
      - 
-     - None
+     - 
    * - swe
      - Snow water equivalent
      - 
@@ -341,19 +341,19 @@ variable
      - alpha parameter for van Genucten curve
      - hydrogeology
      - unitless
-     - true
+     - TRUE
    * - van_genuchten_n
      - Van Genuchten n
      - n parameter for van Genuchten curve
      - hydrogeology
      - unitless
-     - true
+     - TRUE
    * - veg_type_IGBP
      - Vegetation Type
      - Vegetation type using IGBP classifications
      - land_surface
      - unitless
-     - true
+     - TRUE
    * - water_table_depth
      - Water Table Depth
      - 

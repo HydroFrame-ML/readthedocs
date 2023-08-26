@@ -57,7 +57,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 2
      - conus1_baseline_85
      - parflow
@@ -83,7 +83,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 3
      - conus1_baseline_mod
      - parflow
@@ -109,7 +109,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 4
      - conus1_baseline_mod
      - parflow
@@ -135,7 +135,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 5
      - conus1_baseline_mod
      - parflow
@@ -161,7 +161,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 6
      - conus1_baseline_mod
      - parflow
@@ -187,7 +187,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 7
      - conus1_baseline_mod
      - parflow
@@ -213,7 +213,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 8
      - conus1_baseline_mod
      - parflow
@@ -239,7 +239,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 9
      - conus1_baseline_mod
      - parflow
@@ -265,7 +265,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 10
      - conus1_baseline_mod
      - parflow
@@ -291,7 +291,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 11
      - conus1_baseline_mod
      - parflow
@@ -317,7 +317,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 12
      - conus1_baseline_mod
      - parflow
@@ -343,7 +343,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 13
      - conus1_baseline_mod
      - parflow
@@ -369,7 +369,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 14
      - conus1_baseline_mod
      - parflow
@@ -395,7 +395,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 15
      - conus1_baseline_mod
      - parflow
@@ -421,7 +421,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 16
      - conus1_baseline_mod
      - parflow
@@ -447,7 +447,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 17
      - conus1_baseline_mod
      - parflow
@@ -473,7 +473,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 18
      - conus1_baseline_mod
      - parflow
@@ -499,7 +499,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 19
      - conus1_baseline_mod
      - parflow
@@ -525,7 +525,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 20
      - conus1_baseline_mod
      - parflow
@@ -551,7 +551,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 21
      - conus1_baseline_mod
      - parflow
@@ -577,7 +577,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 22
      - conus1_baseline_mod
      - parflow
@@ -603,7 +603,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 23
      - conus1_baseline_mod
      - parflow
@@ -629,7 +629,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 24
      - conus1_domain
      - parameters
@@ -655,7 +655,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 25
      - conus1_domain
      - parameters
@@ -681,7 +681,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 26
      - conus1_domain
      - parameters
@@ -707,7 +707,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 27
      - conus1_domain
      - parameters
@@ -733,7 +733,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 28
      - conus1_domain
      - parameters
@@ -759,7 +759,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 29
      - conus1_domain
      - parameters
@@ -785,7 +785,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 30
      - conus1_domain
      - parameters
@@ -811,7 +811,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 31
      - conus1_domain
      - parameters
@@ -837,7 +837,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 32
      - conus1_domain
      - parameters
@@ -863,7 +863,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 33
      - conus1_domain
      - parameters
@@ -889,7 +889,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 34
      - conus1_domain
      - parameters
@@ -915,7 +915,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 35
      - conus1_domain
      - parameters
@@ -941,7 +941,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 36
      - conus1_baseline_85
      - parflow
@@ -967,7 +967,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 37
      - conus1_baseline_85
      - parflow
@@ -993,7 +993,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 38
      - conus1_baseline_85
      - parflow
@@ -1019,7 +1019,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 39
      - conus1_baseline_85
      - parflow
@@ -1045,7 +1045,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 40
      - conus1_baseline_85
      - parflow
@@ -1071,7 +1071,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 41
      - conus1_baseline_85
      - parflow
@@ -1097,7 +1097,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 42
      - conus1_baseline_85
      - parflow
@@ -1123,7 +1123,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 43
      - conus1_baseline_85
      - parflow
@@ -1149,7 +1149,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 44
      - conus1_baseline_85
      - parflow
@@ -1175,7 +1175,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 45
      - conus1_baseline_85
      - parflow
@@ -1201,7 +1201,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 46
      - conus1_baseline_85
      - parflow
@@ -1227,7 +1227,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 47
      - conus1_baseline_85
      - parflow
@@ -1253,7 +1253,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 48
      - conus1_baseline_85
      - parflow
@@ -1279,7 +1279,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 49
      - conus1_baseline_85
      - parflow
@@ -1305,7 +1305,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 50
      - conus1_baseline_85
      - parflow
@@ -1331,7 +1331,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 51
      - conus1_baseline_85
      - parflow
@@ -1357,7 +1357,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 52
      - conus1_baseline_mod
      - parflow
@@ -1383,7 +1383,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 53
      - conus1_baseline_mod
      - parflow
@@ -1409,7 +1409,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 54
      - conus1_baseline_mod
      - parflow
@@ -1435,7 +1435,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 55
      - conus1_baseline_mod
      - parflow
@@ -1461,7 +1461,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 56
      - conus1_baseline_mod
      - parflow
@@ -1487,7 +1487,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 57
      - conus1_baseline_mod
      - parflow
@@ -1513,7 +1513,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 58
      - conus1_baseline_mod
      - parflow
@@ -1539,7 +1539,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 59
      - conus1_baseline_mod
      - parflow
@@ -1565,7 +1565,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 60
      - conus1_baseline_mod
      - parflow
@@ -1591,7 +1591,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 61
      - conus1_baseline_mod
      - parflow
@@ -1617,7 +1617,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 62
      - conus1_baseline_mod
      - parflow
@@ -1643,7 +1643,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 63
      - conus1_baseline_mod
      - parflow
@@ -1669,7 +1669,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 64
      - conus1_baseline_mod
      - parflow
@@ -1695,7 +1695,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 65
      - conus1_baseline_mod
      - parflow
@@ -1721,7 +1721,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 66
      - conus1_baseline_mod
      - parflow
@@ -1747,7 +1747,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 67
      - conus1_baseline_mod
      - parflow
@@ -1773,7 +1773,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 68
      - conus1_domain
      - parameters
@@ -1799,7 +1799,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 69
      - conus1_domain
      - parameters
@@ -1825,7 +1825,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 70
      - conus1_domain
      - parameters
@@ -1851,7 +1851,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 71
      - conus1_domain
      - parameters
@@ -1877,7 +1877,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 72
      - conus1_domain
      - parameters
@@ -1903,7 +1903,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 73
      - conus1_domain
      - parameters
@@ -1929,7 +1929,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 74
      - conus1_domain
      - parameters
@@ -1955,7 +1955,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 75
      - conus1_domain
      - parameters
@@ -1981,7 +1981,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 76
      - conus1_domain
      - parameters
@@ -2007,7 +2007,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 77
      - conus1_domain
      - parameters
@@ -2033,7 +2033,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 78
      - conus1_domain
      - parameters
@@ -2059,7 +2059,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 79
      - conus1_domain
      - parameters
@@ -2085,7 +2085,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 80
      - conus1_domain
      - parameters
@@ -2111,7 +2111,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 81
      - conus1_domain
      - parameters
@@ -2137,7 +2137,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 82
      - conus1_domain
      - parameters
@@ -2163,7 +2163,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 83
      - conus1_domain
      - parameters
@@ -2189,7 +2189,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 84
      - conus1_domain
      - parameters
@@ -2215,7 +2215,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 85
      - conus1_domain
      - parameters
@@ -2241,7 +2241,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 86
      - conus1_domain
      - parameters
@@ -2267,7 +2267,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 87
      - conus1_domain
      - parameters
@@ -2293,7 +2293,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 88
      - conus1_domain
      - parameters
@@ -2319,7 +2319,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 89
      - conus1_domain
      - parameters
@@ -2345,7 +2345,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 90
      - conus1_domain
      - parameters
@@ -2371,7 +2371,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 91
      - conus1_domain
      - parameters
@@ -2397,7 +2397,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 92
      - conus1_domain
      - parameters
@@ -2423,7 +2423,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 93
      - conus1_domain
      - parameters
@@ -2449,7 +2449,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 94
      - conus1_domain
      - parameters
@@ -2475,7 +2475,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 95
      - conus1_domain
      - parameters
@@ -2501,7 +2501,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 96
      - conus1_domain
      - parameters
@@ -2527,7 +2527,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 97
      - conus1_domain
      - parameters
@@ -2553,7 +2553,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 98
      - conus1_baseline_85
      - parflow
@@ -2579,7 +2579,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 99
      - conus1_baseline_85
      - parflow
@@ -2605,7 +2605,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 102
      - conus1_baseline_85
      - parflow
@@ -2631,7 +2631,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 103
      - conus1_baseline_85
      - parflow
@@ -2657,7 +2657,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 104
      - conus1_baseline_85
      - parflow
@@ -2683,7 +2683,7 @@ data_catalog_entry
      - 10/1/84 0:00
      - UTC−06:00
      - 
-     - None
+     - 
    * - 105
      - conus1_baseline_mod
      - parflow
@@ -2709,7 +2709,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 108
      - conus1_baseline_mod
      - parflow
@@ -2735,7 +2735,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 109
      - conus1_baseline_mod
      - parflow
@@ -2761,7 +2761,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 110
      - conus1_baseline_mod
      - parflow
@@ -2787,7 +2787,7 @@ data_catalog_entry
      - 10/1/02 0:00
      - UTC−0:00
      - 
-     - None
+     - 
    * - 111
      - conus1_domain
      - parameters
@@ -2813,7 +2813,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 112
      - NLDAS2
      - forcing
@@ -2835,11 +2835,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 113
      - NLDAS2
      - forcing
@@ -2861,11 +2861,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 114
      - NLDAS2
      - forcing
@@ -2887,11 +2887,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 115
      - NLDAS2
      - forcing
@@ -2913,11 +2913,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 116
      - NLDAS2
      - forcing
@@ -2939,11 +2939,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 117
      - NLDAS2
      - forcing
@@ -2965,11 +2965,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 118
      - NLDAS2
      - forcing
@@ -2991,11 +2991,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 119
      - NLDAS2
      - forcing
@@ -3017,11 +3017,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 120
      - NLDAS2
      - forcing
@@ -3043,11 +3043,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 121
      - NLDAS2
      - forcing
@@ -3069,11 +3069,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 122
      - NLDAS2
      - forcing
@@ -3095,11 +3095,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 123
      - NLDAS2
      - forcing
@@ -3121,11 +3121,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 124
      - NLDAS2
      - forcing
@@ -3147,11 +3147,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 125
      - NLDAS2
      - forcing
@@ -3173,11 +3173,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 126
      - NLDAS2
      - forcing
@@ -3199,11 +3199,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 127
      - NLDAS2
      - forcing
@@ -3225,11 +3225,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 128
      - NLDAS2
      - forcing
@@ -3251,11 +3251,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 129
      - NLDAS2
      - forcing
@@ -3277,11 +3277,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 130
      - NLDAS2
      - forcing
@@ -3303,11 +3303,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 131
      - NLDAS2
      - forcing
@@ -3329,11 +3329,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 132
      - NLDAS2
      - forcing
@@ -3355,11 +3355,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 133
      - NLDAS2
      - forcing
@@ -3381,11 +3381,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 134
      - NLDAS2
      - forcing
@@ -3407,11 +3407,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 135
      - NLDAS2
      - forcing
@@ -3433,11 +3433,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 136
      - NLDAS2
      - forcing
@@ -3459,11 +3459,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 137
      - NLDAS2
      - forcing
@@ -3485,11 +3485,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 138
      - NLDAS2
      - forcing
@@ -3511,11 +3511,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 139
      - NLDAS2
      - forcing
@@ -3537,11 +3537,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 140
      - NLDAS2_85
      - forcing
@@ -3563,11 +3563,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 141
      - NLDAS2_85
      - forcing
@@ -3589,11 +3589,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 142
      - NLDAS2_85
      - forcing
@@ -3615,11 +3615,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 143
      - NLDAS2_85
      - forcing
@@ -3641,11 +3641,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 144
      - NLDAS2_85
      - forcing
@@ -3667,11 +3667,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 145
      - NLDAS2_85
      - forcing
@@ -3693,11 +3693,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 146
      - NLDAS2_85
      - forcing
@@ -3719,11 +3719,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 147
      - NLDAS2_85
      - forcing
@@ -3745,11 +3745,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 148
      - NLDAS2_85
      - forcing
@@ -3771,11 +3771,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 149
      - NLDAS2_85
      - forcing
@@ -3797,11 +3797,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 150
      - NLDAS2_85
      - forcing
@@ -3823,11 +3823,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 151
      - NLDAS2_85
      - forcing
@@ -3849,11 +3849,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 152
      - NLDAS2_85
      - forcing
@@ -3875,11 +3875,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 153
      - NLDAS2_85
      - forcing
@@ -3901,11 +3901,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 154
      - NLDAS2_85
      - forcing
@@ -3927,11 +3927,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 155
      - NLDAS2_85
      - forcing
@@ -3953,11 +3953,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 156
      - NLDAS2_85
      - forcing
@@ -3979,11 +3979,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 157
      - NLDAS2_85
      - forcing
@@ -4005,11 +4005,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 158
      - NLDAS2_85
      - forcing
@@ -4031,11 +4031,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 159
      - NLDAS2_85
      - forcing
@@ -4057,11 +4057,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 160
      - NLDAS2
      - forcing
@@ -4083,11 +4083,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 161
      - NLDAS2
      - forcing
@@ -4109,11 +4109,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 162
      - NLDAS2
      - forcing
@@ -4135,11 +4135,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 163
      - NLDAS2
      - forcing
@@ -4161,11 +4161,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 164
      - NLDAS2_85
      - forcing
@@ -4187,11 +4187,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 165
      - NLDAS2
      - forcing
@@ -4213,11 +4213,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 166
      - NLDAS2
      - forcing
@@ -4239,11 +4239,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2
      - 10.5194/gmd-14-7223-2021; 10.1002/2016GL069964
      - 
-     - 10/1/2002
-     - 9/30/2006
+     - 10/1/02
+     - 9/30/06
      - UTC−0:00
      - 
-     - None
+     - 
    * - 167
      - NLDAS3
      - forcing
@@ -4265,11 +4265,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 168
      - NLDAS3
      - forcing
@@ -4291,11 +4291,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 169
      - NLDAS3
      - forcing
@@ -4317,11 +4317,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 170
      - NLDAS3
      - forcing
@@ -4343,11 +4343,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 171
      - NLDAS3
      - forcing
@@ -4369,11 +4369,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 172
      - NLDAS3
      - forcing
@@ -4395,11 +4395,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 173
      - NLDAS3
      - forcing
@@ -4421,11 +4421,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 174
      - NLDAS3
      - forcing
@@ -4447,11 +4447,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 175
      - NLDAS3
      - forcing
@@ -4473,11 +4473,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 176
      - NLDAS3
      - forcing
@@ -4499,11 +4499,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 177
      - NLDAS3
      - forcing
@@ -4525,11 +4525,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 178
      - NLDAS3
      - forcing
@@ -4551,11 +4551,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 179
      - NLDAS3
      - forcing
@@ -4577,11 +4577,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 180
      - NLDAS3
      - forcing
@@ -4603,11 +4603,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 181
      - NLDAS3
      - forcing
@@ -4629,11 +4629,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 182
      - NLDAS3
      - forcing
@@ -4655,11 +4655,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 183
      - NLDAS3
      - forcing
@@ -4681,11 +4681,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 184
      - NLDAS3
      - forcing
@@ -4707,11 +4707,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 185
      - NLDAS3
      - forcing
@@ -4733,11 +4733,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 186
      - NLDAS3
      - forcing
@@ -4759,11 +4759,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 187
      - NLDAS3
      - forcing
@@ -4785,11 +4785,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 188
      - NLDAS3
      - forcing
@@ -4811,11 +4811,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 189
      - NLDAS3
      - forcing
@@ -4837,11 +4837,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 190
      - NLDAS3
      - forcing
@@ -4863,11 +4863,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 191
      - NLDAS3
      - forcing
@@ -4889,11 +4889,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 192
      - NLDAS3
      - forcing
@@ -4915,11 +4915,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 193
      - NLDAS3
      - forcing
@@ -4941,11 +4941,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 194
      - NLDAS3
      - forcing
@@ -4967,11 +4967,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 195
      - NLDAS3
      - forcing
@@ -4993,11 +4993,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 196
      - NLDAS3
      - forcing
@@ -5019,11 +5019,11 @@ data_catalog_entry
      - 
      - 
      - 
-     - 10/1/1979
-     - 9/30/2022
+     - 10/1/79
+     - 9/30/22
      - 
      - 
-     - None
+     - 
    * - 197
      - NLDAS2_85
      - forcing
@@ -5045,11 +5045,11 @@ data_catalog_entry
      - National Land Data Assimilation Product V2  - Water Year 1985
      - 10.1002/2016GL069964
      - 
-     - 10/1/1984
-     - 9/30/1985
+     - 10/1/84
+     - 9/30/85
      - UTC−06:00
      - 
-     - None
+     - 
    * - 198
      - huc_mapping
      - parameters
@@ -5075,7 +5075,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 199
      - huc_mapping
      - parameters
@@ -5101,7 +5101,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 200
      - conus2_domain
      - parameters
@@ -5127,7 +5127,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 201
      - conus2_domain
      - parameters
@@ -5153,7 +5153,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 202
      - nasa_smap
      - remote_sensing
@@ -5175,11 +5175,11 @@ data_catalog_entry
      - NASA Soil Moisture
      - 
      - 
-     - 10/1/2022
+     - 10/1/22
      - 
      - UTC-00:00
      - 
-     - None
+     - 
    * - 203
      - conus1_current_conditions
      - current_conditions
@@ -5188,7 +5188,7 @@ data_catalog_entry
      - soil_moisture
      - subsurface
      - soil_moisture
-     - 2022/05/20
+     - 5/20/22
      - 
      - daily
      - cm3/cm3
@@ -5205,7 +5205,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 204
      - conus1_current_conditions
      - current_conditions
@@ -5214,7 +5214,7 @@ data_catalog_entry
      - water_table_depth
      - subsurface
      - water_table_depth
-     - 2022/05/20
+     - 5/20/22
      - 
      - daily
      - m
@@ -5231,7 +5231,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 205
      - conus1_current_conditions
      - current_conditions
@@ -5257,7 +5257,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 206
      - conus2_current_conditions
      - current_conditions
@@ -5283,7 +5283,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 207
      - conus2_current_conditions
      - current_conditions
@@ -5292,7 +5292,7 @@ data_catalog_entry
      - soil_moisture
      - subsurface
      - soil_moisture
-     - 2022/05/20
+     - 5/20/22
      - 
      - daily
      - cm3/cm3
@@ -5309,7 +5309,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 208
      - conus2_current_conditions
      - current_conditions
@@ -5335,7 +5335,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 209
      - conus2_current_conditions
      - current_conditions
@@ -5361,7 +5361,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 210
      - conus2_current_conditions
      - current_conditions
@@ -5387,7 +5387,7 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 
    * - 211
      - nasa_smap
      - remote_sensing
@@ -5409,11 +5409,11 @@ data_catalog_entry
      - NASA Soil Moisture
      - 
      - 
-     - 10/1/2022
+     - 10/1/22
      - 
      - UTC-00:00
      - 
-     - None
+     - 
    * - 212
      - nasa_smap
      - remote_sensing
@@ -5435,11 +5435,11 @@ data_catalog_entry
      - NASA Soil Moisture
      - 
      - 
-     - 10/1/2022
+     - 10/1/22
      - 
      - UTC-00:00
      - 
-     - None
+     - 
    * - 213
      - conus2_domain
      - parameters
@@ -5465,7 +5465,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 214
      - conus2_domain
      - parameters
@@ -5491,7 +5491,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 215
      - conus2_domain
      - parameters
@@ -5517,7 +5517,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 216
      - conus2_domain
      - parameters
@@ -5543,7 +5543,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 217
      - conus2_domain
      - parameters
@@ -5569,7 +5569,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 218
      - conus2_domain
      - parameters
@@ -5595,7 +5595,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 219
      - conus2_domain
      - parameters
@@ -5621,7 +5621,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 220
      - conus2_domain
      - parameters
@@ -5647,7 +5647,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 221
      - conus2_domain
      - parameters
@@ -5673,7 +5673,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 222
      - conus2_domain
      - parameters
@@ -5699,7 +5699,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 223
      - conus2_domain
      - parameters
@@ -5725,7 +5725,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 224
      - conus2_domain
      - parameters
@@ -5751,7 +5751,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 225
      - conus2_domain
      - parameters
@@ -5777,7 +5777,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 226
      - conus2_domain
      - parameters
@@ -5803,7 +5803,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 227
      - conus2_domain
      - parameters
@@ -5829,7 +5829,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 228
      - conus2_domain
      - parameters
@@ -5855,7 +5855,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 229
      - conus2_domain
      - parameters
@@ -5881,7 +5881,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 230
      - conus2_domain
      - parameters
@@ -5907,7 +5907,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 231
      - conus2_domain
      - parameters
@@ -5933,7 +5933,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 234
      - conus2_domain
      - parameters
@@ -5959,7 +5959,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 235
      - conus2_domain
      - parameters
@@ -5985,7 +5985,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 236
      - conus2_domain
      - parameters
@@ -6011,7 +6011,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 237
      - conus2_domain
      - parameters
@@ -6037,7 +6037,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 240
      - conus2_domain
      - parameters
@@ -6063,7 +6063,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 241
      - conus2_domain
      - parameters
@@ -6089,7 +6089,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 242
      - conus2_domain
      - parameters
@@ -6115,7 +6115,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 243
      - conus2_domain
      - parameters
@@ -6141,7 +6141,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 244
      - conus2_domain
      - parameters
@@ -6167,7 +6167,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 245
      - conus2_domain
      - parameters
@@ -6193,7 +6193,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 228
      - conus2_domain
      - parameters
@@ -6219,7 +6219,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 229
      - conus2_domain
      - parameters
@@ -6245,7 +6245,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 230
      - conus2_domain
      - parameters
@@ -6271,7 +6271,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 231
      - conus2_domain
      - parameters
@@ -6297,7 +6297,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 234
      - conus2_domain
      - parameters
@@ -6323,7 +6323,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 235
      - conus2_domain
      - parameters
@@ -6349,7 +6349,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 236
      - conus2_domain
      - parameters
@@ -6375,7 +6375,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 237
      - conus2_domain
      - parameters
@@ -6401,7 +6401,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 240
      - conus2_domain
      - parameters
@@ -6427,7 +6427,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 241
      - conus2_domain
      - parameters
@@ -6453,7 +6453,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 242
      - conus2_domain
      - parameters
@@ -6479,7 +6479,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 243
      - conus2_domain
      - parameters
@@ -6505,7 +6505,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 244
      - conus2_domain
      - parameters
@@ -6531,7 +6531,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 245
      - conus2_domain
      - parameters
@@ -6557,7 +6557,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 246
      - conus2_domain
      - parameters
@@ -6575,7 +6575,7 @@ data_catalog_entry
      - conus2
      - 2
      - /hydrodata/PFCLM/CONUS2_baseline/inputs/domain_files/CONUS2.0.Final.LatLongsa
-     - None
+     - 
      - Inputs for baseline CONUS2 ParFlow Simulations
      - 
      - 
@@ -6583,7 +6583,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 249
      - conus2_domain
      - parameters
@@ -6609,7 +6609,7 @@ data_catalog_entry
      - 
      - 
      - 
-     - None
+     - 
    * - 250
      - conus2_smap_current_conditions
      - current_conditions
@@ -6618,7 +6618,7 @@ data_catalog_entry
      - soil_moisture
      - subsurface
      - soil_moisture
-     - 2023/08/01
+     - 8/1/23
      - 
      - daily
      - cm3/cm3
@@ -6635,4 +6635,4 @@ data_catalog_entry
      - 
      - UTC−0:00
      - 
-     - None
+     - 

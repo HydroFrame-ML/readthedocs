@@ -2379,7 +2379,7 @@ data_catalog_entry
      - pftxt
      - elevation
      - topography
-     - elevation 
+     - elevation
      - 
      - 
      - static
@@ -2415,7 +2415,7 @@ data_catalog_entry
      - conus1
      - 2
      - /hydrodata/PFCLM/CONUS1_baseline/other_domain_files/StreamOrder_pfFormat.txt
-     -  Stream orders are assigned for every subbasin. Headwaters and non-river cells are assigned a value of zero . The order for all other streams was determined by walking downstream from the headwater reaches. Streams are assigned the largest order possible (i.e. the longest route to get to them).
+     - Stream orders are assigned for every subbasin. Headwaters and non-river cells are assigned a value of zero . The order for all other streams was determined by walking downstream from the headwater reaches. Streams are assigned the largest order possible (i.e. the longest route to get to them).
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916
      - 
@@ -2493,7 +2493,7 @@ data_catalog_entry
      - conus1
      - 2
      - /hydrodata/PFCLM/CONUS1_baseline/other_domain_files/stream.interp_format.txt
-     - The reach number for every stream. Pretty much the same as the subbasin file except only the river cells have values.  Numbers in this file correspond to subbasin numers. 
+     - The reach number for every stream. Pretty much the same as the subbasin file except only the river cells have values.  Numbers in this file correspond to subbasin numers.
      - Inputs for baseline CONUS1 ParFlow Simulations
      - 10.5194/gmd-8-1-2015;  10.1016/j.advwatres.2015.04.008; 10.1002/2014WR016774; 10.1002/2015GL066916
      - 
@@ -2795,7 +2795,7 @@ data_catalog_entry
      - pfb
      - ss_pressure_head
      - subsurface
-     - press 
+     - press
      - 
      - 
      - static
@@ -5171,7 +5171,7 @@ data_catalog_entry
      - smapgrid
      - 3
      - /hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc
-     - None
+     - 
      - NASA Soil Moisture
      - 
      - 
@@ -5197,7 +5197,7 @@ data_catalog_entry
      - conus1
      - 3
      - /hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mdy}.pfb
-     - None
+     - 
      - Current Conditions Conus1
      - 
      - 
@@ -5223,7 +5223,7 @@ data_catalog_entry
      - conus1
      - 3
      - /hydrodata/HydroGEN/current_conditions/CONUS1/WY{wy}/{dataset_var}.{mdy}.pfb
-     - None
+     - 
      - Current Conditions Conus1
      - 
      - 
@@ -5249,7 +5249,7 @@ data_catalog_entry
      - conus1
      - 2
      - /hydrodata/HydroGEN/current_conditions/supporting_data/CONUS1_row_col_in_SMAP.pfb
-     - None
+     - 
      - Current Conditions Conus1
      - 
      - 
@@ -5275,7 +5275,7 @@ data_catalog_entry
      - conus2
      - 2
      - /hydrodata/temp/SM_estimation_CONUS2/CONUS2_row_col_in_SMAP.pfb
-     - None
+     - 
      - Current Conditions Conus2
      - 
      - 
@@ -5301,7 +5301,7 @@ data_catalog_entry
      - conus2
      - 3
      - /hydrodata/HydroGEN/current_conditions/CONUS2/WY{wy}/{dataset_var}.{ymd}.pfb
-     - None
+     - 
      - Current Conditions Conus2
      - 
      - 
@@ -5327,7 +5327,7 @@ data_catalog_entry
      - conus2
      - 3
      - /hydrodata/temp/high_resolution_data/WTD_estimates/1km/wtd_mean_estimate_RF_1km_CONUS2_m_v_20230406.tif
-     - None
+     - 
      - Current Conditions Conus2
      - 
      - 
@@ -5353,7 +5353,7 @@ data_catalog_entry
      - conus2.90
      - 3
      - /hydrodata/temp/high_resolution_data/WTD_estimates/90m/wtd_mean_estimate_RF_additional_input_3s_CONUS2_m_v_20230627.tif
-     - None
+     - 
      - Current Conditions Conus2
      - 
      - 
@@ -5379,7 +5379,7 @@ data_catalog_entry
      - conus2.30
      - 3
      - /hydrodata/temp/high_resolution_data/WTD_estimates/30m/wtd_mean_estimate_RF_additional_inputs_dummy_drop0LP_1s_CONUS2_m_v_20230714.tif
-     - None
+     - 
      - Current Conditions Conus2
      - 
      - 
@@ -5405,7 +5405,7 @@ data_catalog_entry
      - smapgrid
      - 2
      - /hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc
-     - None
+     - 
      - NASA Soil Moisture
      - 
      - 
@@ -5431,7 +5431,7 @@ data_catalog_entry
      - smapgrid
      - 2
      - /hydrodata/national_obs/smap/data/Oct1_{wy_minus1}_Sept30_{wy}.nc
-     - None
+     - 
      - NASA Soil Moisture
      - 
      - 
@@ -5441,6 +5441,1176 @@ data_catalog_entry
      - 
      - None
    * - 213
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - veg_type_IGBP
+     - land_surface
+     - vegetation_type
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/1km_CONUS2_landcover_IGBP_723.pfb
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 214
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - veg_type_IGBP
+     - land_surface
+     - vegetation_type
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/1km_CONUS2_landcover_IGBP_723.tif
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 215
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - veg_type_IGBP
+     - land_surface
+     - vegetation_type
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/250m_CONUS2_landcover_IGBP_723.pfb
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 216
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - veg_type_IGBP
+     - land_surface
+     - vegetation_type
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/250m_CONUS2_landcover_IGBP_723.tif
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 217
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - slope_x
+     - topography
+     - slope_x
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/CONUS2.0.Final1km.slopex.pfb
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 218
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - slope_y
+     - topography
+     - slope_y
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/CONUS2.0.Final1km.slopex.pfb
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 219
+     - conus2_domain
+     - parameters
+     - gridded
+     - drv_clm
+     - clm_run
+     - run_file
+     - clm_run
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/drv_clmin.dat
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 220
+     - conus2_domain
+     - parameters
+     - gridded
+     - vegm
+     - clm_run
+     - run_file
+     - clm_run
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/drv_vegm.CONUS2_723.dat
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 221
+     - conus2_domain
+     - parameters
+     - gridded
+     - vegp
+     - clm_run
+     - run_file
+     - clm_run
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/drv_vegm.CONUS2_723.dat
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 222
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - pme
+     - climate
+     - pme
+     - 
+     - 
+     - static
+     - m/h
+     - rate
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/1km_CONUS2_PME.pfb
+     - pme that was used for steady state CONUS2 spinup
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 223
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfsol
+     - pf_solid
+     - run_file
+     - pf_solid
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/CONUS2.0_fix115.pfsol
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 224
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - mannings
+     - surface_water
+     - mannings
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/CONUS2.0.Final1km_mannings_rv50_original_values_Lake_Sink.pfb
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 225
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - pf_indicator
+     - hydrogeology
+     - pf_indicator
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus1
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/CONUS2.0.Final1km.Subsurface.pfb
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 226
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - pf_flowbarrier
+     - hydrogeology
+     - pf_flowbarrier
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/model_inputs/CONUS2.0.Shangguan_200m_FBZ.pfb
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 227
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - ss_pressure_head
+     - subsurface
+     - pressure
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/steady_state_runs/2003_run/spinup.wy2003.out.press.08760.pfb
+     - steady state pressure used to initialize transient runs
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 228
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - distance_stream_lin
+     - stream_network
+     - distance_stream_lin
+     - 
+     - 
+     - static
+     - km
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DisToStream.pfb
+     - Map of distance for each cell to the stream (CONUS2.0.Final1km.RiverMask) using the function StreamDist in PriorityFlow.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 229
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - distance_stream_lin
+     - stream_network
+     - distance_stream_lin
+     - 
+     - 
+     - static
+     - km
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DisToStream.tif
+     - Map of distance for each cell to the stream (CONUS2.0.Final1km.RiverMask) using the function StreamDist in PriorityFlow.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 230
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - drainage_area
+     - topography
+     - drainage_area
+     - 
+     - 
+     - static
+     - km2
+     - area
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DrainageArea.pfb
+     - Drainage area in km2 calculated based on the flow directions
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 231
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - drainage_area
+     - topography
+     - drainage_area
+     - 
+     - 
+     - static
+     - km2
+     - area
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DrainageArea.tif
+     - Drainage area in km2 calculated based on the flow directions
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 234
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - flow_direction
+     - stream_network
+     - flow_direction
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.FlowDirection.pfb
+     - Primary flow direction for every grid cell (1=down, 2=left, 3=up, 4=right)
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 235
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - flow_direction
+     - stream_network
+     - flow_direction
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.FlowDirection.tif
+     - Primary flow direction for every grid cell (1=down, 2=left, 3=up, 4=right)
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 236
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - elevation
+     - topography
+     - elevation 
+     - 
+     - 
+     - static
+     - m
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.ProcessedDEM.pfb
+     - Final DEM after, smoothing, applying PriroirtyFlow algorithm to ensure complete drainage and additional smoothing to create constant slopes along river segments.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 237
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - elevation
+     - topography
+     - elevation 
+     - 
+     - 
+     - static
+     - m
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.ProcessedDEM.tif
+     - Final DEM after, smoothing, applying PriroirtyFlow algorithm to ensure complete drainage and additional smoothing to create constant slopes along river segments.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 240
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - stream_order
+     - stream_network
+     - stream_order
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamOrder.pfb
+     - Strahler stream order calculated from the 100km area threshold river mask using the function CalcStreamOrder in PriorityFlow
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 241
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - stream_order
+     - stream_network
+     - stream_order
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamOrder.tif
+     - Strahler stream order calculated from the 100km area threshold river mask using the function CalcStreamOrder in PriorityFlow
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 242
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - stream_segments
+     - stream_network
+     - stream_segments
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamSegments.pfb
+     - Mask of stream segments with their segment IDs.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 243
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - stream_segments
+     - stream_network
+     - stream_segments
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamSegments.tif
+     - Mask of stream segments with their segment IDs.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 244
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - subbasins
+     - 
+     - subbasins
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.Subbasins.pfb
+     - Map of the subbasins drainage area for each stream segment.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 245
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - subbasins
+     - 
+     - subbasins
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250mCONUS2.0.Final1km.Subbasins.tif
+     - Map of the subbasins drainage area for each stream segment.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 228
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - distance_stream_lin
+     - stream_network
+     - distance_stream_lin
+     - 
+     - 
+     - static
+     - km
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DisToStream.pfb
+     - Map of distance for each cell to the stream (CONUS2.0.Final1km.RiverMask) using the function StreamDist in PriorityFlow.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 229
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - distance_stream_lin
+     - stream_network
+     - distance_stream_lin
+     - 
+     - 
+     - static
+     - km
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DisToStream.tif
+     - Map of distance for each cell to the stream (CONUS2.0.Final1km.RiverMask) using the function StreamDist in PriorityFlow.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 230
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - drainage_area
+     - topography
+     - drainage_area
+     - 
+     - 
+     - static
+     - km2
+     - area
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DrainageArea.pfb
+     - Drainage area in km2 calculated based on the flow directions
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 231
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - drainage_area
+     - topography
+     - drainage_area
+     - 
+     - 
+     - static
+     - km2
+     - area
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.DrainageArea.tif
+     - Drainage area in km2 calculated based on the flow directions
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 234
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - flow_direction
+     - stream_network
+     - flow_direction
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.FlowDirection.pfb
+     - Primary flow direction for every grid cell (1=down, 2=left, 3=up, 4=right)
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 235
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - flow_direction
+     - stream_network
+     - flow_direction
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.FlowDirection.tif
+     - Primary flow direction for every grid cell (1=down, 2=left, 3=up, 4=right)
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 236
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - elevation
+     - topography
+     - elevation 
+     - 
+     - 
+     - static
+     - m
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.ProcessedDEM.pfb
+     - Final DEM after, smoothing, applying PriroirtyFlow algorithm to ensure complete drainage and additional smoothing to create constant slopes along river segments.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 237
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - elevation
+     - topography
+     - elevation 
+     - 
+     - 
+     - static
+     - m
+     - length
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.ProcessedDEM.tif
+     - Final DEM after, smoothing, applying PriroirtyFlow algorithm to ensure complete drainage and additional smoothing to create constant slopes along river segments.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 240
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - stream_order
+     - stream_network
+     - stream_order
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamOrder.pfb
+     - Strahler stream order calculated from the 100km area threshold river mask using the function CalcStreamOrder in PriorityFlow
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 241
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - stream_order
+     - stream_network
+     - stream_order
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamOrder.tif
+     - Strahler stream order calculated from the 100km area threshold river mask using the function CalcStreamOrder in PriorityFlow
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 242
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - stream_segments
+     - stream_network
+     - stream_segments
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamSegments.pfb
+     - Mask of stream segments with their segment IDs.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 243
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - stream_segments
+     - stream_network
+     - stream_segments
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.StreamSegments.tif
+     - Mask of stream segments with their segment IDs.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 244
+     - conus2_domain
+     - parameters
+     - gridded
+     - pfb
+     - subbasins
+     - 
+     - subbasins
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250m/CONUS2.0.Final1km.Subbasins.pfb
+     - Map of the subbasins drainage area for each stream segment.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 245
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - subbasins
+     - 
+     - subbasins
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2.250
+     - 3
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/topography_files/250mCONUS2.0.Final1km.Subbasins.tif
+     - Map of the subbasins drainage area for each stream segment.
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 246
+     - conus2_domain
+     - parameters
+     - gridded
+     - sa
+     - lat_lon
+     - location
+     - lat_lon
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/domain_files/CONUS2.0.Final.LatLongsa
+     - None
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 249
+     - conus2_domain
+     - parameters
+     - gridded
+     - tiff
+     - mask
+     - topography
+     - mask
+     - 
+     - 
+     - static
+     - -
+     - unitless
+     - -
+     - conus2
+     - 2
+     - /hydrodata/PFCLM/CONUS2_baseline/inputs/domain_files/CONUS2.0.Final1km.Mask.tif
+     - 
+     - Inputs for baseline CONUS2 ParFlow Simulations
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - None
+   * - 250
      - conus2_smap_current_conditions
      - current_conditions
      - gridded
@@ -5457,7 +6627,7 @@ data_catalog_entry
      - conus2
      - 3
      - /hydrodata/temp/bill/smap/WY{wy}/{dataset_var}.{mdy}.pfb
-     - None
+     - 
      - Current Conditions Conus2 Raw SMAP
      - 
      - 

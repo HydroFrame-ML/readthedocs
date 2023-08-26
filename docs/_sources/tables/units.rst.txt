@@ -27,6 +27,9 @@ units
    * - in
      - inches
      - length
+   * - km
+     - kilometers
+     - length
    * - K
      - Kelvin
      - temperature

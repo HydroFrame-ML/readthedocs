@@ -17,121 +17,133 @@ variable
      - 
      - atmospheric
      - temperature
-     - None
+     - 
    * - aridity_index
      - Aridity Index
      - Aridity Index precipitation/ (precipitaiton -Evaporaiton)
      - climate
-     - None
+     - 
      - None
    * - atmospheric_pressure
      - Atmospheric Pressure
      - 
      - atmospheric
      - pressure
-     - None
+     - 
    * - clm_run
      - 
      - 
      - run_file
-     - None
+     - 
      - None
    * - downward_longwave
      - Downward Longwave Radiation
      - 
      - atmospheric
      - intensity
-     - None
+     - 
    * - downward_shortwave
      - Downward Shortwave Radiation
      - 
      - atmospheric
      - intensity
-     - None
+     - 
    * - drainage_area
      - Drainage Area
      - 
      - topography
      - area
-     - None
+     - 
+   * - distance_stream_lin
+     - Linear Distance to Streams
+     - Shortest linear distance to streams
+     - stream_network
+     - length
+     - 
    * - east_windspeed
      - Zonal windspeed
      - 
      - atmospheric
      - rate
-     - None
+     - 
    * - elevation
      - Processed elevation 
      - Final processed elevation
      - topography
      - length
-     - None
+     - 
    * - evapotranspiration
      - Evapotranspiration
      - 
      - land_surface
      - rate
-     - None
+     - 
    * - flow_direction_grass
      - Grass Flow Direction 
      - D4 Flow directions with Grass numbering (2=up, 4=left, 6=down, 8=right)
      - stream_network
-     - None
-     - None
+     - 
+     - 
+   * - flow_direction
+     - Flow Direction
+     - D4 Flow Direcitons with the following numbering: 1=down, 2=left, 3=up, 4=right
+     - stream_network
+     - 
+     - 
    * - ground_evap
      - Ground evaporation
      - ground surface evaporation rate
      - land_surface
      - rate
-     - None
+     - 
    * - ground_evap_heat
      - Ground evaporation heat flux
      - evaporation heat flux from ground
      - land_surface
      - rate
-     - None
+     - 
    * - ground_heat
      - ground heat flux
      - ground heat flux 
      - land_surface
      - intensity
-     - None
+     - 
    * - ground_temp
      - ground temperature
      - ground temperature
      - subsurface
      - temperature
-     - None
+     - 
    * - infiltration
      - Infiltration rate
      - infiltration
      - subsurface
      - rate
-     - None
+     - 
    * - irrigation
      - Irrigation Flux
      - irrigation applied at surface 
      - surface_water
      - rate
-     - None
+     - 
    * - latent_heat
      - Latent Heat Flux
      -  latent heat flux from canopy height to atmosphere
      - land_surface
      - intensity
-     - None
+     - 
    * - latitude
      - latitude
      - 
      - location
      - lat_lon
-     - None
+     - 
    * - longitude
      - longitude
      - 
      - location
      - lat_lon
-     - None
+     - 
    * - lat_lon
      - lat_lon
      - Latitude/Longitude in z dimension
@@ -143,19 +155,31 @@ variable
      - 
      - atmospheric
      - rate
-     - None
+     - 
+   * - mannings
+     - Mannings N
+     - Mannings roughness coefficient
+     - surface_water
+     - 
+     - 
+   * - mask
+     - mask
+     - Mask showing active domain
+     - topography
+     - 
+     - 
    * - outward_longwave_radiation
      - Outward Longwave radiation 
      - outgoing long-wave radiation from ground+canopy
      - land_surface
      - intensity
-     - None
+     - 
    * - parflow_run
-     - 
-     - 
+     - ParFlow Run files
+     - Run scripts and other model configuration files
      - run_file
-     - None
-     - None
+     - 
+     - 
    * - permeability
      - permeability
      - 
@@ -163,17 +187,29 @@ variable
      - rate
      - true
    * - pf_indicator
-     - 
+     - Indicator file for subsufrace units in ParFlow
      - 
      - hydrogeology
      - unitless
      - true
+   * - pf_solid
+     - ParFlow Solid File
+     - File to define a domain shape for Parflow
+     - run_file
+     - 
+     - 
+   * - pf_flowbarrier
+     - ParFlow Flow Barrier
+     - File defining the depth to flow barier
+     - hydrogeology
+     - 
+     - 
    * - pme
      - Precipitation minus evaporation (net recharge)
      - Recharge forcing used for ParFlow spinups
      - climate
      - rate
-     - None
+     - true
    * - porosity
      - Porosity 
      - 
@@ -185,7 +221,7 @@ variable
      - 
      - atmospheric
      - length
-     - None
+     - 
    * - pressure_head
      - Pressure Head 
      - 
@@ -215,19 +251,19 @@ variable
      - sensible heat from canopy height to atmosphere 
      - land_surface
      - intensity
-     - None
+     - 
    * - slope_x
      - Slope x
      - Slope in the x direciton (Grid centered)
      - topography
-     - None
-     - None
+     - 
+     - 
    * - slope_y
      - Slope y
      - Slope in the y direction (Grid centered)
      - topography
-     - None
-     - None
+     - 
+     - 
    * - soil_moisture
      - Soil Moisture
      - 
@@ -244,62 +280,62 @@ variable
      - Specific Humidity
      - 
      - atmospheric
-     - None
-     - None
+     - 
+     - 
    * - stream_order
      - Kahler stream order
      - Kahler stream order
      - stream_network
-     - None
-     - None
+     - 
+     - 
    * - stream_segments
      - Stream segment IDs
      - Stream segment ID numbers (0 values outside of stream)
      - stream_network
-     - None
-     - None
+     - 
+     - 
    * - streamflow
      - Streamflow
      - 
      - land_surface
      - volume_flux
-     - None
+     - 
    * - subbasins
      - Watershed subbains IDs
      - Subbasins calculated from topographic processing
      - 
-     - None
+     - 
      - None
    * - swe
      - Snow water equivalent
      - 
      - surface_water
      - length
-     - None
+     - 
    * - swe_melt
      - Snow melt
      - Difference in SWE over a given time period
      - land_surface
      - length
-     - None
+     - 
    * - topographic_index
      - Topographic Index
      - 
      - topography
-     - None
-     - None
+     - 
+     - 
    * - transpiration
      - Transpiration rate
      - transpiration rate
      - land_surface
-     - None
-     - None
+     - 
+     - 
    * - transpiration_leaves
      - Evapotranspiration from leaves
      - evaporation+transpiration from leaves
      - land_surface
-     - None
-     - None
+     - 
+     - 
    * - van_genuchten_alpha
      - Van Genuchten Alpha
      - alpha parameter for van Genucten curve
@@ -323,10 +359,10 @@ variable
      - 
      - subsurface
      - length
-     - None
+     - 
    * - huc_map
      - topography
      - HUC map
      - 
      - 
-     - None
+     - 

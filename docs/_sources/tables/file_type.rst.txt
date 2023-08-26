@@ -62,3 +62,11 @@ file_type
      - TIFF file
      - 
      - 
+   * - pfsol
+     - ParFlow Solid File
+     - Solid file for defining 3D ParFlow domains
+     - 
+   * - sa
+     - ParFlow Ascii file
+     - Ascii file where the rows are in standard ParFlow order as specified by ParFlow manual
+     - 

@@ -87,6 +87,7 @@
 <dt>Functions to access data from data catalog information.</dt><dd><p>get_catalog_entries()</p>
 <p>get_catalog_entry()</p>
 <p>get_file_paths()</p>
+<p>get_numpy_data()</p>
 <p>get_ndarray()</p>
 <p>get_table_names()</p>
 <p>get_table_rows()</p>
@@ -271,8 +272,8 @@ If both start_time and end_time is specified then dates in the date range are us
 <dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_ndarray">
 <span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_ndarray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_ndarray" title="Permalink to this definition"></a></dt>
 <dd><p>Get a numpy ndarray from files in /hydrodata with the applied data filters.
-If a dates array is provided as an option this array will be populated with the
-date string of the date dimentions of the ndarray that is returned.</p>
+If a time_values data filter option is provided as an arrat this array will be populated with the
+date strings of the date dimentions of the ndarray that is returned. This is used for graphing use cases.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -322,6 +323,69 @@ The start_time is inclusive the end_time is exclusive (data returned less than t
 <dt>For example, to get data from the 3 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>bounds = [200, 200, 300, 250]</p>
 <p>entry = get_catalog_entry(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”)</p>
 <p>data = get_ndarray(entry, start_time=”2021-09-30”, end_time=”2021-10-03”, grid_bounds = bounds)</p>
+<p># The result has 3 days in the time dimension and sliced to x,y shape 100x50 at origin 200, 200 in the conus1 grid.</p>
+<p>assert data.shape == [3, 100, 50]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hydrodata.data_catalog.data_access.get_numpy_data">
+<span class="sig-prename descclassname"><span class="pre">hydrodata.data_catalog.data_access.</span></span><span class="sig-name descname"><span class="pre">get_numpy_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="headerlink" href="#hydrodata.data_catalog.data_access.get_numpy_data" title="Permalink to this definition"></a></dt>
+<dd><p>Get a numpy ndarray from files in /hydrodata with the applied data filters.
+If a time_values data filter option is provided as an arrat this array will be populated with the
+date strings of the date dimentions of the ndarray that is returned. This is used for graphing use cases.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>entry</strong> – Either a ModelTableRow or the ID number of a data_catalog_entry. If None then get entry from options.</p></li>
+<li><p><strong>args</strong> – Optional positional parameter that must be a dict with data filter options.</p></li>
+<li><p><strong>kwargs</strong> – Supports multiple named parameters with data filter option values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A numpy ndarray containing the data loaded from the files identified by the entry and sliced by the data filter options.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError if both grid_bounds and latlng_bounds are specified as data filters.</strong> – </p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>A data filter option must be one of the following:</dt><dd><ul class="simple">
+<li><p>start_time:     A time as either a datetime object or a string in the form YYYY-MM-DD. Start of the date range for data.</p></li>
+<li><p>end_time:       A time as either a datetime object or a string in the form YYYY-MM-DD. End of the date range for data.</p></li>
+<li><p>site_id:        An observation point site id.</p></li>
+<li><p>grid_bounds:    An array (or string representing an array) of points [left, bottom, right, top] in xy grid corridates in the grid of the data.</p></li>
+<li><p>latlng_bounds:  An array (or string representing an array) of points [left, bottom, right, top] in lat/lng coordinates mapped with the grid of the data.</p></li>
+<li><p>depth:          A number 0-n of the depth index of the data to return.</p></li>
+<li><p>z:              A value of the z dimension to be used as a filter to remove this dismension.</p></li>
+<li><p>level:          A HUC level integer when reading HUC boundary files.</p></li>
+</ul>
+</dd>
+<dt>For gridded results the returned numpy array has dimensions:</dt><dd><ul class="simple">
+<li><p>[hour, y, x]`````               period is hourly without z dimension</p></li>
+<li><p>[day, y, x]                     period is daily without z dimension</p></li>
+<li><p>[month, y, x]                   period is monthly without z dimension</p></li>
+<li><p>[y, x]                          period is static or blank without z dimension</p></li>
+<li><p>[hour, z, y, x]`````            period is hourly with z dimension</p></li>
+<li><p>[day, z, y, x]                  period is daily with z dimension</p></li>
+<li><p>[month, z, y, x]                period is monthly with z dimension</p></li>
+<li><p>[z, y, x]                       period is static or blank with z dimension</p></li>
+</ul>
+</dd>
+</dl>
+<p>If the dataset has ensembles then there is an ensemble dimension at the beginning.</p>
+<p>Both start_time and end_time must be in the form “YYYY-MM-DD HH:MM:SS” or “YYYY-MM-DD” or a datetime object.</p>
+<p>If only start_time is specified than only that month/day/hour is returned.
+The start_time is inclusive the end_time is exclusive (data returned less than that time).</p>
+<p>If either grid_bounds or latlng_bounds is specified then the result is sliced by the x,y values in the bounds.</p>
+<p>If z is specified then the result is sliced by the z dimension.</p>
+<dl>
+<dt>For example, to get data from the 3 daily files bewteen 9/30/2021 and 10/3/2021.</dt><dd><p>bounds = [200, 200, 300, 250]</p>
+<dl class="simple">
+<dt>data = get_numpy_data(dataset=”NLDAS2”, file_type=”pfb”, period=”daily”, variable=”precipitation”,</dt><dd><p>start_time=”2021-09-30”, end_time=”2021-10-03”, grid_bounds = bounds)</p>
+</dd>
+</dl>
 <p># The result has 3 days in the time dimension and sliced to x,y shape 100x50 at origin 200, 200 in the conus1 grid.</p>
 <p>assert data.shape == [3, 100, 50]</p>
 </dd>

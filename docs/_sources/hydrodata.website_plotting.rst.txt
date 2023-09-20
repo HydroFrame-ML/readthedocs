@@ -1,0 +1,19 @@
+hydrodata.website\_plotting package
+===================================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hydrodata.website_plotting.anomaly_plots
+   hydrodata.website_plotting.plotting_utils
+
+Module contents
+---------------
+
+.. automodule:: hydrodata.website_plotting
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+hydrodata.website\_plotting.anomaly\_plots module
+=================================================
+
+.. automodule:: hydrodata.website_plotting.anomaly_plots
+   :members:
+   :undoc-members:
+   :show-inheritance:

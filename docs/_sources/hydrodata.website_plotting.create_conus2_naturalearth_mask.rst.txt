@@ -1,0 +1,7 @@
+hydrodata.website\_plotting.create\_conus2\_naturalearth\_mask module
+=====================================================================
+
+.. automodule:: hydrodata.website_plotting.create_conus2_naturalearth_mask
+   :members:
+   :undoc-members:
+   :show-inheritance:

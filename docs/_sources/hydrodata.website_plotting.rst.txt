@@ -7,7 +7,8 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
-   hydrodata.website_plotting.anomaly_plots
+   hydrodata.website_plotting.create_conus2_naturalearth_mask
+   hydrodata.website_plotting.hydrogen_plots
    hydrodata.website_plotting.plotting_utils
 
 Module contents
